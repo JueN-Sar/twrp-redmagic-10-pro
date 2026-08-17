@@ -25,7 +25,7 @@
 - ❌ Vibration not working
 - ❌ WLan not working
 - ❌ Battery % (indicator) showing always 100%
-
+- ❌ Temprature indicator showing 37c 
 
 <img width="152" height="336" alt="TWRP-decrypt" src="https://github.com/user-attachments/assets/032e73a7-c73a-434b-86e0-2a9f046f7402" />
 
