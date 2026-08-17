@@ -6,7 +6,7 @@
 
 ## 📋 Device Specs
 
-
+| | |
 |---|---|
 | **Device** | Nubia RedMagic 10 Pro |
 | **Codename** | NX789J |
