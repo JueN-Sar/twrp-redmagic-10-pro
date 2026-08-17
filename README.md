@@ -31,10 +31,10 @@
 
 <img width="152" height="336" alt="TWRP-home" src="https://github.com/user-attachments/assets/6304d097-72f1-4399-bbbc-7ed4f35bf910" />
 <img width="152" height="336" alt="TWRP-files" src="https://github.com/user-attachments/assets/c00a74f9-1664-43f6-9761-3209a581394c" />
-<img width="152" height="336" alt="5198" src="https://github.com/user-attachments/assets/fbdd7c2a-535d-49f6-aea2-6023f7a118fc" />
+<img width="152" height="336" alt="TWRP-wipe" src="https://github.com/user-attachments/assets/fbdd7c2a-535d-49f6-aea2-6023f7a118fc" />
 
-<img width="152" height="336" alt="5210" src="https://github.com/user-attachments/assets/bbd630d5-1119-4654-8286-be2247b31217" />
-<img width="152" height="336" alt="5199" src="https://github.com/user-attachments/assets/080030c9-36ab-4e0a-a3b5-fa10794a7005" />
+<img width="152" height="336" alt="TWRP-reboot" src="https://github.com/user-attachments/assets/bbd630d5-1119-4654-8286-be2247b31217" />
+<img width="152" height="336" alt="TWRP-backup" src="https://github.com/user-attachments/assets/080030c9-36ab-4e0a-a3b5-fa10794a7005" />
 <img width="152" height="336" alt="5200" src="https://github.com/user-attachments/assets/e4220d5e-ddf6-4cf6-b94d-c89ad33f74aa" />
 <img width="152" height="336" alt="5201" src="https://github.com/user-attachments/assets/2a3a122a-c31a-428f-9f6a-f3832c74f6c0" />
 
