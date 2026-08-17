@@ -7,7 +7,6 @@
 ## 📋 Device Specs
 
 | | |
-|---|---|
 | **Device** | Nubia RedMagic 10 Pro |
 | **Codename** | NX789J |
 | **SoC** | Snapdragon 8 Elite (sun) |
