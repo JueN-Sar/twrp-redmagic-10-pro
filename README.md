@@ -1,4 +1,4 @@
-# 🔥 TWRP 16.0 for Nubia RedMagic 10 Pro (NX789J)
+# TWRP 16.0 for Nubia RedMagic 10 Pro (NX789J)
 
 > **Built by a human and an AI, side by side.**
 >
