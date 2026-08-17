@@ -63,7 +63,7 @@ GitHub Actions pipeline to build it ourselves. Zero patches, zero hacks
 - **[reminon](https://github.com/reminon)** — TWRP 16.0 device tree for RedMagic 10 Pro
 - **[plompomg](https://github.com/plompomg)** — OrangeFox device tree (original reference)
 - **[TeamWin](https://github.com/TeamWin)** — TWRP Recovery Project
-- **[JueN-Sar]MsysteM** — Repo owner, builder
+- **[JueN-Sar](https://github.com/JueN-Sar)** — Repo owner, builder also known as MsysteM
 - **[Claude](https://claude.ai)** — AI partner
 
 
