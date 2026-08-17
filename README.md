@@ -36,12 +36,12 @@
 <img width="152" height="336" alt="TWRP-reboot" src="https://github.com/user-attachments/assets/bbd630d5-1119-4654-8286-be2247b31217" />
 <img width="152" height="336" alt="TWRP-backup" src="https://github.com/user-attachments/assets/080030c9-36ab-4e0a-a3b5-fa10794a7005" />
 <img width="152" height="336" alt="5200" src="https://github.com/user-attachments/assets/e4220d5e-ddf6-4cf6-b94d-c89ad33f74aa" />
-<img width="152" height="336" alt="5201" src="https://github.com/user-attachments/assets/2a3a122a-c31a-428f-9f6a-f3832c74f6c0" />
+<img width="152" height="336" alt="TWRP-mount" src="https://github.com/user-attachments/assets/2a3a122a-c31a-428f-9f6a-f3832c74f6c0" />
 
 
 
-<img width="152" height="336" alt="5203" src="https://github.com/user-attachments/assets/e5de5cb0-e426-4c6c-978e-92fb8c09d3b7" />
-<img width="152" height="336" alt="5202" src="https://github.com/user-attachments/assets/b3fc0867-32aa-4e4a-bb5f-f36191f9ffd9" />
+<img width="152" height="336" alt="TWRP-advanced" src="https://github.com/user-attachments/assets/e5de5cb0-e426-4c6c-978e-92fb8c09d3b7" />
+<img width="152" height="336" alt="TWRP-settings" src="https://github.com/user-attachments/assets/b3fc0867-32aa-4e4a-bb5f-f36191f9ffd9" />
 
 
 ## 📥 Download
