@@ -7,6 +7,7 @@
 ## 📋 Device Specs
 
 | | |
+|---|---|
 | **Device** | Nubia RedMagic 10 Pro |
 | **Codename** | NX789J |
 | **SoC** | Snapdragon 8 Elite (sun) |
@@ -57,11 +58,14 @@ GitHub Actions pipeline to build it ourselves. Zero patches, zero hacks
 
 ## 🙏 Credits
 
-- **[JueN-Sar](https://github.com/JueN-Sar)** — Project owner, builder
-- **[Claude](https://claude.ai)** — AI partner
 - **[reminon](https://github.com/reminon)** — TWRP 16.0 device tree for RedMagic 10 Pro
 - **[plompomg](https://github.com/plompomg)** — OrangeFox device tree (original reference)
 - **[TeamWin](https://github.com/TeamWin)** — TWRP Recovery Project
+- **[JueN-Sar](https://github.com/JueN-Sar)** — Repo owner, builder
+- **[Claude](https://claude.ai)** — AI partner
+
+
+
 
 ---
 
