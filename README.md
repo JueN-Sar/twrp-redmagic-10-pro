@@ -1,3 +1,5 @@
+<img width="1216" height="2688" alt="TWRP-home" src="https://github.com/user-attachments/assets/6304d097-72f1-4399-bbbc-7ed4f35bf910" />
+<img width="1216" height="2688" alt="TWRP-files" src="https://github.com/user-attachments/assets/c00a74f9-1664-43f6-9761-3209a581394c" />
 # TWRP 16.0 for Nubia RedMagic 10 Pro (NX789J)
 
 
