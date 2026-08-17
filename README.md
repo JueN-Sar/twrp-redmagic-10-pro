@@ -27,7 +27,7 @@
 - ❌ Battery % (indicator) showing always 100%
 
 
-<img width="152" height="336" alt="decrypt" src="https://github.com/user-attachments/assets/032e73a7-c73a-434b-86e0-2a9f046f7402" />
+<img width="152" height="336" alt="TWRP-decrypt" src="https://github.com/user-attachments/assets/032e73a7-c73a-434b-86e0-2a9f046f7402" />
 
 <img width="152" height="336" alt="TWRP-home" src="https://github.com/user-attachments/assets/6304d097-72f1-4399-bbbc-7ed4f35bf910" />
 <img width="152" height="336" alt="TWRP-files" src="https://github.com/user-attachments/assets/c00a74f9-1664-43f6-9761-3209a581394c" />
