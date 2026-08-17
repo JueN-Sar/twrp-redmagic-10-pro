@@ -1,12 +1,6 @@
 # TWRP 16.0 for Nubia RedMagic 10 Pro (NX789J)
 
-> **Built by a human and an AI, side by side.**
->
-> [JueN-Sar](https://github.com/JueN-Sar) and [Claude](https://claude.ai)
-> discovered [reminon's TWRP 16.0 device tree](https://github.com/reminon/twrp_device_nubia_nx789j)
-> for the RedMagic 10 Pro — fully working but with no published builds.
-> So we built it. No PC required — entirely in the cloud via GitHub Actions,
-> triggered from a phone. 📱🤖
+
 
 ---
 
@@ -27,9 +21,7 @@
 - ✅ Working decryption (FBE fscrypt policy 2)
 - ✅ ADB, Fastbootd, USB OTG, MTP
 - ✅ Backup / Restore / ZIP flashing
-- ✅ WLAN (WiFi in recovery)
-- 🔧 Fan LED (WIP)
-- 🔧 Vibrator (WIP)
+- ❌ Vibration not working
 
 ## 📥 Download
 
@@ -58,9 +50,9 @@ adb reboot recovery
 
 ## 🏗️ How It Was Built
 
-We found [reminon's TWRP 16.0 device tree](https://github.com/reminon/twrp_device_nubia_nx789j)
+I've found [reminon's TWRP 16.0 device tree](https://github.com/reminon/twrp_device_nubia_nx789j)
 — a clean, complete device tree for the RedMagic 10 Pro with working
-decryption and all the essentials. It had no releases, so we set up a
+decryption and all the essentials. It had no releases, so i set up a
 GitHub Actions pipeline to build it ourselves. Zero patches, zero hacks
 — just a straight build from a solid device tree.
 
