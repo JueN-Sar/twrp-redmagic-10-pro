@@ -1,7 +1,4 @@
-
 # TWRP 16.0 for Nubia RedMagic 10 Pro (NX789J)
-
-
 
 ---
 
@@ -25,27 +22,24 @@
 - ❌ Vibration not working
 - ❌ WLan not working
 - ❌ Battery % (indicator) showing always 100%
-- ❌ Temprature indicator showing 37c 
+- ❌ Temperature indicator showing 37°C
 
-<img width="152" height="336" alt="TWRP-decrypt" src="https://github.com/user-attachments/assets/032e73a7-c73a-434b-86e0-2a9f046f7402" />
+## 📸 Screenshots
 
-<img width="152" height="336" alt="TWRP-home" src="https://github.com/user-attachments/assets/6304d097-72f1-4399-bbbc-7ed4f35bf910" />
-<img width="152" height="336" alt="TWRP-files" src="https://github.com/user-attachments/assets/c00a74f9-1664-43f6-9761-3209a581394c" />
-<img width="152" height="336" alt="TWRP-wipe" src="https://github.com/user-attachments/assets/fbdd7c2a-535d-49f6-aea2-6023f7a118fc" />
-<img width="152" height="336" alt="TWRP-backup" src="https://github.com/user-attachments/assets/080030c9-36ab-4e0a-a3b5-fa10794a7005" />
+<p align="center">
+<a href="https://github.com/user-attachments/assets/032e73a7-c73a-434b-86e0-2a9f046f7402"><img src="https://github.com/user-attachments/assets/032e73a7-c73a-434b-86e0-2a9f046f7402" width="100" alt="Decrypt"></a>
+<a href="https://github.com/user-attachments/assets/6304d097-72f1-4399-bbbc-7ed4f35bf910"><img src="https://github.com/user-attachments/assets/6304d097-72f1-4399-bbbc-7ed4f35bf910" width="100" alt="Home"></a>
+<a href="https://github.com/user-attachments/assets/c00a74f9-1664-43f6-9761-3209a581394c"><img src="https://github.com/user-attachments/assets/c00a74f9-1664-43f6-9761-3209a581394c" width="100" alt="Files"></a>
+<a href="https://github.com/user-attachments/assets/fbdd7c2a-535d-49f6-aea2-6023f7a118fc"><img src="https://github.com/user-attachments/assets/fbdd7c2a-535d-49f6-aea2-6023f7a118fc" width="100" alt="Wipe"></a>
+<a href="https://github.com/user-attachments/assets/080030c9-36ab-4e0a-a3b5-fa10794a7005"><img src="https://github.com/user-attachments/assets/080030c9-36ab-4e0a-a3b5-fa10794a7005" width="100" alt="Backup"></a>
+<a href="https://github.com/user-attachments/assets/e4220d5e-ddf6-4cf6-b94d-c89ad33f74aa"><img src="https://github.com/user-attachments/assets/e4220d5e-ddf6-4cf6-b94d-c89ad33f74aa" width="100" alt="Restore"></a>
+<a href="https://github.com/user-attachments/assets/2a3a122a-c31a-428f-9f6a-f3832c74f6c0"><img src="https://github.com/user-attachments/assets/2a3a122a-c31a-428f-9f6a-f3832c74f6c0" width="100" alt="Mount"></a>
+<a href="https://github.com/user-attachments/assets/b3fc0867-32aa-4e4a-bb5f-f36191f9ffd9"><img src="https://github.com/user-attachments/assets/b3fc0867-32aa-4e4a-bb5f-f36191f9ffd9" width="100" alt="Settings"></a>
+<a href="https://github.com/user-attachments/assets/e5de5cb0-e426-4c6c-978e-92fb8c09d3b7"><img src="https://github.com/user-attachments/assets/e5de5cb0-e426-4c6c-978e-92fb8c09d3b7" width="100" alt="Advanced"></a>
+<a href="https://github.com/user-attachments/assets/bbd630d5-1119-4654-8286-be2247b31217"><img src="https://github.com/user-attachments/assets/bbd630d5-1119-4654-8286-be2247b31217" width="100" alt="Reboot"></a>
+</p>
 
-<img width="152" height="336" alt="TWRP-restore" src="https://github.com/user-attachments/assets/e4220d5e-ddf6-4cf6-b94d-c89ad33f74aa" />
-
-
-
-
-<img width="152" height="336" alt="TWRP-mount" src="https://github.com/user-attachments/assets/2a3a122a-c31a-428f-9f6a-f3832c74f6c0" />
-
-<img width="152" height="336" alt="TWRP-settings" src="https://github.com/user-attachments/assets/b3fc0867-32aa-4e4a-bb5f-f36191f9ffd9" />
-
-<img width="152" height="336" alt="TWRP-advanced" src="https://github.com/user-attachments/assets/e5de5cb0-e426-4c6c-978e-92fb8c09d3b7" />
-
-<img width="152" height="336" alt="TWRP-reboot" src="https://github.com/user-attachments/assets/bbd630d5-1119-4654-8286-be2247b31217" />
+<p align="center"><em>Click any screenshot to view full size</em></p>
 
 ## 📥 Download
 
@@ -87,9 +81,6 @@ GitHub Actions pipeline to build it ourselves. Zero patches, zero hacks
 - **[TeamWin](https://github.com/TeamWin)** — TWRP Recovery Project
 - **[JueN-Sar](https://github.com/JueN-Sar)** — Repo owner, builder also known as MsysteM
 - **[Claude](https://claude.ai)** — AI partner
-
-
-
 
 ---
 
