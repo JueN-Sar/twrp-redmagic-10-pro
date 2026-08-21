@@ -33,7 +33,9 @@ jobs:
 
       - name: Clone LSPlant
         run: |
-          git clone --depth=1 --recurse-submodules https://github.com/LSPosed/LSPlant.git external/lsplant
+          git clone --depth=1 https://github.com/LSPosed/LSPlant.git external/lsplant
+          cd external/lsplant
+          git submodule update --init --depth=1 lsplant/src/main/jni/external/dex_builder
 
       - name: Build native module (arm64-v8a)
         run: |
