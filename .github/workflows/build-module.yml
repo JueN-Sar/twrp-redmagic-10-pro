@@ -33,13 +33,8 @@ jobs:
 
       - name: Clone Dobby (inline hooking)
         run: |
-          git clone --depth=1 --branch latest https://github.com/jmpews/Dobby.git external/dobby
-          # Fix Dobby ARM64 assembly: Mach-O @PAGE/@PAGEOFF -> ELF syntax
-          # Pattern includes cdecl() macro wrapping, so match broadly
-          sed -i 's/\([^ ,]*\)@PAGEOFF/:lo12:\1/g' \
-            external/dobby/source/TrampolineBridge/ClosureTrampolineBridge/arm64/closure_bridge_arm64.asm
-          sed -i 's/@PAGE//g' \
-            external/dobby/source/TrampolineBridge/ClosureTrampolineBridge/arm64/closure_bridge_arm64.asm
+          # Use LSPosed's maintained fork of Dobby (same version used by LSPosed with LSPlant)
+          git clone --depth=1 https://github.com/LSPosed/Dobby.git external/dobby
 
       - name: Clone LSPlant
         run: |
