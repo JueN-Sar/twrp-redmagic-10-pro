@@ -34,6 +34,10 @@ jobs:
       - name: Clone Dobby (inline hooking)
         run: |
           git clone --depth=1 https://github.com/jmpews/Dobby.git external/dobby
+          # Fix Dobby ARM64 assembly: Mach-O @PAGE/@PAGEOFF -> ELF syntax
+          find external/dobby -name "*.asm" -exec sed -i \
+            -e 's/\([a-zA-Z_][a-zA-Z0-9_]*\)@PAGE$/\1/' \
+            -e 's/\([a-zA-Z_][a-zA-Z0-9_]*\)@PAGEOFF/:lo12:\1/' {} +
 
       - name: Clone LSPlant
         run: |
