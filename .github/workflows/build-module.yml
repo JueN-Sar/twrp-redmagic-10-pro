@@ -31,11 +31,15 @@ jobs:
         run: |
           sdkmanager --install "build-tools;35.0.0" "platforms;android-35" "ndk;27.0.12077973"
 
+      - name: Clone Dobby (inline hooking)
+        run: |
+          git clone --depth=1 https://github.com/jmpews/Dobby.git external/dobby
+
       - name: Clone LSPlant
         run: |
           git clone --depth=1 https://github.com/LSPosed/LSPlant.git external/lsplant
           cd external/lsplant
-          git submodule update --init --depth=1 lsplant/src/main/jni/external/dex_builder
+          git submodule update --init --recursive --depth=1 lsplant/src/main/jni/external/dex_builder
 
       - name: Build native module (arm64-v8a)
         run: |

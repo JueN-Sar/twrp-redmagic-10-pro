@@ -10,9 +10,19 @@ add_library(${PROJECT_NAME} SHARED
     src/main.cpp
 )
 
-# LSPlant - added as subdirectory (cloned during CI)
+# Dobby - inline hooking engine (required by LSPlant)
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../external/dobby/CMakeLists.txt")
+    set(DOBBY_DEBUG OFF CACHE BOOL "" FORCE)
+    set(DOBBY_GENERATE_SHARED OFF CACHE BOOL "" FORCE)
+    add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../external/dobby dobby_build)
+    target_link_libraries(${PROJECT_NAME} dobby)
+else()
+    message(FATAL_ERROR "Dobby not found. Run: git clone --depth=1 https://github.com/jmpews/Dobby.git external/dobby")
+endif()
+
+# LSPlant - ART method hooking (build as static lib)
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../external/lsplant/lsplant/src/main/jni/CMakeLists.txt")
-    # Build LSPlant from source
+    set(LSPLANT_SHARED OFF CACHE BOOL "" FORCE)
     set(LSPLANT_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../external/lsplant/lsplant/src/main/jni")
     add_subdirectory(${LSPLANT_DIR} lsplant_build)
     target_link_libraries(${PROJECT_NAME} lsplant)

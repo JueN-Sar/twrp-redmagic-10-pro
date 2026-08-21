@@ -12,9 +12,11 @@
 #include <android/log.h>
 #include <dlfcn.h>
 #include <vector>
+#include <string>
 
 #include "zygisk.hpp"
 #include "lsplant.hpp"
+#include "dobby.h"
 
 #define TAG "GSU-Native"
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, TAG, __VA_ARGS__)
@@ -35,10 +37,9 @@ static std::vector<uint8_t> readFile(int fd) {
 
 // Companion handler - runs with root, sends DEX and config to the module process
 static void companionHandler(int fd) {
-    // Read DEX file
+    // Read module dir path from fd
     std::string modulePath;
     {
-        // Read module dir path from fd
         uint32_t pathLen = 0;
         read(fd, &pathLen, sizeof(pathLen));
         if (pathLen > 0 && pathLen < 4096) {
@@ -167,7 +168,7 @@ public:
 
         LOGI("Hooking process: %s", processName_.c_str());
 
-        // Initialize LSPlant
+        // Initialize LSPlant with Dobby as inline hooker
         if (!initLSPlant(env_)) {
             LOGE("LSPlant initialization failed");
             return;
@@ -194,13 +195,21 @@ private:
 
     bool initLSPlant(JNIEnv *env) {
         return lsplant::Init(env, lsplant::InitInfo{
-            .inline_hooker = [](auto, auto) { return true; },
-            .inline_unhooker = [](auto) { return true; },
-            .art_symbol_resolver = [](auto symbol) -> void* {
-                return dlsym(RTLD_DEFAULT, symbol);
+            .inline_hooker = [](void *target, void *hooker) -> void* {
+                void *origin = nullptr;
+                if (DobbyHook(target, hooker, &origin) == 0) {
+                    return origin;
+                }
+                return nullptr;
             },
-            .art_symbol_prefix_resolver = [](auto symbol) -> void* {
-                return dlsym(RTLD_DEFAULT, symbol);
+            .inline_unhooker = [](void *target) -> bool {
+                return DobbyDestroy(target) == 0;
+            },
+            .art_symbol_resolver = [](std::string_view symbol) -> void* {
+                return dlsym(RTLD_DEFAULT, symbol.data());
+            },
+            .art_symbol_prefix_resolver = [](std::string_view symbol) -> void* {
+                return dlsym(RTLD_DEFAULT, symbol.data());
             },
         });
     }
@@ -259,7 +268,7 @@ private:
         write(tmpFd, dexData_.data(), dexData_.size());
         close(tmpFd);
 
-        // Use PathClassLoader or DexClassLoader
+        // Use DexClassLoader
         jclass clsDexCL = env->FindClass("dalvik/system/DexClassLoader");
         jmethodID ctorDexCL = env->GetMethodID(clsDexCL, "<init>",
             "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V");
@@ -372,8 +381,14 @@ private:
 
     // JNI native implementations
     static jobject JNICALL nativeHook(JNIEnv *env, jclass, jobject targetMember, jobject replacement) {
-        // LSPlant::Hook returns the backup method
-        jobject backup = lsplant::Hook(env, targetMember, replacement);
+        // Get the declaring class of the replacement method to use as hooker_object
+        jclass methodClass = env->FindClass("java/lang/reflect/Method");
+        jmethodID getDeclaringClass = env->GetMethodID(methodClass, "getDeclaringClass",
+            "()Ljava/lang/Class;");
+        jobject hookerObject = env->CallObjectMethod(replacement, getDeclaringClass);
+
+        // LSPlant::Hook(env, target, hooker_object, callback_method) -> backup method
+        jobject backup = lsplant::Hook(env, targetMember, hookerObject, replacement);
         if (!backup) {
             LOGE("LSPlant::Hook failed");
         }
