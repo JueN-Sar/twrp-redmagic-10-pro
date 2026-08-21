@@ -6,11 +6,15 @@
 
 #include <cstdlib>
 #include <cstring>
+#include <cerrno>
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+#include <sys/mman.h>
 #include <android/log.h>
 #include <dlfcn.h>
+#include <link.h>
+#include <elf.h>
 #include <vector>
 #include <string>
 
@@ -21,6 +25,206 @@
 #define TAG "GSU-Native"
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, TAG, __VA_ARGS__)
+
+// =============================================================================
+// ART Symbol Resolver — safe file-based ELF parser for prefix matching.
+// DobbySymbolResolver handles exact matches (it already has a working parser).
+// This class mmaps the libart.so *file* from disk and parses ELF section
+// headers for the .dynsym table. File-based parsing avoids all the pitfalls
+// of in-memory dynamic-segment walking (bad base-address arithmetic,
+// unbounded GNU-hash chain iteration, etc.).
+// =============================================================================
+
+class ArtSymbolResolver {
+public:
+    static ArtSymbolResolver &instance() {
+        static ArtSymbolResolver resolver;
+        return resolver;
+    }
+
+    bool init() {
+        if (initialized_) return valid_;
+        initialized_ = true;
+
+        LOGI("ArtSymbolResolver: locating libart.so...");
+
+        // Step 1 — find libart.so load bias + file path via dl_iterate_phdr
+        struct FindData {
+            uintptr_t bias;
+            std::string path;
+            bool found;
+        } fd{0, {}, false};
+
+        dl_iterate_phdr([](struct dl_phdr_info *info, size_t, void *arg) -> int {
+            auto *d = static_cast<FindData *>(arg);
+            if (info->dlpi_name && strstr(info->dlpi_name, "libart.so")) {
+                d->bias = info->dlpi_addr;
+                d->path = info->dlpi_name;
+                d->found = true;
+                return 1;
+            }
+            return 0;
+        }, &fd);
+
+        if (!fd.found || fd.path.empty()) {
+            LOGE("ArtSymbolResolver: libart.so not found via dl_iterate_phdr");
+            return false;
+        }
+
+        loadBias_ = fd.bias;
+        artPath_  = fd.path;
+        LOGI("ArtSymbolResolver: libart.so at %s  bias=0x%lx",
+             artPath_.c_str(), (unsigned long)loadBias_);
+
+        // Step 2 — mmap the file
+        int fileFd = open(artPath_.c_str(), O_RDONLY);
+        if (fileFd < 0) {
+            LOGE("ArtSymbolResolver: open(%s) failed: %s",
+                 artPath_.c_str(), strerror(errno));
+            return false;
+        }
+
+        struct stat st{};
+        if (fstat(fileFd, &st) != 0 || st.st_size < (off_t)sizeof(Elf64_Ehdr)) {
+            LOGE("ArtSymbolResolver: fstat failed or file too small");
+            close(fileFd);
+            return false;
+        }
+
+        fileSize_ = (size_t)st.st_size;
+        fileData_ = (uint8_t *)mmap(nullptr, fileSize_, PROT_READ,
+                                    MAP_PRIVATE, fileFd, 0);
+        close(fileFd);
+
+        if (fileData_ == MAP_FAILED) {
+            fileData_ = nullptr;
+            LOGE("ArtSymbolResolver: mmap failed: %s", strerror(errno));
+            return false;
+        }
+
+        LOGI("ArtSymbolResolver: mmap'd %zu bytes, parsing ELF...", fileSize_);
+
+        // Step 3 — parse ELF section headers for .dynsym + .dynstr
+        if (!parseElfSections()) {
+            LOGE("ArtSymbolResolver: ELF parse failed");
+            cleanup();
+            return false;
+        }
+
+        valid_ = true;
+        LOGI("ArtSymbolResolver: ready — %zu dynsym entries", symcount_);
+        return true;
+    }
+
+    // Prefix-match: return the first symbol whose name starts with |prefix|
+    void *resolvePrefix(std::string_view prefix) {
+        if (!valid_ || !symtab_ || !strtab_) return nullptr;
+
+        for (size_t i = 0; i < symcount_; i++) {
+            const auto &sym = symtab_[i];
+            if (sym.st_shndx == SHN_UNDEF || sym.st_value == 0) continue;
+            if (sym.st_name >= strtabSize_) continue;
+
+            const char *name = strtab_ + sym.st_name;
+            if (strncmp(name, prefix.data(), prefix.size()) == 0) {
+                void *addr = reinterpret_cast<void *>(loadBias_ + sym.st_value);
+                return addr;
+            }
+        }
+        return nullptr;
+    }
+
+    ~ArtSymbolResolver() { cleanup(); }
+
+private:
+    ArtSymbolResolver() = default;
+
+    void cleanup() {
+        if (fileData_) {
+            munmap(fileData_, fileSize_);
+            fileData_ = nullptr;
+        }
+        symtab_     = nullptr;
+        strtab_     = nullptr;
+        strtabSize_ = 0;
+        symcount_   = 0;
+    }
+
+    // Parse section headers to locate .dynsym and its associated .dynstr.
+    // Section headers give us file-offset + size directly — no address
+    // translation needed, no hash-table walks, no unbounded loops.
+    bool parseElfSections() {
+        auto *ehdr = reinterpret_cast<Elf64_Ehdr *>(fileData_);
+
+        // Validate ELF magic
+        if (memcmp(ehdr->e_ident, ELFMAG, SELFMAG) != 0) {
+            LOGE("ArtSymbolResolver: bad ELF magic");
+            return false;
+        }
+
+        if (ehdr->e_shoff == 0 || ehdr->e_shnum == 0 || ehdr->e_shentsize == 0) {
+            LOGE("ArtSymbolResolver: no section headers");
+            return false;
+        }
+
+        // Bounds-check the entire section-header table
+        size_t shTabEnd = ehdr->e_shoff
+                        + (size_t)ehdr->e_shnum * ehdr->e_shentsize;
+        if (shTabEnd > fileSize_) {
+            LOGE("ArtSymbolResolver: section headers out of bounds");
+            return false;
+        }
+
+        auto *shdrs = reinterpret_cast<Elf64_Shdr *>(fileData_ + ehdr->e_shoff);
+
+        // Find SHT_DYNSYM; its sh_link points at the matching SHT_STRTAB
+        for (uint16_t i = 0; i < ehdr->e_shnum; i++) {
+            if (shdrs[i].sh_type != SHT_DYNSYM) continue;
+
+            auto &dynsymHdr = shdrs[i];
+            // Bounds-check .dynsym data
+            if (dynsymHdr.sh_offset + dynsymHdr.sh_size > fileSize_) {
+                LOGE("ArtSymbolResolver: .dynsym data out of bounds");
+                return false;
+            }
+
+            symtab_   = reinterpret_cast<Elf64_Sym *>(fileData_ + dynsymHdr.sh_offset);
+            symcount_ = dynsymHdr.sh_size / sizeof(Elf64_Sym);
+
+            // Locate .dynstr via sh_link
+            uint32_t strIdx = dynsymHdr.sh_link;
+            if (strIdx >= ehdr->e_shnum) {
+                LOGE("ArtSymbolResolver: .dynsym sh_link out of range");
+                symtab_ = nullptr;
+                return false;
+            }
+
+            auto &dynstrHdr = shdrs[strIdx];
+            if (dynstrHdr.sh_offset + dynstrHdr.sh_size > fileSize_) {
+                LOGE("ArtSymbolResolver: .dynstr data out of bounds");
+                symtab_ = nullptr;
+                return false;
+            }
+
+            strtab_     = reinterpret_cast<const char *>(fileData_ + dynstrHdr.sh_offset);
+            strtabSize_ = dynstrHdr.sh_size;
+            break;
+        }
+
+        return (symtab_ && strtab_ && symcount_ > 0);
+    }
+
+    bool       initialized_ = false;
+    bool       valid_        = false;
+    uintptr_t  loadBias_     = 0;
+    std::string artPath_;
+    uint8_t   *fileData_     = nullptr;
+    size_t     fileSize_     = 0;
+    Elf64_Sym *symtab_       = nullptr;
+    const char *strtab_      = nullptr;
+    size_t     strtabSize_   = 0;
+    size_t     symcount_     = 0;
+};
 
 static constexpr const char *CONFIG_PATH = "/data/adb/game_space_unleashed/config.json";
 
@@ -194,22 +398,42 @@ private:
     std::vector<uint8_t> configData_;
 
     bool initLSPlant(JNIEnv *env) {
+        LOGI("Initializing ART symbol resolver...");
+
+        // Eagerly initialize the file-based resolver so any failure is
+        // logged before we hand the callbacks to LSPlant.
+        auto &resolver = ArtSymbolResolver::instance();
+        if (!resolver.init()) {
+            LOGE("ART symbol resolver init failed — LSPlant may not work");
+            // Continue anyway; DobbySymbolResolver + dlsym may suffice.
+        }
+
+        LOGI("Initializing LSPlant...");
+
         return lsplant::Init(env, lsplant::InitInfo{
             .inline_hooker = [](void *target, void *hooker) -> void* {
                 dobby_dummy_func_t origin = nullptr;
                 if (DobbyHook(target, (dobby_dummy_func_t)hooker, &origin) == 0) {
                     return (void *)origin;
                 }
+                LOGE("DobbyHook failed for target %p", target);
                 return nullptr;
             },
             .inline_unhooker = [](void *target) -> bool {
                 return DobbyDestroy(target) == 0;
             },
             .art_symbol_resolver = [](std::string_view symbol) -> void* {
-                return dlsym(RTLD_DEFAULT, symbol.data());
+                // Dobby's resolver can find hidden / unexported symbols
+                // that dlsym cannot see on Android 14+.
+                void *addr = DobbySymbolResolver("libart.so", symbol.data());
+                if (!addr) {
+                    addr = dlsym(RTLD_DEFAULT, symbol.data());
+                }
+                return addr;
             },
-            .art_symbol_prefix_resolver = [](std::string_view symbol) -> void* {
-                return dlsym(RTLD_DEFAULT, symbol.data());
+            .art_symbol_prefix_resolver = [](std::string_view prefix) -> void* {
+                // Prefix-match via our safe file-based .dynsym parser.
+                return ArtSymbolResolver::instance().resolvePrefix(prefix);
             },
         });
     }
