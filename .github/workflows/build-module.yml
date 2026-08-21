@@ -38,7 +38,7 @@ jobs:
 
       - name: Clone LSPlant
         run: |
-          git clone --depth=1 https://github.com/LSPosed/LSPlant.git external/lsplant
+          git clone --depth=1 --branch v6.4 https://github.com/LSPosed/LSPlant.git external/lsplant
           cd external/lsplant
           git submodule update --init --recursive --depth=1 lsplant/src/main/jni/external/dex_builder
 
