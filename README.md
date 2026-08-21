@@ -1,87 +1,81 @@
-# TWRP 16.0 for Nubia RedMagic 10 Pro (NX789J)
+# Game Space Unleashed by MsysteM
 
----
+Magisk module that unlocks Super Resolution (Superior Pic Quality) and other Game Space features for **all games** on RedMagic devices — without LSPosed.
 
-## 📋 Device Specs
+## Features
 
-| | |
-|---|---|
-| **Device** | Nubia RedMagic 10 Pro |
-| **Codename** | NX789J |
-| **SoC** | Snapdragon 8 Elite (sun) |
-| **Android** | 16 |
-| **TWRP** | 16.0 (3.7.1) |
-| **Encryption** | FBE fscrypt policy v2 with ICE wrappedkey |
-| **Partition** | A/B with dedicated recovery |
+| Feature | Description |
+|---------|-------------|
+| ⚡ **Super Resolution** | Enable high frame rate & picture quality for ALL games, not just Nubia's whitelist |
+| 🎮 **Global Game Mode** | Treat any app as a game so Game Space features work everywhere |
+| 🛡️ **No Kill** | Prevent Game Space from killing background apps |
+| 🔲 **Hide Energy Cube** | Hide the Energy Cube overlay on game launch |
+| 📐 **Small Window** | Allow all apps in floating window mode |
+| ✍️ **Watermark Length** | Extend watermark text limit to 1000 characters |
 
-## ⚡ Features
+## How It Works
 
-- ✅ Working decryption (FBE fscrypt policy 2)
-- ✅ ADB, Fastbootd, USB OTG, MTP
-- ✅ Backup / Restore / ZIP flashing
-- ❌ Vibration not working
-- ❌ WLan not working
-- ❌ Battery % (indicator) showing always 100%
-- ❌ Temperature indicator showing 37°C
+Uses **Zygisk** (via Magisk or ReZygisk) and **LSPlant** to hook Game Space (`cn.nubia.gamelauncher`) and Game Assist (`cn.nubia.gameassist`) at runtime. Bypasses capability checks, whitelist gates, and feature flags to unlock all features for every game.
 
-## 📸 Screenshots
+**No LSPosed needed** — no detectable Xposed framework for root-detection-heavy apps.
 
-<p align="center">
-<a href="https://github.com/user-attachments/assets/032e73a7-c73a-434b-86e0-2a9f046f7402"><img src="https://github.com/user-attachments/assets/032e73a7-c73a-434b-86e0-2a9f046f7402" width="100" alt="Decrypt"></a>
-<a href="https://github.com/user-attachments/assets/6304d097-72f1-4399-bbbc-7ed4f35bf910"><img src="https://github.com/user-attachments/assets/6304d097-72f1-4399-bbbc-7ed4f35bf910" width="100" alt="Home"></a>
-<a href="https://github.com/user-attachments/assets/c00a74f9-1664-43f6-9761-3209a581394c"><img src="https://github.com/user-attachments/assets/c00a74f9-1664-43f6-9761-3209a581394c" width="100" alt="Files"></a>
-<a href="https://github.com/user-attachments/assets/fbdd7c2a-535d-49f6-aea2-6023f7a118fc"><img src="https://github.com/user-attachments/assets/fbdd7c2a-535d-49f6-aea2-6023f7a118fc" width="100" alt="Wipe"></a>
-<a href="https://github.com/user-attachments/assets/080030c9-36ab-4e0a-a3b5-fa10794a7005"><img src="https://github.com/user-attachments/assets/080030c9-36ab-4e0a-a3b5-fa10794a7005" width="100" alt="Backup"></a>
-<a href="https://github.com/user-attachments/assets/e4220d5e-ddf6-4cf6-b94d-c89ad33f74aa"><img src="https://github.com/user-attachments/assets/e4220d5e-ddf6-4cf6-b94d-c89ad33f74aa" width="100" alt="Restore"></a>
-<a href="https://github.com/user-attachments/assets/2a3a122a-c31a-428f-9f6a-f3832c74f6c0"><img src="https://github.com/user-attachments/assets/2a3a122a-c31a-428f-9f6a-f3832c74f6c0" width="100" alt="Mount"></a>
-<a href="https://github.com/user-attachments/assets/b3fc0867-32aa-4e4a-bb5f-f36191f9ffd9"><img src="https://github.com/user-attachments/assets/b3fc0867-32aa-4e4a-bb5f-f36191f9ffd9" width="100" alt="Settings"></a>
-<a href="https://github.com/user-attachments/assets/e5de5cb0-e426-4c6c-978e-92fb8c09d3b7"><img src="https://github.com/user-attachments/assets/e5de5cb0-e426-4c6c-978e-92fb8c09d3b7" width="100" alt="Advanced"></a>
-<a href="https://github.com/user-attachments/assets/bbd630d5-1119-4654-8286-be2247b31217"><img src="https://github.com/user-attachments/assets/bbd630d5-1119-4654-8286-be2247b31217" width="100" alt="Reboot"></a>
-</p>
+## Requirements
 
-<p align="center"><em>Click any screenshot to view full size</em></p>
+- RedMagic device with Game Space
+- Magisk with Zygisk **or** ReZygisk module
+- [KsuWebUI](https://github.com/5ec1cff/KsuWebUIStandalone) for the settings interface
+- arm64-v8a architecture
 
-## 📥 Download
+## Installation
 
-Grab the latest build from [**Releases**](../../releases).
+1. Download the latest `GameSpaceUnleashed-vX.X.X.zip` from [Releases](../../releases)
+2. Flash it in Magisk Manager
+3. Reboot your device
+4. Open **KsuWebUI** → tap **Game Space Unleashed**
+5. Toggle features on/off, then tap **Apply & Restart Games**
 
-## 🔧 Flashing
+## Building
 
-Already rooted? Flash directly from your phone:
+Built automatically via GitHub Actions. To trigger a build:
 
-```bash
-# Open a terminal app (e.g. Termux) and run:
-su
-dd if=/sdcard/Download/recovery.img of=/dev/block/bootdevice/by-name/recovery_a
-dd if=/sdcard/Download/recovery.img of=/dev/block/bootdevice/by-name/recovery_b
-reboot recovery
+1. Push to a `claude/nubia-toolkit-*` branch, or
+2. Go to Actions → "Build Game Space Unleashed" → Run workflow
+
+The workflow compiles the Zygisk native module (C++ with LSPlant) using Android NDK, compiles Java hook code into DEX, and packages everything into a flashable Magisk module zip.
+
+## Architecture
+
+```
+GameSpaceUnleashed.zip
+├── module.prop              # Module metadata
+├── customize.sh             # Magisk install script
+├── service.sh               # Boot service
+├── post-fs-data.sh          # Pre-zygote setup
+├── uninstall.sh             # Cleanup on removal
+├── config.json              # Default feature toggles
+├── webroot/
+│   └── index.html           # KsuWebUI settings interface
+├── zygisk/
+│   └── arm64-v8a.so         # Zygisk native module (LSPlant hooks)
+└── dex/
+    └── classes.dex           # Java hook logic
 ```
 
-Or via PC with ADB:
+### Hook Flow
 
-```bash
-adb push recovery.img /sdcard/recovery.img
-adb shell dd if=/sdcard/recovery.img of=/dev/block/bootdevice/by-name/recovery_a
-adb shell dd if=/sdcard/recovery.img of=/dev/block/bootdevice/by-name/recovery_b
-adb reboot recovery
-```
+1. Zygisk injects the native module into Game Space / Game Assist processes
+2. Native module loads `classes.dex` and initializes LSPlant
+3. Java hook code uses reflection to find target methods
+4. LSPlant replaces method entry points with our replacements
+5. Feature checks return "supported" → Super Resolution works everywhere
 
-## 🏗️ How It Was Built
+## Credits
 
-I've found [reminon's TWRP 16.0 device tree](https://github.com/reminon/twrp_device_nubia_nx789j)
-— a clean, complete device tree for the RedMagic 10 Pro with working
-decryption and all the essentials. It had no releases, so i set up a
-GitHub Actions pipeline to build it ourselves. Zero patches, zero hacks
-— just a straight build from a solid device tree.
+- **MsysteM** — Module concept and development
+- [KhanhNguyen9872/NubiaToolkit](https://github.com/KhanhNguyen9872/NubiaToolkit) — Original hook research
+- [LSPlant](https://github.com/LSPosed/LSPlant) — ART method hooking engine
+- [Zygisk API](https://github.com/topjohnwu/Magisk) — Process injection framework
 
-## 🙏 Credits
+## License
 
-- **[reminon](https://github.com/reminon)** — TWRP 16.0 device tree for RedMagic 10 Pro
-- **[plompomg](https://github.com/plompomg)** — OrangeFox device tree (original reference)
-- **[TeamWin](https://github.com/TeamWin)** — TWRP Recovery Project
-- **[JueN-Sar](https://github.com/JueN-Sar)** — Repo owner, builder also known as MsysteM
-- **[Claude](https://claude.ai)** — AI partner
-
----
-
-*"The best builds are the ones that just work."* 🚀
+This project is for educational and personal use on devices you own.
