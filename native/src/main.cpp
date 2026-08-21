@@ -196,9 +196,9 @@ private:
     bool initLSPlant(JNIEnv *env) {
         return lsplant::Init(env, lsplant::InitInfo{
             .inline_hooker = [](void *target, void *hooker) -> void* {
-                void *origin = nullptr;
-                if (DobbyHook(target, hooker, &origin) == 0) {
-                    return origin;
+                dobby_dummy_func_t origin = nullptr;
+                if (DobbyHook(target, (dobby_dummy_func_t)hooker, &origin) == 0) {
+                    return (void *)origin;
                 }
                 return nullptr;
             },
