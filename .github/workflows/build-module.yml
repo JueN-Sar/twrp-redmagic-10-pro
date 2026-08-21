@@ -33,7 +33,7 @@ jobs:
 
       - name: Clone Dobby (inline hooking)
         run: |
-          git clone --depth=1 https://github.com/jmpews/Dobby.git external/dobby
+          git clone --depth=1 --branch latest https://github.com/jmpews/Dobby.git external/dobby
           # Fix Dobby ARM64 assembly: Mach-O @PAGE/@PAGEOFF -> ELF syntax
           # Pattern includes cdecl() macro wrapping, so match broadly
           sed -i 's/\([^ ,]*\)@PAGEOFF/:lo12:\1/g' \
