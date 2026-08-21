@@ -1,19 +1,13 @@
-# Build outputs
+# Build artifacts
 build/
-native/build/
-external/
+*.apk
+apktool.jar
+rm10.zip
 
-# IDE
-.idea/
-*.iml
-.vscode/
+# Decompiled APKs (too large for git)
+*_decompiled/
+*_patched*
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
-
-# Build artifacts
-*.zip
-*.so
-*.dex
-*.class
