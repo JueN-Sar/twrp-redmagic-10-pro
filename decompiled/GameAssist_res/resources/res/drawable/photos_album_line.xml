@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_photos_album_line__0_res_0x7f080370">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_photos_album_line__1_res_0x7f080371"/>
+    <target
+        android:name="photo_album"
+        android:animation="@drawable/_photos_album_line__2_res_0x7f080372"/>
+</animated-vector>

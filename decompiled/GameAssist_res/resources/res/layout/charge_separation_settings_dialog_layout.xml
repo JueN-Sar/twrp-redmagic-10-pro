@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/upgrade_dialog_title_text_color"
+        android:id="@+id/charge_separation_seekbar_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="20%"
+        android:layout_marginStart="26.33dp"/>
+    <SeekBar
+        android:id="@+id/charge_separation_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.33dp"
+        android:layout_marginBottom="8dp"
+        android:maxHeight="2.67dp"
+        android:max="10"
+        android:progress="2"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/charge_separation_seekbar"
+        android:minHeight="2.67dp"
+        android:thumb="@drawable/seekbar_ball"
+        android:layout_below="@+id/charge_separation_seekbar_progress"
+        android:paddingStart="26dp"
+        android:paddingEnd="26dp"
+        android:min="2"/>
+</RelativeLayout>

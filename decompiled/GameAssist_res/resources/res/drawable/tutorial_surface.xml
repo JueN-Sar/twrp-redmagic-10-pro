@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_tutorial_surface__0_res_0x7f0804b8">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_tutorial_surface__1_res_0x7f0804b9"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_tutorial_surface__2_res_0x7f0804ba"/>
+    <target
+        android:name="path"
+        android:animation="@drawable/_tutorial_surface__3_res_0x7f0804bb"/>
+    <target
+        android:name="kuang"
+        android:animation="@drawable/_tutorial_surface__4_res_0x7f0804bc"/>
+    <target
+        android:name="line_1"
+        android:animation="@drawable/_tutorial_surface__5_res_0x7f0804bd"/>
+    <target
+        android:name="zhen"
+        android:animation="@drawable/_tutorial_surface__6_res_0x7f0804be"/>
+    <target
+        android:name="zhen1"
+        android:animation="@drawable/_tutorial_surface__7_res_0x7f0804bf"/>
+</animated-vector>

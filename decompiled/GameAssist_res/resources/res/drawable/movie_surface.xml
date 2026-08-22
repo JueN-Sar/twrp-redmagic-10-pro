@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_movie_surface__0_res_0x7f080294">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_movie_surface__1_res_0x7f080295"/>
+    <target
+        android:name="innner_1"
+        android:animation="@drawable/_movie_surface__2_res_0x7f080296"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_movie_surface__3_res_0x7f080297"/>
+    <target
+        android:name="outer"
+        android:animation="@drawable/_movie_surface__4_res_0x7f080298"/>
+    <target
+        android:name="innner"
+        android:animation="@drawable/_movie_surface__5_res_0x7f080299"/>
+</animated-vector>

@@ -1,0 +1,64 @@
+package com.google.android.gms.internal.mlkit_vision_common;
+
+import com.google.firebase.encoders.FieldDescriptor;
+import com.google.firebase.encoders.ObjectEncoder;
+
+/* loaded from: classes.dex */
+final class zzdy implements ObjectEncoder {
+
+    /* renamed from: a, reason: collision with root package name */
+    static final zzdy f12144a = new zzdy();
+
+    /* renamed from: b, reason: collision with root package name */
+    private static final FieldDescriptor f12145b;
+
+    /* renamed from: c, reason: collision with root package name */
+    private static final FieldDescriptor f12146c;
+
+    /* renamed from: d, reason: collision with root package name */
+    private static final FieldDescriptor f12147d;
+
+    /* renamed from: e, reason: collision with root package name */
+    private static final FieldDescriptor f12148e;
+
+    /* renamed from: f, reason: collision with root package name */
+    private static final FieldDescriptor f12149f;
+
+    /* renamed from: g, reason: collision with root package name */
+    private static final FieldDescriptor f12150g;
+
+    static {
+        FieldDescriptor.Builder a2 = FieldDescriptor.a("maxMs");
+        zzae zzaeVar = new zzae();
+        zzaeVar.a(1);
+        f12145b = a2.b(zzaeVar.b()).a();
+        FieldDescriptor.Builder a3 = FieldDescriptor.a("minMs");
+        zzae zzaeVar2 = new zzae();
+        zzaeVar2.a(2);
+        f12146c = a3.b(zzaeVar2.b()).a();
+        FieldDescriptor.Builder a4 = FieldDescriptor.a("avgMs");
+        zzae zzaeVar3 = new zzae();
+        zzaeVar3.a(3);
+        f12147d = a4.b(zzaeVar3.b()).a();
+        FieldDescriptor.Builder a5 = FieldDescriptor.a("firstQuartileMs");
+        zzae zzaeVar4 = new zzae();
+        zzaeVar4.a(4);
+        f12148e = a5.b(zzaeVar4.b()).a();
+        FieldDescriptor.Builder a6 = FieldDescriptor.a("medianMs");
+        zzae zzaeVar5 = new zzae();
+        zzaeVar5.a(5);
+        f12149f = a6.b(zzaeVar5.b()).a();
+        FieldDescriptor.Builder a7 = FieldDescriptor.a("thirdQuartileMs");
+        zzae zzaeVar6 = new zzae();
+        zzaeVar6.a(6);
+        f12150g = a7.b(zzaeVar6.b()).a();
+    }
+
+    private zzdy() {
+    }
+
+    @Override // com.google.firebase.encoders.ObjectEncoder
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        throw null;
+    }
+}

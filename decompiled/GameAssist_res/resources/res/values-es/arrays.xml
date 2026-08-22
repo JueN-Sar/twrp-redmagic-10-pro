@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>día</item>
+    </array>
+    <array name="game_space_mode">
+        <item>Modo atmosférico</item>
+        <item>Modo tarjeta</item>
+        <item>Modo portátil</item>
+    </array>
+    <array name="month">
+        <item>Mes</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Dom</item>
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mie</item>
+        <item>Jue</item>
+        <item>Vie</item>
+        <item>Sab</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Secuencia fija</item>
+        <item>Usado recientemente</item>
+        <item>Tiempos de uso</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Este es el mensaje emergente.</item>
+        <item>El estilo de la ventana emergente se puede ajustar libremente.</item>
+        <item>Establezca el tipo de mensaje que desea convertir en una ventana emergente.</item>
+        <item>Haga clic en el botón de respuesta para abrir una pequeña ventana.</item>
+    </array>
+    <array name="year">
+        <item>año</item>
+    </array>
+</resources>

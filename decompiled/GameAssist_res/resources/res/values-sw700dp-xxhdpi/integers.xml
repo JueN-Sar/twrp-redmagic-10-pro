@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="low_sguar_sgame_events_endY">465</integer>
+    <integer name="low_sguar_sgame_events_startY">365</integer>
+    <integer name="low_sguar_sgame_wish_endY">775</integer>
+    <integer name="low_sguar_sgame_wish_startY">675</integer>
+</resources>

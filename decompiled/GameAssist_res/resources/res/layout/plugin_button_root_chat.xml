@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.nubia.gameassist.plugin.PluginButtonView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/plugin_button_root"
+    android:background="@drawable/plugin_button_close_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/plugin_button_title_text_size"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center"
+        android:id="@+id/plugin_button_title"
+        android:paddingLeft="@dimen/plugin_button_chat_title_padding_left"
+        android:paddingTop="@dimen/plugin_button_chat_title_padding_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</cn.nubia.gameassist.plugin.PluginButtonView>

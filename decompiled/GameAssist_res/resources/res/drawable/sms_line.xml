@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_sms_line__0_res_0x7f08042f">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_sms_line__1_res_0x7f080430"/>
+    <target
+        android:name="point_1"
+        android:animation="@drawable/_sms_line__2_res_0x7f080431"/>
+    <target
+        android:name="path"
+        android:animation="@drawable/_sms_line__3_res_0x7f080432"/>
+</animated-vector>

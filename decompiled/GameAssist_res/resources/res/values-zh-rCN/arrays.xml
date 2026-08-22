@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>日</item>
+    </array>
+    <array name="game_space_mode">
+        <item>氛围模式</item>
+        <item>卡片模式</item>
+        <item>掌机模式</item>
+    </array>
+    <array name="month">
+        <item>月</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>固定顺序</item>
+        <item>最近使用</item>
+        <item>使用次数</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>这就是弹幕消息</item>
+        <item>弹幕样式可以自由调整</item>
+        <item>设置你想要哪种消息变成弹幕</item>
+        <item>点击回复按钮打开小窗</item>
+    </array>
+    <array name="year">
+        <item>年</item>
+    </array>
+</resources>

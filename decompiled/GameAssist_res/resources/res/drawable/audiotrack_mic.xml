@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_audiotrack_mic__0_res_0x7f080069">
+    <target
+        android:name="outer"
+        android:animation="@drawable/_audiotrack_mic__1_res_0x7f08006a"/>
+    <target
+        android:name="mic"
+        android:animation="@drawable/_audiotrack_mic__2_res_0x7f08006b"/>
+</animated-vector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="game_assist_meditation_mode_margin_bottom">20dp</dimen>
+    <dimen name="game_assist_performance_effect_margin_bottom">20dp</dimen>
+    <dimen name="game_assist_performance_effect_margin_bottom_legacy">48dp</dimen>
+</resources>

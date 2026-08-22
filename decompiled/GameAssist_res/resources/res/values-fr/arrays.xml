@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>Jour</item>
+    </array>
+    <array name="game_space_mode">
+        <item>Mode atmosphérique</item>
+        <item>Mode carte</item>
+        <item>Mode main levée</item>
+    </array>
+    <array name="month">
+        <item>Mois</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>dim.</item>
+        <item>lun.</item>
+        <item>mar.</item>
+        <item>Mer</item>
+        <item>jeu.</item>
+        <item>ven.</item>
+        <item>sam.</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Séquence fixe</item>
+        <item>Utilisé récemment</item>
+        <item>Temps d\'utilisation</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Ceci est le message contextuel.</item>
+        <item>Le style de la fenêtre peut être ajusté librement.</item>
+        <item>Définissez le type de message que vous souhaitez transformer en fenêtre contextuelle.</item>
+        <item>Cliquez sur le bouton de réponse pour ouvrir une petite fenêtre.</item>
+    </array>
+    <array name="year">
+        <item>année</item>
+    </array>
+</resources>

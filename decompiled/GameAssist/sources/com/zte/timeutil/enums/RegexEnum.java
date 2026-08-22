@@ -1,0 +1,142 @@
+package com.zte.timeutil.enums;
+
+import com.zte.timeutil.utils.RegexCache;
+import java.util.regex.Pattern;
+
+/* loaded from: classes2.dex */
+public enum RegexEnum {
+    NormStandard("\\d{4}-\\d{1,2}-\\d{1,2}( \\d{1,2}:\\d{1,2}(:\\d{1,2})?)?", 0, "标准时间"),
+    NormStandardCn("\\d{4}(年)\\d{1,2}(月)\\d{1,2}(日|号)( \\d{1,2}:\\d{1,2}(:\\d{1,2})?)?", 0, "标准时间中文"),
+    NormYearTwo("[0-9]{2}(?=年)", 0, "两位数来表示年份"),
+    NormYearFour("[0-9]?[0-9]{3}(?=年)", 0, "三位数和四位数表示的年份"),
+    NormMonth("((10)|(11)|(12)|([1-9]))(?=月)", 0, "月字段"),
+    NormDay("((?<!\\d))([0-3][0-9]|[1-9])(?=(日|号))", 0, "日字段"),
+    NormMonthFuzzyDay("((10)|(11)|(12)|([1-9]))(月|\\.|\\-)([0-3][0-9]|[1-9])", 0, "月-日 兼容模糊写法"),
+    NormMonthFuzzyDaySeparator("(月|\\.|\\-)", 0, "月-日 兼容模糊写法分隔符"),
+    NormBaseRelatedDayBefore("\\d+(?=天[以之]?前)", 0, "几天前"),
+    NormBaseRelatedDayAfter("\\d+(?=天[以之]?后)", 0, "几天后"),
+    NormBaseRelatedMonthBefore("\\d+(?=(个)?月[以之]?前)", 0, "几月前"),
+    NormBaseRelatedMonthAfter("\\d+(?=(个)?月[以之]?后)", 0, "几月后"),
+    NormBaseRelatedYearBefore("\\d+(?=年[以之]?前)", 0, "几年前"),
+    NormBaseRelatedYearAfter("\\d+(?=年[以之]?后)", 0, "几年后"),
+    NormBaseTimeRelatedHourBefore("\\d+(?=个?半?(小时|钟头|h|H)[以之]?前)", 0, "3小时前"),
+    NormBaseTimeRelatedHourAfter("\\d+(?=个?半?(小时|钟头|h|H)[以之]?后)", 0, "3小时后"),
+    NormBaseTimeRelatedHalfHourBefore("半个?(小时|钟头)[以之]?前", 0, "半个小时前"),
+    NormBaseTimeRelatedHalfHourAfter("半个?(小时|钟头)[以之]?后", 0, "半个小时后"),
+    NormBaseTimeRelatedHour("\\d+(?=个?半?(小时|钟头|h|H))", 0, "1个小时"),
+    NormBaseTimeRelatedMinuteBefore("\\d+(?=(分钟|分|min)[以之]?前)", 0, "3分钟前"),
+    NormBaseTimeRelatedMinuteAfter("\\d+(?=(分钟|分|min)[以之]?后)", 0, "3分钟后"),
+    NormBaseTimeRelatedMinute("\\d+(?=(分钟|min))", 0, "1分钟"),
+    NormBaseTimeRelatedSecondBefore("\\d+(?=(秒钟|秒|sec)[以之]?前)", 0, "3秒钟前"),
+    NormBaseTimeRelatedSecondAfter("\\d+(?=(秒钟|秒|sec)[以之]?后)", 0, "3秒钟后"),
+    NormCurRelatedYearBeforeLast("前年", 0, "前年"),
+    NormCurRelatedYearBefore("去年", 0, "去年"),
+    NormCurRelatedYear("今年", 0, "今年"),
+    NormCurRelatedYearAfter("明年", 0, "明年"),
+    NormCurRelatedYearAfterNext("后年", 0, "后年"),
+    NormCurRelatedMonthBefore("上(个)?月((\\d{1,2})(号|日))?\\s*((\\d{1,2})(点|时))?", 0, "上个月"),
+    NormCurRelatedMonth("(每|本|这)(个)?月((\\d{1,2})(号|日))?\\s*((\\d{1,2})(点|时))?", 0, "这个月"),
+    NormCurRelatedMonthAfter("下(个)?月((\\d{1,2})(号|日))?\\s*((\\d{1,2})(点|时))?", 0, "下个月"),
+    NormCurRelatedDayBeforeThree("大前天", 0, "大前天"),
+    NormCurRelatedDayBeforeLast("(?<!大)前天", 0, "前天"),
+    NormCurRelatedDayYesterday("昨", 0, "昨天"),
+    NormCurRelatedDayToday("今(?!年)", 0, "今天"),
+    NormCurRelatedDayTomorrow("明(?!年)", 0, "明天"),
+    NormCurRelatedDayAfterNext("(?<!大)后天", 0, "后天"),
+    NormCurRelatedDayAfterThree("大后天", 0, "大后天"),
+    NormCurRelatedWeekBeforeLast("(?<=(上上(周|星期)))[1-7]?", 0, "上上周"),
+    NormCurRelatedWeekBefore("(?<=((?<!上)上(周|星期)))[1-7]?", 0, "上周"),
+    NormCurRelatedWeek("(?<=((?<!(上|下))(周|星期)))[1-7]?", 0, "周一 二等"),
+    NormCurRelatedWeekExcept("(?:查|找)(?:[1一])?下(?:周|星期)([一二三四五六日1-7])", 0, "周一 二等"),
+    NormCurRelatedWeekAfter("(?<=((?<!下)下(周|星期)))[1-7]?", 0, "下周"),
+    NormCurRelatedWeekAfterExcept("(?:查|找)(?:[1一])?下下(?:周|星期)([一二三四五六日1-7])", 0, "下周"),
+    NormCurRelatedWeekAfterNext("(?<=(下下(周|星期)))[1-7]?", 0, "下下周"),
+    NormCurRelatedWeekAfterNextExcept("(?:查|找)(?:[1一])?下下下(?:周|星期)([一二三四五六日1-7])", 0, "下下周"),
+    NormHour("(?<!(周|星期))([0-2]?[0-9])(?=(点|时))", 0, "时字段"),
+    RecentYearWithin("(最近|近期|近)([0-9零一二三四五六七八九十百千万]{1,}?)年(内|之内|间|之间)", 0, "区间时段"),
+    RecentYear("(最近|近期|近)([0-9零一二三四五六七八九十百千万]{1,}?)年", 0, "区间时段"),
+    YearWithin("([0-9零一二三四五六七八九十百千万]{1,}?)年(内|之内|间|之间)", 0, "区间时段"),
+    RecentMonthWithin("(最近|近期|近)([0-9零一二三四五六七八九十百千万]{1,}?)(个)?月(内|之内|间|之间)", 0, "区间时段"),
+    RecentMonth("(最近|近期|近)([0-9零一二三四五六七八九十百千万]{1,}?)(个)?月", 0, "区间时段"),
+    MonthWithin("([0-9零一二三四五六七八九十百千万]{1,}?)(个)?月(内|之内|间|之间)", 0, "区间时段"),
+    RecentWeekWithin("(最近|近期|近)([0-9零一二三四五六七八九十百千万]{1,}?)周(内|之内|间|之间)", 0, "区间时段"),
+    RecentWeek("(最近|近期|近)([0-9零一二三四五六七八九十百千万]{1,}?)周", 0, "区间时段"),
+    WeekWithin("([0-9零一二三四五六七八九十百千万]{1,}?)周(内|之内|间|之间)", 0, "区间时段"),
+    RecentDayWithin("(最近|近期|近)([0-9零一二三四五六七八九十百千万]{1,}?)天(内|之内|间|之间)", 0, "区间时段"),
+    RecentDay("(最近|近期|近)([0-9零一二三四五六七八九十百千万]{1,}?)天", 0, "区间时段"),
+    DayWithin("([0-9零一二三四五六七八九十百千万]{1,}?)天(内|之内|间|之间)", 0, "区间时段"),
+    RecentHourWithin("(最近|近期|近)([0-9零一二三四五六七八九十百千万]{1,}?)(个)?小时(内|之内|间|之间)", 0, "区间时段"),
+    RecentHour("(最近|近期|近)([0-9零一二三四五六七八九十百千万]{1,}?)(个)?小时", 0, "区间时段"),
+    HourWithin("([0-9零一二三四五六七八九十百千万]{1,}?)(个)?小时(内|之内|间|之间)", 0, "区间时段"),
+    RecentMinuteWithin("(最近|近期|近)([0-9零一二三四五六七八九十百千万]{1,}?)(个)?分钟(内|之内|间|之间)", 0, "区间时段"),
+    RecentMinute("(最近|近期|近)([0-9零一二三四五六七八九十百千万]{1,}?)(个)?分钟", 0, "区间时段"),
+    MinuteWithin("([0-9零一二三四五六七八九十百千万]{1,}?)(个)?分钟(内|之内|间|之间)", 0, "区间时段"),
+    Recent("(最近|近期)", 0, "区间时段"),
+    NormHourBetween("([0-9]|1[0-9]|2[0-4])(点|时)(到|至|-|~)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "区间时段"),
+    NormHourDayBreak("凌晨", 0, "凌晨"),
+    NormHourDayBreakExcept("凌晨([0-9]|1[0-9]|2[0-4])(点|时)", 0, "凌晨"),
+    NormHourDayBreakBetweenHourExcept("凌晨([0-9]|1[0-9]|2[0-4])(点|时)(到|至|-|~)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "凌晨"),
+    NormHourEarlyMorning("早上|早晨|早间|晨间|今早|明早", 0, "早上"),
+    NormHourEarlyMorningExcept("(早上|早晨|早间|晨间|今早|明早)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "早上"),
+    NormHourEarlyMorningBetweenHourExcept("(早上|早晨|早间|晨间|今早|明早)([0-9]|1[0-9]|2[0-4])(点|时)(到|至|-|~)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "早上"),
+    NormHourMorning("上午", 0, "上午"),
+    NormHourMorningExcept("上午([0-9]|1[0-9]|2[0-4])(点|时)", 0, "上午"),
+    NormHourMorningBetweenHourExcept("上午([0-9]|1[0-9]|2[0-4])(点|时)(到|至|-|~)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "上午"),
+    NormHourNoon("中午|午间", 0, "中午"),
+    NormHourNoonExcept("(中午|午间)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "中午"),
+    NormHourNoonBetweenHourExcept("(中午|午间)([0-9]|1[0-9]|2[0-4])(点|时)(到|至|-|~)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "中午"),
+    NormHourAfternoon("下午|午后|pm|PM", 0, "下午"),
+    NormHourAfternoonExcept("(下午|午后|pm|PM)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "下午"),
+    NormHourAfternoonBetweenHourExcept("(下午|午后|pm|PM)([0-9]|1[0-9]|2[0-4])(点|时)(到|至|-|~)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "下午"),
+    NormHourNight("晚上|夜间|夜里|今晚|明晚", 0, "晚上"),
+    NormHourNightExcept("(晚上|夜间|夜里|今晚|明晚)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "晚上"),
+    NormHourNightBetweenHourExcept("(晚上|夜间|夜里|今晚|明晚)([0-9]|1[0-9]|2[0-4])(点|时)(到|至|-|~)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "晚上"),
+    NormMinute("([0-5]?[0-9](?=分(?!钟)))|((?<=((?<!小)[点时]))[0-5]?[0-9](?!刻))", 0, "分字段"),
+    NormMinuteSpec("(\\d+(分钟|分|min)[以之]?[前后])", 0, "排除30分后"),
+    NormMinuteOneQuarter("(?<=[点时])[1一]刻(?!钟)", 0, "一刻"),
+    NormMinuteHalf("(?<=[点时])半", 0, "点半"),
+    NormMinuteThreeQuarter("(?<=[点时])[3三]刻(?!钟)", 0, "3刻"),
+    NormSecondSpec("(\\d+(秒钟|秒|sec)[以之]?[前后])", 0, "排除30秒后"),
+    NormSecond("([0-5]?[0-9](?=秒))|((?<=分)[0-5]?[0-9])", 0, "秒字段"),
+    NormTotalTime("(?<!(周|星期))([0-2]?[0-9]):[0-5]?[0-9]:[0-5]?[0-9]", 0, "时分秒"),
+    NormTotalTimeShort("(?<!(周|星期))([0-2]?[0-9]):[0-5]?[0-9]", 0, "时分"),
+    NormTotalNight("晚|晚上", 0, "晚上"),
+    NormTotalNightExcept("(晚|晚上)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "晚上"),
+    NormTotalNightBetweenHourExcept("(晚|晚上)([0-9]|1[0-9]|2[0-4])(点|时)(到|至|-|~)([0-9]|1[0-9]|2[0-4])(点|时)", 0, "晚上"),
+    NormTotalDateOne("[0-9]?[0-9]?[0-9]{2}-((10)|(11)|(12)|([1-9]))-((?<!\\d))([0-3][0-9]|[1-9])", 0, "年月日 -"),
+    NormTotalDateTwo("((10)|(11)|(12)|([1-9]))/((?<!\\d))([0-3][0-9]|[1-9])/[0-9]?[0-9]?[0-9]{2}", 0, "年月日 /"),
+    NormTotalDateThree("[0-9]?[0-9]?[0-9]{2}\\.((10)|(11)|(12)|([1-9]))\\.((?<!\\d))([0-3][0-9]|[1-9])", 0, "年月日 ."),
+    NormLocalHoliday("(元旦节|元旦|情人节|妇女节|植树节|消费者权益日|愚人节|清明节|五一节|劳动节|青年节|护士节|母亲节|儿童节|父亲节|建党节|建军节|教师节|国庆节|国庆|万圣节|圣诞节)", 0, "新历节日"),
+    XthDays("(大年|\\d{1,2}(月))初([1-9]|10|一|二|三|四|五|六|七|八|九|十)", 0, "初几"),
+    NormChineseHoliday("大年|春节|元宵节|元宵|龙抬头|端午节|端午|七夕节|七夕|中秋节|中秋|重阳节|重阳|腊八节|腊八|北方小年|南方小年|除夕夜|除夕节|除夕", 0, "农历节日"),
+    TextPreprocessSeparator("[的]+", 0, "凌晨"),
+    TextPreprocessNumberTranslatorOne("[一二两三四五六七八九123456789]万[一二两三四五六七八九123456789](?!(千|百|十))", 0, "数字正则1"),
+    TextPreprocessNumberTranslatorTwo("[一二两三四五六七八九123456789]千[一二两三四五六七八九123456789](?!(百|十))", 0, "数字正则2"),
+    TextPreprocessNumberTranslatorThree("[一二两三四五六七八九123456789]百[一二两三四五六七八九123456789](?!十)", 0, "数字正则3"),
+    TextPreprocessNumberTranslatorFour("[零一二两三四五六七八九]", 0, "数字正则4"),
+    TextPreprocessNumberTranslatorFive("(?<=(周|星期))[末天日]", 0, "数字正则5"),
+    TextPreprocessNumberTranslatorSix("(?<!(周|星期))0?[0-9]?十[0-9]?", 0, "数字正则6"),
+    TextPreprocessNumberTranslatorSeven("0?[1-9]百[0-9]?[0-9]?", 0, "数字正则7"),
+    TextPreprocessNumberTranslatorEight("0?[1-9]千[0-9]?[0-9]?[0-9]?", 0, "数字正则8"),
+    TextPreprocessNumberTranslatorNine("[0-9]+万[0-9]?[0-9]?[0-9]?[0-9]?", 0, "数字正则9"),
+    TextPreprocessDelDecimalStrSeparator("[日号]", 0, "日号"),
+    TextPreprocessDelDecimalStr("\\{0,1\\}\\d+\\.\\d*|\\{0,1\\}\\d*\\.\\d+", 0, "小数");
+
+    private String desc;
+    private int flags;
+    private String rule;
+
+    RegexEnum(String str, int i2, String str2) {
+        this.rule = str;
+        this.flags = i2;
+        this.desc = str2;
+    }
+
+    public Pattern d() {
+        return RegexCache.b(this.rule, this.flags);
+    }
+
+    public String e() {
+        return this.rule;
+    }
+}

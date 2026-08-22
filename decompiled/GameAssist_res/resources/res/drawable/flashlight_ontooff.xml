@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_flashlight_ontooff__0_res_0x7f080179">
+    <target
+        android:name="off1"
+        android:animation="@drawable/_flashlight_ontooff__1_res_0x7f08017a"/>
+    <target
+        android:name="off2"
+        android:animation="@drawable/_flashlight_ontooff__2_res_0x7f08017b"/>
+    <target
+        android:name="off3"
+        android:animation="@drawable/_flashlight_ontooff__3_res_0x7f08017c"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_flashlight_ontooff__4_res_0x7f08017d"/>
+    <target
+        android:name="bottom"
+        android:animation="@drawable/_flashlight_ontooff__5_res_0x7f08017e"/>
+</animated-vector>

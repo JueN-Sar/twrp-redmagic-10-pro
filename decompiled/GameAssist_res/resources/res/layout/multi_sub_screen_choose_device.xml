@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/devices_list"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"/>
+    <include
+        android:id="@+id/searching_container"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/multi_sub_screen_search_panel_height"
+        layout="@layout/multi_sub_screen_searching_content"/>
+    <TextView
+        android:textSize="@dimen/multi_sub_screen_choose_device_text_size"
+        android:layout_gravity="center"
+        android:id="@+id/no_devices_found"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/multi_subscreen_no_device"/>
+</LinearLayout>

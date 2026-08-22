@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/gameratio_bg_radio_button_radius"/>
+            <stroke
+                android:width="@dimen/gameratio_bg_radio_button_stroke"
+                android:color="#ffff1212"/>
+            <solid android:color="#66ff1313"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/gameratio_bg_radio_button_radius"/>
+            <stroke
+                android:width="@dimen/gameratio_bg_radio_button_stroke"
+                android:color="#ff7a7a7a"/>
+            <solid android:color="#7f000000"/>
+        </shape>
+    </item>
+</selector>

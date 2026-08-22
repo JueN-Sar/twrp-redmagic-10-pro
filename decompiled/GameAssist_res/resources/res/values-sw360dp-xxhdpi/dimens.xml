@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="low_sugar_genshin_calendar_crop_height">277dp</dimen>
+    <dimen name="low_sugar_genshin_calendar_crop_startX">200dp</dimen>
+    <dimen name="low_sugar_genshin_calendar_crop_startY">42dp</dimen>
+    <dimen name="low_sugar_genshin_calendar_crop_width">500dp</dimen>
+    <dimen name="low_sugar_genshin_wish_crop_height">270dp</dimen>
+    <dimen name="low_sugar_genshin_wish_crop_startX">150dp</dimen>
+    <dimen name="low_sugar_genshin_wish_crop_startY">45dp</dimen>
+    <dimen name="low_sugar_genshin_wish_crop_width">530dp</dimen>
+    <dimen name="low_sugar_pubg_events_crop_width">160dp</dimen>
+    <dimen name="low_sugar_sgame_events_crop_startX">125dp</dimen>
+    <dimen name="low_sugar_view_height">345dp</dimen>
+    <dimen name="low_sugar_view_width">345dp</dimen>
+    <dimen name="low_sugar_wildrift_events_crop_startX">85dp</dimen>
+    <dimen name="low_sugar_wildrift_events_crop_startY">22dp</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_cooling_fans_anim__0_res_0x7f08011c">
+    <target
+        android:name="group"
+        android:animation="@drawable/_cooling_fans_anim__1_res_0x7f08011d"/>
+</animated-vector>

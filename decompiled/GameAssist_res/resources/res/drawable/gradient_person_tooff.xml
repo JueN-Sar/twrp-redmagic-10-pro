@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_gradient_person_tooff__0_res_0x7f0801c1">
+    <target
+        android:name="mask1"
+        android:animation="@drawable/_gradient_person_tooff__2_res_0x7f0801c3"/>
+    <target
+        android:name="person_end"
+        android:animation="@drawable/_gradient_person_tooff__3_res_0x7f0801c4"/>
+</animated-vector>

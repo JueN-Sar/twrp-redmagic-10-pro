@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_wlan_anim__0_res_0x7f0804fe">
+    <target
+        android:name="wifi1"
+        android:animation="@drawable/_wlan_anim__1_res_0x7f0804ff"/>
+    <target
+        android:name="wifi2"
+        android:animation="@drawable/_wlan_anim__2_res_0x7f080500"/>
+    <target
+        android:name="wifi3"
+        android:animation="@drawable/_wlan_anim__3_res_0x7f080501"/>
+    <target
+        android:name="wifi4"
+        android:animation="@drawable/_wlan_anim__4_res_0x7f080502"/>
+    <target
+        android:name="wifi_all"
+        android:animation="@drawable/_wlan_anim__5_res_0x7f080503"/>
+</animated-vector>

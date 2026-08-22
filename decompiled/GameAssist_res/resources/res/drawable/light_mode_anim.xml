@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_light_mode_anim__0_res_0x7f080244">
+    <target
+        android:name="path"
+        android:animation="@drawable/_light_mode_anim__1_res_0x7f080245"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_light_mode_anim__2_res_0x7f080246"/>
+    <target
+        android:name="group_1"
+        android:animation="@drawable/_light_mode_anim__3_res_0x7f080247"/>
+    <target
+        android:name="path_1"
+        android:animation="@drawable/_light_mode_anim__4_res_0x7f080248"/>
+</animated-vector>

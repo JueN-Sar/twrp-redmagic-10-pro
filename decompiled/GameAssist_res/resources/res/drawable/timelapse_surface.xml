@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_timelapse_surface__0_res_0x7f08048e">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_timelapse_surface__1_res_0x7f08048f"/>
+    <target
+        android:name="group_1"
+        android:animation="@drawable/_timelapse_surface__2_res_0x7f080490"/>
+    <target
+        android:name="outer"
+        android:animation="@drawable/_timelapse_surface__3_res_0x7f080491"/>
+    <target
+        android:name="pointer"
+        android:animation="@drawable/_timelapse_surface__4_res_0x7f080492"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_timelapse_surface__5_res_0x7f080493"/>
+    <target
+        android:name="all"
+        android:animation="@drawable/_timelapse_surface__6_res_0x7f080494"/>
+</animated-vector>

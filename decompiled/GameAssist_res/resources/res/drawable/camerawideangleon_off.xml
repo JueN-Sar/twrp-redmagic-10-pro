@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_camerawideangleon_off__0_res_0x7f0800d4">
+    <target
+        android:name="on"
+        android:animation="@drawable/_camerawideangleon_off__1_res_0x7f0800d5"/>
+    <target
+        android:name="on_line"
+        android:animation="@drawable/_camerawideangleon_off__2_res_0x7f0800d6"/>
+</animated-vector>

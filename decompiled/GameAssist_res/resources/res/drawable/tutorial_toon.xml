@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_tutorial_toon__0_res_0x7f0804c3">
+    <target
+        android:name="path_1"
+        android:animation="@drawable/_tutorial_toon__1_res_0x7f0804c4"/>
+    <target
+        android:name="path_2"
+        android:animation="@drawable/_tutorial_toon__2_res_0x7f0804c5"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_tutorial_toon__3_res_0x7f0804c6"/>
+    <target
+        android:name="group_1"
+        android:animation="@drawable/_tutorial_toon__4_res_0x7f0804c7"/>
+</animated-vector>

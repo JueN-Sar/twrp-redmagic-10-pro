@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckedTextView
+            android:textSize="15sp"
+            android:textColor="@color/upgrade_dialog_title_text_color"
+            android:gravity="center_vertical"
+            android:id="@+id/charge_seperation_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:checked="true"
+            android:text="@string/ic_qs_charge_separation_dialog_content_prompt"
+            android:drawableLeft="@drawable/select_dialog_singlechoice_checkmark"
+            android:drawablePadding="5dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <cn.nubia.plugin.gameratio.MarqueeRadioButton
+        android:textSize="@dimen/gameratio_option_btn_text_size"
+        android:textColor="#d9ffffff"
+        android:gravity="center"
+        android:id="@+id/option"
+        android:background="@drawable/gameratio_bg_radio_button"
+        android:layout_width="@dimen/gameratio_option_btn_w"
+        android:layout_height="@dimen/gameratio_option_btn_h"
+        android:layout_marginTop="@dimen/gameratio_option_btn_margin_v"
+        android:layout_marginBottom="@dimen/gameratio_option_btn_margin_v"
+        android:button="@null"
+        android:layout_marginStart="@dimen/gameratio_option_btn_margin_h"
+        android:layout_marginEnd="@dimen/gameratio_option_btn_margin_h"/>
+</LinearLayout>

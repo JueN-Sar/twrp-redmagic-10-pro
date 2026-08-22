@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <inset android:inset="6dp">
+            <shape android:shape="rectangle">
+                <corners android:radius="20dp"/>
+                <solid android:color="@color/ga_common_btn_pressed_bg"/>
+            </shape>
+        </inset>
+    </item>
+    <item android:state_pressed="false">
+        <inset android:inset="6dp">
+            <shape android:shape="rectangle">
+                <corners android:radius="20dp"/>
+                <solid android:color="@color/ga_common_btn_default_bg"/>
+            </shape>
+        </inset>
+    </item>
+</selector>

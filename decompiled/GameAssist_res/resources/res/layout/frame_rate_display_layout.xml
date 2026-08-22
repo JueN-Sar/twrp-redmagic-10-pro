@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/frame_rate_focus_icon"
+    android:layout_width="@dimen/frame_rate_floating_view_bg_width"
+    android:layout_height="@dimen/frame_rate_floating_view_bg_height">
+    <TextView
+        android:textSize="12dp"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center"
+        android:id="@+id/frame_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7.67dp"
+        android:text="0"/>
+    <TextView
+        android:textSize="12dp"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center"
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FPS"
+        android:layout_below="@+id/frame_rate"/>
+</LinearLayout>

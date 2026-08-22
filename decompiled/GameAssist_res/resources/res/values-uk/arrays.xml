@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>день</item>
+    </array>
+    <array name="game_space_mode">
+        <item>Атмосферний режим</item>
+        <item>Режим картки</item>
+        <item>Портативний режим</item>
+    </array>
+    <array name="month">
+        <item>місяць</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Нд</item>
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Четвер</item>
+        <item>Пт</item>
+        <item>Сб</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Фіксована послідовність</item>
+        <item>Останні використані</item>
+        <item>Час використання</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Це спливаюче повідомлення.</item>
+        <item>Стиль відкривання спливаючого вікна можна змінювати як завгодно.</item>
+        <item>Установіть тип повідомлень, які потрібно перетворити на спливаючі.</item>
+        <item>Натисніть кнопку відповіді, щоб відкрити невелике вікно.</item>
+    </array>
+    <array name="year">
+        <item>рік</item>
+    </array>
+</resources>

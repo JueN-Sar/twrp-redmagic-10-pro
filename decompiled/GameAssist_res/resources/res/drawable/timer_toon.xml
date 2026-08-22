@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_timer_toon__0_res_0x7f0804a3">
+    <target
+        android:name="bg"
+        android:animation="@drawable/_timer_toon__1_res_0x7f0804a4"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_timer_toon__2_res_0x7f0804a5"/>
+    <target
+        android:name="top"
+        android:animation="@drawable/_timer_toon__3_res_0x7f0804a6"/>
+    <target
+        android:name="group_1"
+        android:animation="@drawable/_timer_toon__4_res_0x7f0804a7"/>
+</animated-vector>

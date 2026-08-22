@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/loadingSmall"
+        android:layout_width="@dimen/mfvc_loading_small_size"
+        android:layout_height="@dimen/mfvc_loading_small_size"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/multi_sub_screen_loading_small"
+        android:indeterminateTint="@null"/>
+</LinearLayout>

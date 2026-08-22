@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BarrageDefaultStyle" parent="">
+        <item name="app_icon_size">20dp</item>
+        <item name="barrage_space">20dp</item>
+        <item name="channel_height">74.25dp</item>
+        <item name="divider_height">12dp</item>
+        <item name="divider_size">1dp</item>
+        <item name="max_count_in_screen">7</item>
+        <item name="max_ems">15</item>
+        <item name="padding_top">10dp</item>
+        <item name="reply_icon_margin_start">12dp</item>
+        <item name="reply_icon_size">32dp</item>
+        <item name="text_margin_end">12dp</item>
+        <item name="text_margin_start">7dp</item>
+    </style>
+    <style name="TitleTextStyle" parent="">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#d8ffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

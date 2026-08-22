@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.nubia.projection.ui.NubiaProjectionPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/projection_panel"
+    android:paddingTop="7.67dp"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_projection_icon"
+        android:background="@drawable/projection_panel_icon_bg"
+        android:layout_width="@dimen/projection_icon_size"
+        android:layout_height="@dimen/projection_icon_size"
+        android:src="@drawable/projection_view_normal_click_bg"/>
+    <cn.nubia.projection.ui.CircleImageView
+        android:layout_gravity="end|top"
+        android:id="@+id/iv_expanded_app_icon"
+        android:visibility="gone"
+        android:layout_width="@dimen/projection_sub_icon_size"
+        android:layout_height="@dimen/projection_sub_icon_size"
+        android:layout_marginTop="-7.67dp"/>
+</cn.nubia.projection.ui.NubiaProjectionPanel>

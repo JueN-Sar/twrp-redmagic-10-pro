@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/ticker"
+    android:padding="20dp"
+    android:animationCache="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/danmu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:textColor="@color/danmu_text_color"
+        android:ellipsize="end"
+        android:id="@+id/danmu_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="不坠青云之志，宁移白首之心 ~~~"
+        android:maxEms="15"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:layout_marginStart="7dp"/>
+    <ImageView
+        android:id="@+id/danmu_divider"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nubia_danmu_line_divide"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"/>
+    <ImageView
+        android:id="@+id/danmu_replyIcon"
+        android:visibility="gone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="12dp"/>
+</LinearLayout>

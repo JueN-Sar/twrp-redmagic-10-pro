@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.mlkit_vision_text_bundled_common;
+
+/* loaded from: classes.dex */
+final class zbxn implements zbuj {
+
+    /* renamed from: a, reason: collision with root package name */
+    static final zbuj f13067a = new zbxn();
+
+    private zbxn() {
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_text_bundled_common.zbuj
+    public final boolean a(int i2) {
+        return i2 == 0 || i2 == 1 || i2 == 2 || i2 == 3 || i2 == 4;
+    }
+}

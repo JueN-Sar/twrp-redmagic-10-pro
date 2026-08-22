@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="31.5dp"
+    android:insetRight="40dp">
+    <shape
+        android:tint="@color/mfv_common_scroll_bar_letter_bg"
+        android:shape="oval"/>
+</inset>

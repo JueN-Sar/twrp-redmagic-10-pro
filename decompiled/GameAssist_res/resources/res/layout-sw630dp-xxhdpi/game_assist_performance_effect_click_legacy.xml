@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="top|right"
+        android:orientation="horizontal"
+        android:id="@+id/game_assist_performance_effect_expand"
+        android:paddingLeft="18dp"
+        android:visibility="gone"
+        android:layout_width="144dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="18.9dp">
+        <View
+            android:id="@+id/game_assist_performance_effect_expand_awakening"
+            android:layout_width="0dp"
+            android:layout_height="102.6dp"
+            android:layout_marginTop="7.2dp"
+            android:layout_weight="1"/>
+        <View
+            android:id="@+id/game_assist_performance_effect_expand_balance"
+            android:layout_width="0dp"
+            android:layout_height="102.6dp"
+            android:layout_marginTop="21.6dp"
+            android:layout_weight="1"/>
+        <View
+            android:id="@+id/game_assist_performance_effect_expand_economize"
+            android:layout_width="0dp"
+            android:layout_height="102.6dp"
+            android:layout_marginTop="43.2dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <View
+        android:layout_gravity="bottom|right"
+        android:id="@+id/game_assist_performance_effect_button"
+        android:layout_width="40.5dp"
+        android:layout_height="108dp"/>
+</merge>

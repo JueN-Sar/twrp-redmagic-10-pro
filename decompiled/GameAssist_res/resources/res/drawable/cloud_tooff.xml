@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_cloud_tooff__0_res_0x7f080110">
+    <target
+        android:name="mask1"
+        android:animation="@drawable/_cloud_tooff__1_res_0x7f080111"/>
+    <target
+        android:name="call_end"
+        android:animation="@drawable/_cloud_tooff__2_res_0x7f080112"/>
+</animated-vector>

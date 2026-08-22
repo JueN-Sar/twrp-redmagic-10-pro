@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_watch_surface__0_res_0x7f0804ee">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_watch_surface__1_res_0x7f0804ef"/>
+    <target
+        android:name="line"
+        android:animation="@drawable/_watch_surface__2_res_0x7f0804f0"/>
+    <target
+        android:name="yuan"
+        android:animation="@drawable/_watch_surface__3_res_0x7f0804f1"/>
+    <target
+        android:name="zhen"
+        android:animation="@drawable/_watch_surface__4_res_0x7f0804f2"/>
+    <target
+        android:name="group_1"
+        android:animation="@drawable/_watch_surface__5_res_0x7f0804f3"/>
+</animated-vector>

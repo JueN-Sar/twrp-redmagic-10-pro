@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_applets_surface__0_res_0x7f080064">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_applets_surface__1_res_0x7f080065"/>
+    <target
+        android:name="three"
+        android:animation="@drawable/_applets_surface__2_res_0x7f080066"/>
+    <target
+        android:name="arrow"
+        android:animation="@drawable/_applets_surface__3_res_0x7f080067"/>
+    <target
+        android:name="arrow_1"
+        android:animation="@drawable/_applets_surface__4_res_0x7f080068"/>
+</animated-vector>

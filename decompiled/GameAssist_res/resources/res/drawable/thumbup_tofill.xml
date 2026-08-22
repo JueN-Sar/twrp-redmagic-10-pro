@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_thumbup_tofill__0_res_0x7f080486">
+    <target
+        android:name="path"
+        android:animation="@drawable/_thumbup_tofill__1_res_0x7f080487"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_thumbup_tofill__2_res_0x7f080488"/>
+</animated-vector>

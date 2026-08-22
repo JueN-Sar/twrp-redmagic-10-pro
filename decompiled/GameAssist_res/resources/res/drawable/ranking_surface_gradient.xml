@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_ranking_surface_gradient__0_res_0x7f0803d5">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_ranking_surface_gradient__3_res_0x7f0803d8"/>
+    <target
+        android:name="line"
+        android:animation="@drawable/_ranking_surface_gradient__4_res_0x7f0803d9"/>
+    <target
+        android:name="start1"
+        android:animation="@drawable/_ranking_surface_gradient__5_res_0x7f0803da"/>
+</animated-vector>

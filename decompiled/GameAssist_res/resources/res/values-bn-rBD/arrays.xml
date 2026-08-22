@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>দিন</item>
+    </array>
+    <array name="month">
+        <item>মাস</item>
+    </array>
+    <array name="year">
+        <item>বছর</item>
+    </array>
+</resources>

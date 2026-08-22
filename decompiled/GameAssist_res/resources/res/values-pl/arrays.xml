@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>dzień</item>
+    </array>
+    <array name="game_space_mode">
+        <item>Tryb atmosferyczny</item>
+        <item>Tryb karty</item>
+        <item>Tryb ręczny</item>
+    </array>
+    <array name="month">
+        <item>miesiąc</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Nie</item>
+        <item>Pon</item>
+        <item>Wt</item>
+        <item>Śr</item>
+        <item>Czw</item>
+        <item>Pt</item>
+        <item>Sob</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Ustawiona sekwencja</item>
+        <item>Ostatnio używane</item>
+        <item>Liczba użyć</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>To jest wyskakująca wiadomość.</item>
+        <item>Styl wyskakującego okienka można dowolnie dostosować.</item>
+        <item>Ustaw rodzaj wiadomości którą chcesz zamienić w wyskakujące okienko.</item>
+        <item>Kliknij przycisk odpowiedzi, aby otworzyć małe okno.</item>
+    </array>
+    <array name="year">
+        <item>rok</item>
+    </array>
+</resources>

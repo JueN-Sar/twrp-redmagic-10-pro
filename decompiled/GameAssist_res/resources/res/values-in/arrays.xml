@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="game_space_mode">
+        <item>Mode atmosfer</item>
+        <item>Mode kartu</item>
+        <item>Mode genggam</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Minggu</item>
+        <item>Sen</item>
+        <item>Sel</item>
+        <item>Rab</item>
+        <item>Kam</item>
+        <item>Jum</item>
+        <item>Sab</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Urutan tetap</item>
+        <item>Baru digunakan</item>
+        <item>Waktu penggunaan</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Ini adalah pesan pop-up.</item>
+        <item>Gaya pop-up dapat disesuaikan dengan bebas.</item>
+        <item>Atur jenis pesan yang ingin Anda ubah menjadi pop-up.</item>
+        <item>Klik tombol balas untuk membuka jendela kecil.</item>
+    </array>
+</resources>

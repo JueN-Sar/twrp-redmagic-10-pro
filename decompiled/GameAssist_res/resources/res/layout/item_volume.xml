@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/game_tiles_marginLeft"
+    android:layout_marginRight="@dimen/game_tiles_marginRight"
+    android:layout_marginBottom="@dimen/game_tiles_marginBottom">
+    <CheckBox
+        android:layout_gravity="center"
+        android:id="@+id/brightness_box"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/game_auto_brightness_checkbox"/>
+    <cn.nubia.gameassist.volume.NubiaVolumeSeekBar
+        android:layout_gravity="center"
+        android:id="@+id/volume_slider"
+        android:layout_width="@dimen/game_brightness_width"
+        android:layout_height="@dimen/game_brightness_height"
+        app:background_color="@color/brightness_seekbar_background_color"
+        app:brightness_drawable="@drawable/game_ic_qs_brightness"
+        app:brightness_drawable_offset="4dp"
+        app:progress_color="@color/brightness_seekbar_progress_color"
+        app:progress_corner="10dp"
+        app:progress_height="@dimen/game_brightness_line_height"
+        app:progress_warn_color="@color/brightness_seekbar_progress_warn_color"
+        app:seekbar_orientation="vertical"
+        app:text_color="#ffffffff"
+        app:thumb_radius="0dp"
+        app:touch_offset="@dimen/game_brightness_touch_offset"/>
+    <cn.nubia.gameassist.view.NubiaMarqueeView
+        android:textSize="@dimen/game_tile_text_size"
+        android:textColor="@color/game_tile_label_normal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/tile_lable"
+        android:layout_width="@dimen/game_pip_icon_size"
+        android:layout_height="@dimen/game_tile_label_height"
+        android:layout_marginTop="@dimen/game_tile_label_layout_marginTop"
+        android:text="@string/volume_control"/>
+</LinearLayout>

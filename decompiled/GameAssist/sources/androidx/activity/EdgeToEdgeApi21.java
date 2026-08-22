@@ -1,0 +1,27 @@
+package androidx.activity;
+
+import android.view.View;
+import android.view.Window;
+import androidx.annotation.DoNotInline;
+import androidx.annotation.RequiresApi;
+import androidx.core.view.WindowCompat;
+import com.zte.shared.wrapper.WindowManagerWrapper;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+
+@RequiresApi
+@Metadata
+/* loaded from: classes.dex */
+final class EdgeToEdgeApi21 implements EdgeToEdgeImpl {
+    @DoNotInline
+    public void a(@NotNull SystemBarStyle statusBarStyle, @NotNull SystemBarStyle navigationBarStyle, @NotNull Window window, @NotNull View view, boolean z, boolean z2) {
+        Intrinsics.e(statusBarStyle, "statusBarStyle");
+        Intrinsics.e(navigationBarStyle, "navigationBarStyle");
+        Intrinsics.e(window, "window");
+        Intrinsics.e(view, "view");
+        WindowCompat.b(window, false);
+        window.addFlags(WindowManagerWrapper.LayoutParams.PRIVATE_FLAG_OPT_OUT_EDGE_TO_EDGE);
+        window.addFlags(134217728);
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="game_bg_Search_ver_imageSize">20dp</dimen>
+    <dimen name="game_bg_Search_ver_marginRight">8dp</dimen>
+    <dimen name="game_bg_Search_ver_marginTop">17dp</dimen>
+    <dimen name="game_middlePanel_Search_ver_marginLeft">25dp</dimen>
+    <dimen name="game_middlePanel_Search_ver_marginTop">40dp</dimen>
+    <dimen name="game_search_hor_marginEnd">16dp</dimen>
+    <dimen name="game_search_hor_marginTop">25dp</dimen>
+    <dimen name="game_search_ver_marginTop">410dp</dimen>
+</resources>

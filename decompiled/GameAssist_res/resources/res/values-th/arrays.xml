@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>วัน</item>
+    </array>
+    <array name="game_space_mode">
+        <item>โหมดบรรยากาศ</item>
+        <item>โหมดการ์ด</item>
+        <item>โหมดมือถือ</item>
+    </array>
+    <array name="month">
+        <item>เดือน</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>อา</item>
+        <item>จ</item>
+        <item>อ</item>
+        <item>พ</item>
+        <item>พฤ</item>
+        <item>ศ</item>
+        <item>ส</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>ลําดับคงที่</item>
+        <item>ที่ใช้ล่าสุด</item>
+        <item>เวลาการใช้งาน</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>นี่คือข้อความป็อปอัป</item>
+        <item>สไตล์ป็อปอัปสามารถปรับได้อย่างอิสระ</item>
+        <item>ตั้งค่าประเภทข้อความที่คุณต้องการเปลี่ยนเป็นป็อปอัป</item>
+        <item>คลิกปุ่มตอบกลับเพื่อเปิดหน้าต่างขนาดเล็ก</item>
+    </array>
+    <array name="year">
+        <item>ปี</item>
+    </array>
+</resources>

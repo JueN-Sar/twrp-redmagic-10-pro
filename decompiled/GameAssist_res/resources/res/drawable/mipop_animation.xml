@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_mipop_animation__0_res_0x7f080269">
+    <target
+        android:name="mi_pop_arrow_1"
+        android:animation="@drawable/_mipop_animation__1_res_0x7f08026a"/>
+    <target
+        android:name="mi_pop_arrow"
+        android:animation="@drawable/_mipop_animation__2_res_0x7f08026b"/>
+    <target
+        android:name="mi_pop_1"
+        android:animation="@drawable/_mipop_animation__3_res_0x7f08026c"/>
+</animated-vector>

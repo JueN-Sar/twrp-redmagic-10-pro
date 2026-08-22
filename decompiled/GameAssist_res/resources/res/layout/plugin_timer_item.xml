@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.nubia.plugin.timer.TimerItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plugin_timer_item_root"
+    android:layout_width="@dimen/plugin_timer_item_width"
+    android:layout_height="@dimen/plugin_timer_item_height">
+    <TextView
+        android:textSize="9.3dp"
+        android:textColor="#ffffffff"
+        android:gravity="center_horizontal"
+        android:id="@+id/plugin_timer_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="11dp"/>
+</cn.nubia.plugin.timer.TimerItemView>

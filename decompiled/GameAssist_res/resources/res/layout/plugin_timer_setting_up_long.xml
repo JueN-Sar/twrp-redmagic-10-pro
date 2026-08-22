@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:id="@+id/plugin_timer_setting_root"
+    android:background="@drawable/timer_setting_long_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cn.nubia.plugin.timer.TimerSettingPickerView
+        android:id="@+id/plugin_timer_setting_picker"
+        android:background="@drawable/timer_setting_picker_bg"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentTop="true"/>
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/timer_setting_short_bg"
+        android:layout_width="@dimen/plugin_timer_setting_down_width"
+        android:layout_height="@dimen/plugin_timer_setting_down_height"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <View
+            android:id="@+id/plugin_timer_setting_switch"
+            android:background="@drawable/timer_switch"
+            android:layout_width="@dimen/plugin_timer_setting_switch_size"
+            android:layout_height="@dimen/plugin_timer_setting_switch_size"
+            android:layout_marginTop="4dp"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+</RelativeLayout>

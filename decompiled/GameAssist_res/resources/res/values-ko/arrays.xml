@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="game_space_mode">
+        <item>분위기 모드</item>
+        <item>카드 모드</item>
+        <item>핸드헬드 모드</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>일</item>
+        <item>월요일</item>
+        <item>화요일</item>
+        <item>수요일</item>
+        <item>목요일</item>
+        <item>금요일</item>
+        <item>토요일</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>고정 순서</item>
+        <item>최근 사용</item>
+        <item>사용 횟수</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>팝업 메시지입니다.</item>
+        <item>팝업 스타일은 자유롭게 조정할 수 있습니다.</item>
+        <item>팝업으로 표시할 메시지 유형을 설정합니다.</item>
+        <item>답장 버튼을 클릭하면 작은 창이 열립니다.</item>
+    </array>
+</resources>

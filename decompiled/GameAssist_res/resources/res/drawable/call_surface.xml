@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_call_surface__0_res_0x7f080090">
+    <target
+        android:name="mask1"
+        android:animation="@drawable/_call_surface__1_res_0x7f080091"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_call_surface__2_res_0x7f080092"/>
+    <target
+        android:name="call_start"
+        android:animation="@drawable/_call_surface__3_res_0x7f080093"/>
+</animated-vector>

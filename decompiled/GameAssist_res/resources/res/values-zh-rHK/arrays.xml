@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>天</item>
+    </array>
+    <array name="month">
+        <item>月</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>這就是彈幕消息</item>
+        <item>彈幕樣式可以自由調整</item>
+        <item>設置你想要哪種消息變成彈幕</item>
+        <item>點擊回復按鈕打開小窗</item>
+    </array>
+    <array name="year">
+        <item>年</item>
+    </array>
+</resources>

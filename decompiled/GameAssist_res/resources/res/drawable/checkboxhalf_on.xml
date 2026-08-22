@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_checkboxhalf_on__0_res_0x7f0800e2">
+    <target
+        android:name="check_in_1"
+        android:animation="@drawable/_checkboxhalf_on__1_res_0x7f0800e3"/>
+    <target
+        android:name="path_1"
+        android:animation="@drawable/_checkboxhalf_on__2_res_0x7f0800e4"/>
+    <target
+        android:name="check_out"
+        android:animation="@drawable/_checkboxhalf_on__3_res_0x7f0800e5"/>
+    <target
+        android:name="check_in"
+        android:animation="@drawable/_checkboxhalf_on__4_res_0x7f0800e6"/>
+</animated-vector>

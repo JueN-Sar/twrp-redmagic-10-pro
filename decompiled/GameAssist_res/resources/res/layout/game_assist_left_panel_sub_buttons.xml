@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/game_assist_button_home"
+        android:src="@drawable/game_assist_button_home"
+        style="@style/game_assist_button_style"/>
+    <ImageView
+        android:id="@+id/game_assist_button_note"
+        android:src="@drawable/game_assist_button_note"
+        android:text="button2"
+        style="@style/game_assist_button_style_button3"/>
+    <ImageView
+        android:id="@+id/game_assist_button_key"
+        android:src="@drawable/game_assist_button_key"
+        android:text="button3"
+        style="@style/game_assist_button_style_button3"/>
+    <ImageView
+        android:id="@+id/game_assist_button_setting"
+        android:src="@drawable/game_assist_button_setting"
+        android:text="button4"
+        style="@style/game_assist_button_style"/>
+</merge>

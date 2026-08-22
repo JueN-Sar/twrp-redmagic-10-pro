@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_favoritetofill__0_res_0x7f080164">
+    <target
+        android:name="group"
+        android:animation="@drawable/_favoritetofill__1_res_0x7f080165"/>
+    <target
+        android:name="path_1"
+        android:animation="@drawable/_favoritetofill__2_res_0x7f080166"/>
+    <target
+        android:name="path"
+        android:animation="@drawable/_favoritetofill__3_res_0x7f080167"/>
+</animated-vector>

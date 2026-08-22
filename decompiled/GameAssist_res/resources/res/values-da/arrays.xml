@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>dag</item>
+    </array>
+    <array name="month">
+        <item>måned</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Søn</item>
+        <item>Man</item>
+        <item>Tirs</item>
+        <item>Ons</item>
+        <item>Tors</item>
+        <item>Fre</item>
+        <item>Lør</item>
+    </array>
+    <array name="year">
+        <item>år</item>
+    </array>
+</resources>

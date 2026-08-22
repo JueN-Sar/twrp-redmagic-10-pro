@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_optimize_surface__0_res_0x7f0802eb">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_optimize_surface__1_res_0x7f0802ec"/>
+    <target
+        android:name="group_1"
+        android:animation="@drawable/_optimize_surface__2_res_0x7f0802ed"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_optimize_surface__3_res_0x7f0802ee"/>
+    <target
+        android:name="line"
+        android:animation="@drawable/_optimize_surface__4_res_0x7f0802ef"/>
+    <target
+        android:name="line1"
+        android:animation="@drawable/_optimize_surface__5_res_0x7f0802f0"/>
+    <target
+        android:name="zhizhen1"
+        android:animation="@drawable/_optimize_surface__6_res_0x7f0802f1"/>
+    <target
+        android:name="zhizhen"
+        android:animation="@drawable/_optimize_surface__7_res_0x7f0802f2"/>
+</animated-vector>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"/>
+    <TextView
+        android:textSize="@dimen/nubia_left_panel_button_lable_text_size"
+        android:textColor="@color/nubia_left_panel_button_lable"
+        android:ellipsize="marquee"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nubia_left_panel_button_margin_left"
+        android:layout_marginRight="@dimen/nubia_left_panel_button_margin_right"
+        android:singleLine="true"/>
+</LinearLayout>

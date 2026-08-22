@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_camerahdroff_auto__0_res_0x7f0800ab">
+    <target
+        android:name="off_start"
+        android:animation="@drawable/_camerahdroff_auto__1_res_0x7f0800ac"/>
+    <target
+        android:name="mask"
+        android:animation="@drawable/_camerahdroff_auto__2_res_0x7f0800ad"/>
+    <target
+        android:name="hdrauto"
+        android:animation="@drawable/_camerahdroff_auto__3_res_0x7f0800ae"/>
+</animated-vector>

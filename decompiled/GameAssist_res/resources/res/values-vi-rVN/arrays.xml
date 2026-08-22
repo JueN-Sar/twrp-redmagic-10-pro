@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="nubia_weeks_short">
+        <item>chủ nhật</item>
+        <item>Thứ hai</item>
+        <item>Thứ ba</item>
+        <item>Thứ Tư</item>
+        <item>Thứ Năm</item>
+        <item>Thứ Sáu</item>
+        <item>Thứ Bảy</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Đây là tin nhắn bật lên.</item>
+        <item>Bạn có thể tự do điều chỉnh kiểu bật lên.</item>
+        <item>Đặt loại tin nhắn bạn muốn chuyển thành cửa sổ bật lên.</item>
+        <item>Nhấp vào nút trả lời để mở một cửa sổ nhỏ.</item>
+    </array>
+</resources>

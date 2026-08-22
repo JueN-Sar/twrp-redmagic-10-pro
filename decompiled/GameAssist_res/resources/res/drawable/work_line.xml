@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_work_line__0_res_0x7f08050a">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_work_line__1_res_0x7f08050b"/>
+    <target
+        android:name="line"
+        android:animation="@drawable/_work_line__2_res_0x7f08050c"/>
+    <target
+        android:name="full"
+        android:animation="@drawable/_work_line__3_res_0x7f08050d"/>
+</animated-vector>

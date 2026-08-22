@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>zi</item>
+    </array>
+    <array name="game_space_mode">
+        <item>Mod atmosferic</item>
+        <item>Mod card</item>
+        <item>Mod portabil</item>
+    </array>
+    <array name="month">
+        <item>lună</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Dum</item>
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mie</item>
+        <item>Joi</item>
+        <item>Vin</item>
+        <item>Sâm</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Ordine fixă</item>
+        <item>Folosit recent</item>
+        <item>Număr de utilizări</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Acesta este mesajul pop-up.</item>
+        <item>Stilul ferestrei pop-up poate fi ajustat liber.</item>
+        <item>Setați tipul de mesaj pe care doriți să îl transformați într-o fereastră pop-up.</item>
+        <item>Apăsați butonul de răspuns pentru a deschide o fereastră mică.</item>
+    </array>
+    <array name="year">
+        <item>an</item>
+    </array>
+</resources>

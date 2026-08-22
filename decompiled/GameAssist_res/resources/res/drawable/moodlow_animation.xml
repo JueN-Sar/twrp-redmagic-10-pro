@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_moodlow_animation__0_res_0x7f080282">
+    <target
+        android:name="path"
+        android:animation="@drawable/_moodlow_animation__1_res_0x7f080283"/>
+    <target
+        android:name="path_6"
+        android:animation="@drawable/_moodlow_animation__2_res_0x7f080284"/>
+    <target
+        android:name="path_5"
+        android:animation="@drawable/_moodlow_animation__3_res_0x7f080285"/>
+    <target
+        android:name="group2"
+        android:animation="@drawable/_moodlow_animation__4_res_0x7f080286"/>
+</animated-vector>

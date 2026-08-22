@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>Gün</item>
+    </array>
+    <array name="game_space_mode">
+        <item>Atmosferik mod</item>
+        <item>Kart modu</item>
+        <item>Avuç içi modu</item>
+    </array>
+    <array name="month">
+        <item>Ay</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Paz</item>
+        <item>Pzt</item>
+        <item>Sal</item>
+        <item>Çar</item>
+        <item>Per</item>
+        <item>Cum</item>
+        <item>Cut</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Sabit sıra</item>
+        <item>Son kullanılan</item>
+        <item>Kullanım süreleri</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Bu açılır mesajdır.</item>
+        <item>Açılır pencere stili serbestçe ayarlanabilir.</item>
+        <item>Açılır pencereye dönüştürmek istediğiniz mesajın türünü ayarlayın.</item>
+        <item>Küçük bir pencere açmak için yanıtla düğmesine tıklayın.</item>
+    </array>
+    <array name="year">
+        <item>yıl</item>
+    </array>
+</resources>

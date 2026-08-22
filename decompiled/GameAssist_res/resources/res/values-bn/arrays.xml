@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="game_space_mode">
+        <item>বায়ুমণ্ডলীয় মোড</item>
+        <item>কার্ড মোড</item>
+        <item>হ্যান্ডহেল্ড মোড</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>রবি</item>
+        <item>সোম</item>
+        <item>মঙ্গল</item>
+        <item>বুধ</item>
+        <item>বৃহ</item>
+        <item>শুক্র</item>
+        <item>শনি</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>স্থির ক্রম</item>
+        <item>সম্প্রতি ব্যবহৃত</item>
+        <item>ব্যবহারের সময়</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>এটি পপ আপ মেসেজ।</item>
+        <item>পপ আপ স্টাইল অবাধে সামঞ্জস্য করা যেতে পারে।</item>
+        <item>আপনি যে ধরনের মেসেজকে পপ-আপে পরিণত করতে চান সেটি সেট করুন।</item>
+        <item>একটি ছোট উইন্ডো খুলতে উত্তর বোতামে ক্লিক করুন।</item>
+    </array>
+</resources>

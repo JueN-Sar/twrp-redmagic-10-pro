@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>dag</item>
+    </array>
+    <array name="game_space_mode">
+        <item>Atmosfæremodus</item>
+        <item>Kortmodus</item>
+        <item>Håndholdt modus</item>
+    </array>
+    <array name="month">
+        <item>måned</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Sø.</item>
+        <item>Man</item>
+        <item>Tir</item>
+        <item>Ons</item>
+        <item>Tor</item>
+        <item>Fre</item>
+        <item>Lør</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Fast rekkefølge</item>
+        <item>Nylig brukt</item>
+        <item>Antall ganger brukt</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Dette er popup-meldingen.</item>
+        <item>Popup-stilen kan justeres fritt.</item>
+        <item>Angi typen melding du vil gjøre om til et popup-vindu.</item>
+        <item>Trykk på svar-knappen for å åpne et lite vindu.</item>
+    </array>
+    <array name="year">
+        <item>år</item>
+    </array>
+</resources>

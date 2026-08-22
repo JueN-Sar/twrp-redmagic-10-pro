@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gameratio_guide_indicator_bottom">16dp</dimen>
+    <dimen name="gameratio_guide_indicator_top">16dp</dimen>
+    <dimen name="gameratio_guide_msg_top">240dp</dimen>
+    <dimen name="gameratio_guide_one_image_h">132dp</dimen>
+    <dimen name="gameratio_guide_one_image_margin">24dp</dimen>
+    <dimen name="gameratio_guide_one_image_top">58dp</dimen>
+    <dimen name="gameratio_guide_one_image_w">292dp</dimen>
+    <dimen name="gameratio_guide_two_image_margin">34dp</dimen>
+    <dimen name="gameratio_guide_two_image_top">24dp</dimen>
+    <dimen name="gameratio_guide_two_src_h">132dp</dimen>
+    <dimen name="gameratio_guide_two_src_w">292dp</dimen>
+</resources>

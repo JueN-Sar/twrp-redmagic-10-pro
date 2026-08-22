@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="nubia_weeks_short">
+        <item>Нд</item>
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Це спливаюче повідомлення.</item>
+        <item>Стиль відкривання спливаючого вікна можна змінювати як завгодно.</item>
+        <item>Установіть тип повідомлень, які потрібно перетворити на спливаючі.</item>
+        <item>Натисніть кнопку відповіді, щоб відкрити невелике вікно.</item>
+    </array>
+</resources>

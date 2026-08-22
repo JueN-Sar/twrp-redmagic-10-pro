@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>ngày</item>
+    </array>
+    <array name="game_space_mode">
+        <item>Chế độ khí quyển</item>
+        <item>Chế độ thẻ</item>
+        <item>Chế độ cầm tay</item>
+    </array>
+    <array name="month">
+        <item>tháng</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>CN</item>
+        <item>T2</item>
+        <item>T3</item>
+        <item>T4</item>
+        <item>T5</item>
+        <item>T6</item>
+        <item>T7</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Trình tự cố định</item>
+        <item>Đã dùng gần đây</item>
+        <item>Sử dụng thời gian</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Đây là tin nhắn bật lên.</item>
+        <item>Bạn có thể tự do điều chỉnh kiểu bật lên.</item>
+        <item>Đặt loại tin nhắn bạn muốn chuyển thành cửa sổ bật lên.</item>
+        <item>Nhấp vào nút trả lời để mở một cửa sổ nhỏ.</item>
+    </array>
+    <array name="year">
+        <item>năm</item>
+    </array>
+</resources>

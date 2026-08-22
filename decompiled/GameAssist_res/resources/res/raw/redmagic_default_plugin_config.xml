@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin_config config_version="v26.03.25">
+    <!-- 准星辅助 -->
+    <item_config
+        name="sight_assist"
+        space_trigger="3" />
+    <!-- 战术建议 -->
+    <item_config
+        name="ai_tip"
+        space_trigger="1">
+        <white_list>
+            <item>com.tencent.tmgp.sgame</item>
+            <item>com.tencent.tmgp.pubgmhd</item>
+            <item>com.tencent.lolm</item>
+            <item>com.miHoYo.Yuanshen</item>
+            <item>com.tencent.tmgp.cf</item>
+            <item>com.tencent.tmgp.cod</item>
+            <item>com.tencent.jkchess</item>
+        </white_list>
+        <black_list>
+            <item>com.tencent.tmgp.sgamece</item>
+            <item>com.tencent.tmgp.codv</item>
+            <item>com.tencent.tmgp.codev</item>
+        </black_list>
+    </item_config>
+
+    <item_config
+        name="ai_tip"
+        space_trigger="2">
+        <white_list>
+            <item>com.tencent.ig</item>
+            <item>com.dts.freefiremax</item>
+            <item>com.dts.freefireth</item>
+            <item>com.mobile.legends</item>
+            <item>com.proxima.dfm</item>
+        </white_list>
+    </item_config>
+    <!-- 魔姬播报 -->
+    <item_config
+        name="redmagic_broadcast"
+        space_trigger="1">
+        <white_list>
+            <item>com.tencent.tmgp.pubgmhd</item>
+            <item>com.tencent.tmgp.sgame</item>
+            <item>com.garena.game.kg</item>
+            <!-- android s及以上支持 -->
+            <item min_target_sdk="31">com.tencent.lolm</item>
+            <item min_target_sdk="31">com.tencent.tmgp.cf</item>
+            <item min_target_sdk="31">com.miHoYo.Yuanshen</item>
+            <item min_target_sdk="31">com.tencent.tmgp.cod</item>
+        </white_list>
+        <black_list>
+            <item>com.tencent.tmgp.codv</item>
+            <item>com.tencent.tmgp.codev</item>
+        </black_list>
+    </item_config>
+
+    <item_config
+        name="redmagic_broadcast"
+        space_trigger="2">
+        <white_list>
+            <item>com.mobile.legends</item>
+            <item>com.dts.freefiremax</item>
+            <item>com.dts.freefireth</item>
+        </white_list>
+    </item_config>
+
+    <!-- 魔姬应援 -->
+    <item_config
+        name="help"
+        space_trigger="1">
+        <white_list>
+            <item>com.tencent.tmgp.pubgmhd</item>
+            <item>com.tencent.tmgp.sgame</item>
+            <item>com.garena.game.kg</item>
+            <!-- android s及以上支持 -->
+            <item min_target_sdk="31">com.tencent.lolm</item>
+            <item min_target_sdk="31">com.tencent.tmgp.cf</item>
+            <item min_target_sdk="31">com.miHoYo.Yuanshen</item>
+            <item min_target_sdk="31">com.tencent.tmgp.cod</item>
+        </white_list>
+        <black_list>
+            <item>com.tencent.tmgp.codv</item>
+            <item>com.tencent.tmgp.codev</item>
+        </black_list>
+    </item_config>
+
+    <item_config
+        name="help"
+        space_trigger="2">
+        <white_list>
+            <item>com.mobile.legends</item>
+            <item>com.dts.freefiremax</item>
+            <item>com.dts.freefireth</item>
+        </white_list>
+    </item_config>
+
+    <!-- 一键连招 -->
+    <item_config
+        name="keylink"
+        space_trigger="3">
+        <black_list>
+            <item>com.tencent.tmgp.sgame</item>
+            <item>com.tencent.tmgp.sgamece</item>
+            <item>com.levelinfinite.sgameGlobal</item>
+            <item>com.levelinfinite.sgameGlobal.midaspay</item>
+            <item>com.garena.game.kg</item>
+            <item>com.tencent.tmgp.cf</item>
+            <item>com.tencent.KiHan</item>
+            <item>com.tencent.tmgp.pubgmhd</item>
+            <item>com.tencent.tmgp.projectg</item>
+            <item>com.tencent.ig</item>
+            <item>com.tencent.iglite</item>
+            <item>com.pubg.krmobile</item>
+            <item>com.vng.pubgmobile</item>
+            <item>com.pubg.imobile</item>
+            <item>com.rekoo.pubgm</item>
+            <item>com.tencent.tmgp.dfm</item>
+            <item>com.garena.game.df</item>
+            <item>com.proxima.dfm</item>
+        </black_list>
+    </item_config>
+
+    <!-- 4D震感 -->
+    <item_config
+        name="vibrate"
+        space_trigger="1">
+        <white_list>
+            <item>com.mobile.legends</item>
+            <item>com.mobile.legends.usa</item>
+            <item>com.dfjz.moba</item>
+            <item>com.miHoYo.Yuanshen</item>
+            <item>com.tencent.lolm</item>
+            <item>com.tencent.tmgp.sgame</item>
+            <item>com.tencent.tmgp.pubgmhd</item>
+            <item>com.netease.hyxd</item>
+            <item>com.netease.ko</item>
+            <item>.kybc</item>
+            <item>.GloftA9</item>
+            <item>com.rekoo.pubgm</item>
+            <item>com.tencent.ig</item>
+            <item>com.tencent.tmgp.speedmobile</item>
+            <item>com.garena.game.fc</item>
+        </white_list>
+    </item_config>
+
+    <item_config
+        name="vibrate"
+        space_trigger="2">
+        <white_list>
+            <item>com.mobile.legends</item>
+            <item>com.mobile.legends.usa</item>
+            <item>com.dfjz.moba</item>
+            <item>com.tencent.tmgp.pubgmhd</item>
+            <item>com.rekoo.pubgm</item>
+            <item>com.pubg.krmobile</item>
+            <item>com.tencent.ig</item>
+            <item>com.vng.pubgmobile</item>
+            <item>com.pubg.newstate</item>
+            <item>com.tencent.iglite</item>
+            <item>com.pubg.imobile</item>
+            <item>com.netease.hyxd</item>
+            <item>com.netease.ko</item>
+            <item>.kybc</item>
+            <item>com.tencent.tmgp.speedmobile</item>
+            <item>.GloftA9</item>
+            <item>com.garena.game.fc</item>
+        </white_list>
+    </item_config>
+
+    <!-- 狩猎模式 -->
+    <item_config
+        name="hunting_mode"
+        space_trigger="3">
+        <white_list>
+            <item>com.tencent.tmgp.pubgmhd</item>
+            <item>com.netease.hyxd</item>
+            <item>com.netease.ko</item>
+            <item>com.pubg.krmobile</item>
+            <item>com.tencent.ig</item>
+            <item>com.vng.pubgmobile</item>
+            <item>com.pubg.newstate</item>
+            <item>com.rekoo.pubgm</item>
+            <item>com.tencent.iglite</item>
+            <item>com.pubg.imobile</item>
+        </white_list>
+    </item_config>
+    <!-- 狩猎模式-游戏滤镜 -->
+    <item_config
+        name="gameshader"
+        space_trigger="3" />
+    <!-- 魔姬黑话 -->
+    <item_config
+        name="chat_assit"
+        space_trigger="1" />
+    <!-- 胜率预测 -->
+    <item_config
+        name="game_prediction"
+        space_trigger="1">
+        <white_list>
+            <item>com.tencent.tmgp.sgame</item>
+            <item>com.tencent.lolm</item>
+            <item>com.tencent.tmgp.cf</item>
+            <item>com.tencent.jkchess</item>
+        </white_list>
+    </item_config>
+    <item_config
+        name="game_prediction"
+        space_trigger="2">
+        <white_list>
+            <item>com.dts.freefireth</item>
+            <item>com.dts.freefiremax</item>
+            <item>com.mobile.legends</item>
+        </white_list>
+    </item_config>
+    <!-- 侦查模式 -->
+    <item_config
+        name="investigation_mode"
+        space_trigger="3" />
+    <!-- 计数器 -->
+    <item_config
+        name="counter"
+        space_trigger="3" />
+    <!-- 魔姬嘴替 -->
+    <item_config
+        name="mora_ai_speaker"
+        space_trigger="3" />
+    <!-- 体感操控 -->
+    <item_config
+        name="sensor_operation"
+        space_trigger="3" />
+    <!-- 高敏轮盘 -->
+    <item_config
+        name="high_sensitivity_wheel"
+        space_trigger="3" />
+    <!-- 随心显示 -->
+    <item_config
+        name="pleased_display"
+        space_trigger="3">
+        <black_list>
+            <item>com.tencent.mm</item>
+            <item>com.tencent.KiHan</item>
+        </black_list>
+    </item_config>
+    <!-- 声像探针 -->
+    <item_config
+        name="ai_detect"
+        space_trigger="3">
+        <white_list>
+            <item>com.tencent.tmgp.pubgmhd</item>
+            <item>com.pubg.krmobile</item>
+            <item>com.tencent.ig</item>
+            <item>com.vng.pubgmobile</item>
+            <item>com.pubg.newstate</item>
+            <item>com.rekoo.pubgm</item>
+        </white_list>
+    </item_config>
+    <!-- 超分辨率 -->
+    <item_config
+        name="super_resolution"
+        space_trigger="3" />
+    <!-- 超分辨率老方案 -->
+    <item_config name="super_resolution_old" space_trigger="3">
+        <white_list>
+            <item>com.miHoYo.Yuanshen</item>
+            <item>com.miHoYo.ys.mi</item>
+            <item>com.miHoYo.ys.bilibili</item>
+        </white_list>
+    </item_config>
+    <!-- 战力 -->
+    <item_config
+        name="combat_power"
+        space_trigger="3" />
+    <!-- AI触发器 -->
+    <item_config
+        name="ai_trigger"
+        space_trigger="3" />
+    <!-- 抽卡辅助 -->
+    <item_config
+        name="card_assist"
+        space_trigger="3" />
+    <!-- 随心换键 -->
+    <item_config
+        name="keyposition_assist"
+        space_trigger="3" />
+    <!-- 音效均衡器 -->
+    <item_config
+        name="sound_effect"
+        space_trigger="3" />
+    <!-- 快速秒表 -->
+    <item_config
+        name="timer"
+        space_trigger="3">
+        <black_list>
+            <item>com.tencent.KiHan</item>
+        </black_list>
+    </item_config>
+    <!-- 辅助线 -->
+    <item_config
+        name="range_line"
+        space_trigger="3">
+        <black_list>
+            <item>com.tencent.tmgp.sgame</item>
+            <item>com.tencent.tmgp.sgamece</item>
+            <item>com.levelinfinite.sgameGlobal</item>
+            <item>com.levelinfinite.sgameGlobal.midaspay</item>
+        </black_list>
+    </item_config>
+    <!-- X引力 -->
+    <item_config
+        name="operation_devices"
+        space_trigger="3">
+        <black_list>
+            <item>com.netease.x19</item>
+            <item>com.netease.mc.aligames</item>
+            <item>com.mojang.minecraftpe</item>
+            <item>com.mojang.guoji</item>
+        </black_list>
+    </item_config>
+    <!-- 破坏神 -->
+    <item_config
+        name="biablo_mode"
+        space_trigger="3" />
+    <!-- 画面提取 -->
+    <item_config
+        name="screen_extraction"
+        space_trigger="3" />
+
+    <!-- 按下触发单击操作 -->
+    <item_config
+        name="touch_single_point"
+        space_trigger="3" />
+    <!-- 按下触发长按操作 -->
+    <item_config
+        name="touch_long_point"
+        space_trigger="3" />
+    <!-- 按下触发连续点击 -->
+    <item_config
+        name="touch_queue_point"
+        space_trigger="3" />
+    <!-- 按下触发双操作 -->
+    <item_config
+        name="touch_double_point"
+        space_trigger="3" />
+    <!-- 按下抬起分别触发 -->
+    <item_config
+        name="touch_separate_point"
+        space_trigger="3" />
+    <!-- 长按触发一键连招 -->
+    <item_config
+        name="touch_long_keylink_point"
+        space_trigger="3">
+        <black_list>
+            <item>com.tencent.tmgp.sgame</item>
+            <item>com.garena.game.kg</item>
+            <item>com.tencent.tmgp.cf</item>
+        </black_list>
+    </item_config>
+</plugin_config>
+

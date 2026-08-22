@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pre_danmu_item">
+        <item>นี่คือข้อความป็อปอัป</item>
+        <item>สไตล์ป็อปอัปสามารถปรับได้อย่างอิสระ</item>
+        <item>ตั้งค่าประเภทข้อความที่คุณต้องการเปลี่ยนเป็นป็อปอัป</item>
+        <item>คลิกปุ่มตอบกลับเพื่อเปิดหน้าต่างขนาดเล็ก</item>
+    </array>
+</resources>

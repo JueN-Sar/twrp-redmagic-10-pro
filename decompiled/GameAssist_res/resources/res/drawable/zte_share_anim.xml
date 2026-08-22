@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_zte_share_anim__0_res_0x7f080519">
+    <target
+        android:name="up"
+        android:animation="@drawable/_zte_share_anim__1_res_0x7f08051a"/>
+    <target
+        android:name="down"
+        android:animation="@drawable/_zte_share_anim__2_res_0x7f08051b"/>
+</animated-vector>

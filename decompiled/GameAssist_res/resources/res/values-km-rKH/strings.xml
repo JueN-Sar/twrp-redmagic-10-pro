@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_mode_done">ធ្វើ​រួច</string>
+    <string name="alwaysUse">តែងតែ​បញ្ចប់​សកម្មភាព​បែបនេះ​ពេល​ប្រើ​កម្មវិធី​នេះ</string>
+    <string name="cancel">បោះ​បង់</string>
+    <string name="date_picker_decrement_day_button">បន្ថយ​ថ្ងៃ</string>
+    <string name="date_picker_decrement_month_button">បន្ថយ​ខែ</string>
+    <string name="date_picker_decrement_year_button">បន្ថយ​ឆ្នាំ</string>
+    <string name="date_picker_dialog_title">កំណត់​កាល​បរិច្ឆេទ​</string>
+    <string name="date_picker_increment_day_button">បង្កើន​ថ្ងៃ</string>
+    <string name="date_picker_increment_month_button">បង្កើន​ខែ</string>
+    <string name="date_picker_increment_year_button">បង្កើន​​ឆ្នាំ</string>
+    <string name="datetime_dialog_title">​កាលបរិច្ឆេទ​កំណត់ &amp; ម៉ោង</string>
+    <string name="hour_picker_description">គ្រាប់​រំកិល​រង្វង់​ម៉ោង</string>
+    <string name="item_is_selected">បាន​ជ្រើស%1$s ។</string>
+    <string name="minute_picker_description">គ្រាប់​រំកិល​រង្វង់​នាទី</string>
+    <string name="search_hint">ស្វែងរក…</string>
+    <string name="select_day">ជ្រើស​ថ្ងៃ​នៃ​ខែ</string>
+    <string name="select_hours">ជ្រើស​ម៉ោង</string>
+    <string name="select_minutes">ជ្រើស​នាទី</string>
+    <string name="select_year">ជ្រើស​ឆ្នាំ</string>
+    <string name="time_picker_decrement_hour_button">បន្ថយ​ម៉ោង</string>
+    <string name="time_picker_decrement_minute_button">បន្ថយ​នាទី</string>
+    <string name="time_picker_decrement_set_am_button">កំណត់ AM</string>
+    <string name="time_picker_dialog_title">កំណត់​ពេលវេលា</string>
+    <string name="time_picker_increment_hour_button">បង្កើន​ម៉ោង</string>
+    <string name="time_picker_increment_minute_button">បង្កើន​នាទី</string>
+    <string name="time_picker_increment_set_pm_button">កំណត់​ PM</string>
+    <string name="year_picker_description">បញ្ជី​ឆ្នាំ</string>
+    <string name="zte_days_of_week_Fri">សុក្រ</string>
+    <string name="zte_days_of_week_Mon">ចន្ទ</string>
+    <string name="zte_days_of_week_Sat">សៅរ៍</string>
+    <string name="zte_days_of_week_Sun">អាទិត្យ</string>
+    <string name="zte_days_of_week_Thu">ព្រហស្បតិ៍</string>
+    <string name="zte_days_of_week_Tue">អង្កា</string>
+    <string name="zte_days_of_week_Wed">ពុធ</string>
+</resources>

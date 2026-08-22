@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="performance_indicator_base_img_margin_e">170dp</dimen>
+    <dimen name="performance_indicator_detect_button_tv_h">33dp</dimen>
+    <dimen name="performance_indicator_detect_button_tv_margin_b">11.5dp</dimen>
+    <dimen name="performance_indicator_detect_button_tv_w">180dp</dimen>
+    <dimen name="performance_indicator_detect_text_tv_margin_b">16dp</dimen>
+    <dimen name="performance_indicator_detect_text_tv_text_size">16.5dp</dimen>
+    <dimen name="performance_indicator_detected_result_tv_margin_e">58dp</dimen>
+    <dimen name="performance_indicator_detected_result_tv_text_size">78dp</dimen>
+    <dimen name="performance_indicator_detected_time_main_img_h">150dp</dimen>
+    <dimen name="performance_indicator_detected_time_main_img_margin_t">40dp</dimen>
+    <dimen name="performance_indicator_detected_time_main_img_w">450dp</dimen>
+    <dimen name="performance_indicator_detected_time_tv_margin_e">18dp</dimen>
+    <dimen name="performance_indicator_detected_time_tv_margin_t">12.5dp</dimen>
+    <dimen name="performance_indicator_detected_time_tv_text_size">13.5dp</dimen>
+    <dimen name="performance_indicator_jitter_num_tv_margin_s">9dp</dimen>
+    <dimen name="performance_indicator_jitter_num_tv_margin_t">110dp</dimen>
+    <dimen name="performance_indicator_jitter_num_tv_text_size">30dp</dimen>
+    <dimen name="performance_indicator_jitter_title_tv_margin_t">11.5dp</dimen>
+    <dimen name="performance_indicator_jitter_title_tv_text_size">15dp</dimen>
+    <dimen name="performance_indicator_latency_num_tv_margin_s">9dp</dimen>
+    <dimen name="performance_indicator_latency_num_tv_margin_t">75.33dp</dimen>
+    <dimen name="performance_indicator_latency_num_tv_text_size">30dp</dimen>
+    <dimen name="performance_indicator_latency_title_tv_margin_t">85.5dp</dimen>
+    <dimen name="performance_indicator_latency_title_tv_text_size">15dp</dimen>
+    <dimen name="performance_indicator_title_img_h">24dp</dimen>
+    <dimen name="performance_indicator_title_img_margin_s">13.5dp</dimen>
+    <dimen name="performance_indicator_title_img_margin_t">9dp</dimen>
+    <dimen name="performance_indicator_title_img_w">132dp</dimen>
+    <dimen name="performance_indicator_title_tv_margin_s">37.5dp</dimen>
+    <dimen name="performance_indicator_title_tv_margin_t">9dp</dimen>
+    <dimen name="performance_indicator_title_tv_text_size">18dp</dimen>
+</resources>

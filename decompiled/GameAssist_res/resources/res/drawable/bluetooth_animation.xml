@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_bluetooth_animation__0_res_0x7f08007c">
+    <target
+        android:name="bluetooth0"
+        android:animation="@drawable/_bluetooth_animation__1_res_0x7f08007d"/>
+    <target
+        android:name="bluetooth1"
+        android:animation="@drawable/_bluetooth_animation__2_res_0x7f08007e"/>
+    <target
+        android:name="bluetooth2"
+        android:animation="@drawable/_bluetooth_animation__3_res_0x7f08007f"/>
+</animated-vector>

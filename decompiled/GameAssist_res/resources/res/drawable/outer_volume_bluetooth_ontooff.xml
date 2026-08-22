@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_outer_volume_bluetooth_ontooff__0_res_0x7f080349">
+    <target
+        android:name="audiotrack_line"
+        android:animation="@drawable/_outer_volume_bluetooth_ontooff__1_res_0x7f08034a"/>
+    <target
+        android:name="mask"
+        android:animation="@drawable/_outer_volume_bluetooth_ontooff__2_res_0x7f08034b"/>
+</animated-vector>

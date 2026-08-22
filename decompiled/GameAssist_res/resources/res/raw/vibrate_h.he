@@ -1,0 +1,49 @@
+{
+    "Metadata": {
+        "Created": "2025-3-13",
+        "Description": "Smooth and Stable Flight Vibration",
+        "Version": 2
+    },
+    "PatternList": [
+        {
+            "AbsoluteTime": 0,
+            "Pattern": [
+                {
+                    "Event": {
+                        "Duration": 2000,
+                        "Index": 0,
+                        "Parameters": {
+                            "Curve": [
+                                { "Frequency": 30, "Intensity": 0.10, "Time": 0 },
+                                { "Frequency": 30, "Intensity": 0.11, "Time": 100 },
+                                { "Frequency": 30, "Intensity": 0.12, "Time": 200 },
+                                { "Frequency": 30, "Intensity": 0.13, "Time": 300 },
+                                { "Frequency": 30, "Intensity": 0.14, "Time": 400 },
+                                { "Frequency": 30, "Intensity": 0.15, "Time": 500 },
+                                { "Frequency": 30, "Intensity": 0.16, "Time": 600 },
+                                { "Frequency": 30, "Intensity": 0.16, "Time": 700 },
+                                { "Frequency": 30, "Intensity": 0.16, "Time": 800 },
+                                { "Frequency": 30, "Intensity": 0.16, "Time": 900 },
+                                { "Frequency": 30, "Intensity": 0.16, "Time": 1000 },
+                                { "Frequency": 30, "Intensity": 0.16, "Time": 1100 },
+                                { "Frequency": 30, "Intensity": 0.16, "Time": 1200 },
+                                { "Frequency": 30, "Intensity": 0.16, "Time": 1300 },
+                                { "Frequency": 30, "Intensity": 0.16, "Time": 1400 },
+                                { "Frequency": 30, "Intensity": 0.15, "Time": 1500 },
+                                { "Frequency": 30, "Intensity": 0.14, "Time": 1600 },
+                                { "Frequency": 30, "Intensity": 0.13, "Time": 1700 },
+                                { "Frequency": 30, "Intensity": 0.12, "Time": 1800 },
+                                { "Frequency": 30, "Intensity": 0.11, "Time": 1900 },
+                                { "Frequency": 30, "Intensity": 0.10, "Time": 2000 }
+                            ],
+                            "Frequency": 30,
+                            "Intensity": 100
+                        },
+                        "RelativeTime": 0,
+                        "Type": "continuous"
+                    }
+                }
+            ]
+        }
+    ]
+}

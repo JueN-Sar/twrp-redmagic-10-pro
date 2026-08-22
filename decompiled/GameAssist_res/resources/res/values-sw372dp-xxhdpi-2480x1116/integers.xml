@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="low_sguar_genshin_operation_wish_endX">2140</integer>
+    <integer name="low_sguar_genshin_operation_wish_endY">100</integer>
+    <integer name="low_sguar_genshin_operation_wish_startX">1940</integer>
+    <integer name="low_sguar_sgame_events_endX">2400</integer>
+    <integer name="low_sguar_sgame_events_endY">675</integer>
+    <integer name="low_sguar_sgame_events_startX">2000</integer>
+    <integer name="low_sguar_sgame_events_startY">530</integer>
+    <integer name="low_sguar_sgame_events_touch_endX">450</integer>
+    <integer name="low_sguar_sgame_events_touch_startY">155</integer>
+    <integer name="low_sguar_sgame_events_without_wish_endY">560</integer>
+    <integer name="low_sguar_sgame_events_without_wish_startY">415</integer>
+    <integer name="low_sguar_sgame_goback_area_touch_endX">300</integer>
+    <integer name="low_sguar_sgame_goback_area_touch_endY">125</integer>
+    <integer name="low_sguar_sgame_wish_endX">2400</integer>
+    <integer name="low_sguar_sgame_wish_endY">390</integer>
+    <integer name="low_sguar_sgame_wish_startX">2000</integer>
+    <integer name="low_sguar_sgame_wish_startY">295</integer>
+    <integer name="low_sguar_sgame_wish_touch_endX">380</integer>
+    <integer name="low_sguar_sgame_wish_touch_startY">145</integer>
+</resources>

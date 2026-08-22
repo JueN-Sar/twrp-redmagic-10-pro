@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_nfc10_animation__0_res_0x7f0802be">
+    <target
+        android:name="left"
+        android:animation="@drawable/_nfc10_animation__1_res_0x7f0802bf"/>
+    <target
+        android:name="right"
+        android:animation="@drawable/_nfc10_animation__2_res_0x7f0802c0"/>
+    <target
+        android:name="nfc"
+        android:animation="@drawable/_nfc10_animation__3_res_0x7f0802c1"/>
+    <target
+        android:name="left1"
+        android:animation="@drawable/_nfc10_animation__4_res_0x7f0802c2"/>
+    <target
+        android:name="right1"
+        android:animation="@drawable/_nfc10_animation__5_res_0x7f0802c3"/>
+</animated-vector>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_image_line__0_res_0x7f080221">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_image_line__1_res_0x7f080222"/>
+    <target
+        android:name="line"
+        android:animation="@drawable/_image_line__2_res_0x7f080223"/>
+    <target
+        android:name="point"
+        android:animation="@drawable/_image_line__3_res_0x7f080224"/>
+    <target
+        android:name="image"
+        android:animation="@drawable/_image_line__4_res_0x7f080225"/>
+</animated-vector>

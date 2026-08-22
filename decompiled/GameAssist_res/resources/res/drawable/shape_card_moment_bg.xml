@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/moment_card_shade_blur_size"
+    android:insetRight="@dimen/moment_card_shade_blur_size"
+    android:insetTop="@dimen/moment_card_shade_blur_size"
+    android:insetBottom="@dimen/moment_card_shade_blur_size">
+    <shape android:shape="rectangle">
+        <stroke
+            android:width="1.5dp"
+            android:color="#ffbaf5ff"/>
+    </shape>
+</inset>

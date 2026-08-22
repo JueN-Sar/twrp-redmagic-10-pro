@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="center_vertical"
+        android:id="@android:id/background"
+        android:drawable="@drawable/charge_separation_seekbar_bg_light_mode"/>
+    <item
+        android:gravity="center_vertical"
+        android:id="@android:id/progress"
+        android:height="4dp">
+        <clip android:drawable="@drawable/seekbar_progress"/>
+    </item>
+</layer-list>

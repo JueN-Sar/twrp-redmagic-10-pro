@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.nubia.gameassist.meditationmode.NubiaRadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/rg_phone_indicator"
+    android:layout_width="match_parent"
+    android:layout_height="5dp">
+    <cn.nubia.gameassist.meditationmode.NubiaRadioButtonVertical
+        android:button="@drawable/icon_selector_port"
+        android:layout_marginStart="13dp"
+        style="@style/meditation_vertical"/>
+    <cn.nubia.gameassist.meditationmode.NubiaRadioButtonVertical
+        android:button="@null"
+        android:layout_marginStart="13dp"
+        style="@style/meditation_vertical"/>
+</cn.nubia.gameassist.meditationmode.NubiaRadioGroup>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_focused="false"
+        android:drawable="@drawable/multi_sub_screen_sink_close_btn"/>
+    <item android:state_focused="true">
+        <layer-list>
+            <item android:drawable="@drawable/multi_sub_screen_sink_close_btn"/>
+            <item android:drawable="@drawable/multi_sub_screen_sink_close_btn"/>
+        </layer-list>
+    </item>
+</selector>

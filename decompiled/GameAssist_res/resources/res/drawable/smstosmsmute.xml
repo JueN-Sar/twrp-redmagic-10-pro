@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_smstosmsmute__0_res_0x7f080448">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_smstosmsmute__1_res_0x7f080449"/>
+    <target
+        android:name="notifications_lines"
+        android:animation="@drawable/_smstosmsmute__2_res_0x7f08044a"/>
+</animated-vector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/gameratio_bg_panel_btn_radius"/>
+    <solid android:color="#ff252733"/>
+    <stroke
+        android:width="@dimen/gameratio_bg_panel_btn_stroke"
+        android:color="#ff323747"/>
+</shape>

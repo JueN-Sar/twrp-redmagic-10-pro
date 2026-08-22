@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_camerahdron_off__0_res_0x7f0800b9">
+    <target
+        android:name="off_start"
+        android:animation="@drawable/_camerahdron_off__1_res_0x7f0800ba"/>
+    <target
+        android:name="mask"
+        android:animation="@drawable/_camerahdron_off__2_res_0x7f0800bb"/>
+</animated-vector>

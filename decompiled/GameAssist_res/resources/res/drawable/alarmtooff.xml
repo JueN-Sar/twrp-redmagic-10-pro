@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_alarmtooff__0_res_0x7f080044">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_alarmtooff__1_res_0x7f080045"/>
+    <target
+        android:name="alarm_lines"
+        android:animation="@drawable/_alarmtooff__2_res_0x7f080046"/>
+</animated-vector>

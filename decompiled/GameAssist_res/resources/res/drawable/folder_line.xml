@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_folder_line__0_res_0x7f08017f">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_folder_line__1_res_0x7f080180"/>
+    <target
+        android:name="path"
+        android:animation="@drawable/_folder_line__2_res_0x7f080181"/>
+    <target
+        android:name="outside"
+        android:animation="@drawable/_folder_line__3_res_0x7f080182"/>
+</animated-vector>

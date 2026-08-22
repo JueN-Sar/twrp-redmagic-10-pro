@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cn.nubia.gameassist.dessert.policy.performancemonitor.CornerRectangle
+        android:id="@+id/performance_monitor_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <cn.nubia.gameassist.dessert.policy.performancemonitor.PerformanceMonitorLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/performance_monitor_content"
+        android:paddingLeft="@dimen/performance_monitor_content_padding_left"
+        android:paddingRight="@dimen/performance_monitor_content_padding_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/layout_monitor_current_time"
+            style="@style/performance_monitor_content_item_style"/>
+        <include
+            layout="@layout/layout_monitor_frame_rate"
+            style="@style/performance_monitor_content_item_style"/>
+        <include
+            layout="@layout/layout_monitor_net_speed"
+            style="@style/performance_monitor_content_item_style"/>
+        <include
+            layout="@layout/layout_monitor_electricity"
+            style="@style/performance_monitor_content_item_style"/>
+        <include
+            layout="@layout/layout_monitor_game_duration"
+            style="@style/performance_monitor_content_item_style"/>
+    </cn.nubia.gameassist.dessert.policy.performancemonitor.PerformanceMonitorLayout>
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>Den</item>
+    </array>
+    <array name="game_space_mode">
+        <item>Atmosférický režim</item>
+        <item>Karetní režim</item>
+        <item>Režim držení v ruce</item>
+    </array>
+    <array name="month">
+        <item>Měsíc</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Ne</item>
+        <item>Po</item>
+        <item>Út</item>
+        <item>St</item>
+        <item>Čt</item>
+        <item>Pá</item>
+        <item>So</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Pevně nastavené pořadí</item>
+        <item>Nedávno použité</item>
+        <item>Počet použití</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Toto je vyskakovací zpráva.</item>
+        <item>Styl vyskakování lze libovolně nastavit.</item>
+        <item>Nastavte druh zprávy, kterou chcete převést na vyskakovací okno.</item>
+        <item>Kliknutím na tlačítko odpovědět otevřete malé okno.</item>
+    </array>
+    <array name="year">
+        <item>rokem</item>
+    </array>
+</resources>

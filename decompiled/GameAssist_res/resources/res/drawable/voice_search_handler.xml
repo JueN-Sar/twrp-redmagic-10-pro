@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="0dp"
+    android:insetRight="0dp"
+    android:insetTop="0dp"
+    android:insetBottom="0dp">
+    <layer-list>
+        <item>
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/voice_icon_inner_height"/>
+                <solid android:color="@color/mfv_common_sel_on"/>
+                <size
+                    android:height="@dimen/voice_icon_inner_height"
+                    android:width="@dimen/voice_icon_inner_height"/>
+            </shape>
+        </item>
+        <item
+            android:gravity="center"
+            android:height="@dimen/voice_icon_inner_height"
+            android:width="@dimen/voice_icon_inner_height"
+            android:drawable="@drawable/mic_white"/>
+    </layer-list>
+</inset>

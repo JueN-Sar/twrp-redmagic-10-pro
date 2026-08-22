@@ -1,0 +1,8 @@
+package kotlin.collections;
+
+import kotlin.Metadata;
+
+@Metadata
+/* loaded from: classes2.dex */
+public final class SetsKt extends SetsKt___SetsKt {
+}

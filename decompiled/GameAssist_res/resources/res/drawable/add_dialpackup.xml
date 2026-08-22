@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_add_dialpackup__0_res_0x7f080000">
+    <target
+        android:name="dialpackup"
+        android:animation="@drawable/_add_dialpackup__1_res_0x7f080001"/>
+    <target
+        android:name="path_1"
+        android:animation="@drawable/_add_dialpackup__2_res_0x7f080002"/>
+    <target
+        android:name="path"
+        android:animation="@drawable/_add_dialpackup__3_res_0x7f080003"/>
+    <target
+        android:name="add"
+        android:animation="@drawable/_add_dialpackup__4_res_0x7f080004"/>
+</animated-vector>

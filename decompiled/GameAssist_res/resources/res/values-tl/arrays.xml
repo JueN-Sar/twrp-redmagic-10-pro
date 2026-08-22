@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="game_space_mode">
+        <item>Atmospheric mode</item>
+        <item>Card mode</item>
+        <item>Handheld mode</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Lin.</item>
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Miy</item>
+        <item>Huw</item>
+        <item>Biy</item>
+        <item>Sab</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Nakapirming pagkakasunud-sunod</item>
+        <item>Ginamit kamakailan</item>
+        <item>Gumamit ng mga oras</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Ito ang pop-up na mensahe.</item>
+        <item>Ang estilo ng pop-up ay maaaring malayang ayusin.</item>
+        <item>Itakda ang uri ng mensahe na gusto mong gawing pop-up.</item>
+        <item>I-click ang tugon na pindutan para magbukas ng maliit na bintana.</item>
+    </array>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_startofill__0_res_0x7f080450">
+    <target
+        android:name="line"
+        android:animation="@drawable/_startofill__1_res_0x7f080451"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_startofill__2_res_0x7f080452"/>
+    <target
+        android:name="path_1"
+        android:animation="@drawable/_startofill__3_res_0x7f080453"/>
+    <target
+        android:name="group_1"
+        android:animation="@drawable/_startofill__4_res_0x7f080454"/>
+    <target
+        android:name="path"
+        android:animation="@drawable/_startofill__5_res_0x7f080455"/>
+</animated-vector>

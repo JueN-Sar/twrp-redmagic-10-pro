@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_game_line__0_res_0x7f0801a1">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_game_line__1_res_0x7f0801a2"/>
+    <target
+        android:name="add"
+        android:animation="@drawable/_game_line__2_res_0x7f0801a3"/>
+    <target
+        android:name="point"
+        android:animation="@drawable/_game_line__3_res_0x7f0801a4"/>
+    <target
+        android:name="outer"
+        android:animation="@drawable/_game_line__4_res_0x7f0801a5"/>
+    <target
+        android:name="add1"
+        android:animation="@drawable/_game_line__5_res_0x7f0801a6"/>
+    <target
+        android:name="point1"
+        android:animation="@drawable/_game_line__6_res_0x7f0801a7"/>
+</animated-vector>

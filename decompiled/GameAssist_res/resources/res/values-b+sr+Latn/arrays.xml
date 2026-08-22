@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>dan</item>
+    </array>
+    <array name="game_space_mode">
+        <item>Atmosferski režim</item>
+        <item>Režim kartice</item>
+        <item>Režim za ručnu upotrebu</item>
+    </array>
+    <array name="month">
+        <item>mesec</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Ned</item>
+        <item>Pon</item>
+        <item>Uto</item>
+        <item>Sre</item>
+        <item>Čet</item>
+        <item>Pet</item>
+        <item>Sub</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Fiksna sekvenca</item>
+        <item>Nedavno korišćeno</item>
+        <item>Broj korišćenja</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Ovo je iskačuća poruka.</item>
+        <item>Stil iskačuće poruke može se slobodno prilagoditi.</item>
+        <item>Postavite vrstu poruke koju želite pretvoriti u iskačuću.</item>
+        <item>Kliknite na dugme za odgovor da otvorite mali prozor.</item>
+    </array>
+    <array name="year">
+        <item>godina</item>
+    </array>
+</resources>

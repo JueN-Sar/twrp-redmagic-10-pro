@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_outer_notifications_vibration__0_res_0x7f080310">
+    <target
+        android:name="vibration_left_1"
+        android:animation="@drawable/_outer_notifications_vibration__1_res_0x7f080311"/>
+    <target
+        android:name="vibration_left"
+        android:animation="@drawable/_outer_notifications_vibration__2_res_0x7f080312"/>
+    <target
+        android:name="vibration_right"
+        android:animation="@drawable/_outer_notifications_vibration__3_res_0x7f080313"/>
+    <target
+        android:name="vibration_right_1"
+        android:animation="@drawable/_outer_notifications_vibration__4_res_0x7f080314"/>
+    <target
+        android:name="down"
+        android:animation="@drawable/_outer_notifications_vibration__5_res_0x7f080315"/>
+    <target
+        android:name="vibration"
+        android:animation="@drawable/_outer_notifications_vibration__6_res_0x7f080316"/>
+    <target
+        android:name="path_1"
+        android:animation="@drawable/_outer_notifications_vibration__7_res_0x7f080317"/>
+</animated-vector>

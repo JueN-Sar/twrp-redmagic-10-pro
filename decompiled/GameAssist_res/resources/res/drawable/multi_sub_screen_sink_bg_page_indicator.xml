@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="#ae1630"/>
+            <stroke
+                android:width="@dimen/sink_page_indicator_stroke_w"
+                android:color="#e52a56"/>
+            <size
+                android:height="@dimen/sink_page_indicator_size"
+                android:width="@dimen/sink_page_indicator_size"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#252733"/>
+            <stroke
+                android:width="@dimen/sink_page_indicator_stroke_w"
+                android:color="#343747"/>
+            <size
+                android:height="@dimen/sink_page_indicator_size"
+                android:width="@dimen/sink_page_indicator_size"/>
+        </shape>
+    </item>
+</selector>

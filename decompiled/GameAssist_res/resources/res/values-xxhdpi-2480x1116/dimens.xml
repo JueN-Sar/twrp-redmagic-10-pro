@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="game_AISearch_ver_marginRight">8dp</dimen>
+    <dimen name="game_AISearch_ver_marginTop">10dp</dimen>
+    <dimen name="game_assist_meditation_mode_margin_bottom">32dp</dimen>
+    <dimen name="game_assist_performance_effect_margin_bottom">32dp</dimen>
+    <dimen name="game_assist_performance_effect_margin_bottom_legacy">63dp</dimen>
+    <dimen name="game_middlePanel_AISearch_ver_marginLeft">26.7dp</dimen>
+    <dimen name="game_middlePanel_AISearch_ver_marginTop">40dp</dimen>
+    <dimen name="game_middlePanel_Search_ver_marginLeft">43.4dp</dimen>
+    <dimen name="plugin_button_chat_title_padding_left">30dp</dimen>
+</resources>

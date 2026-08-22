@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_radiobuttonon_off_commom__0_res_0x7f0803c3">
+    <target
+        android:name="circle"
+        android:animation="@drawable/_radiobuttonon_off_commom__1_res_0x7f0803c4"/>
+    <target
+        android:name="inner"
+        android:animation="@drawable/_radiobuttonon_off_commom__2_res_0x7f0803c5"/>
+    <target
+        android:name="inner_1"
+        android:animation="@drawable/_radiobuttonon_off_commom__3_res_0x7f0803c6"/>
+</animated-vector>

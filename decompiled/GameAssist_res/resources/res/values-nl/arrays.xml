@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>Dag</item>
+    </array>
+    <array name="month">
+        <item>Maand</item>
+    </array>
+    <array name="year">
+        <item>jaar</item>
+    </array>
+</resources>

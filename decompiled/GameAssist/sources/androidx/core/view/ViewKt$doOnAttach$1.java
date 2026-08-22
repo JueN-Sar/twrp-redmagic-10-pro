@@ -1,0 +1,28 @@
+package androidx.core.view;
+
+import android.view.View;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@Metadata
+@SourceDebugExtension
+/* loaded from: classes.dex */
+public final class ViewKt$doOnAttach$1 implements View.OnAttachStateChangeListener {
+
+    /* renamed from: c, reason: collision with root package name */
+    final /* synthetic */ View f3392c;
+
+    /* renamed from: h, reason: collision with root package name */
+    final /* synthetic */ Function1 f3393h;
+
+    @Override // android.view.View.OnAttachStateChangeListener
+    public void onViewAttachedToWindow(View view) {
+        this.f3392c.removeOnAttachStateChangeListener(this);
+        this.f3393h.c(view);
+    }
+
+    @Override // android.view.View.OnAttachStateChangeListener
+    public void onViewDetachedFromWindow(View view) {
+    }
+}

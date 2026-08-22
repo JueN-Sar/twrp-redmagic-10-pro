@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_cameralockoff_on_stroke__0_res_0x7f0800c1">
+    <target
+        android:name="lock"
+        android:animation="@drawable/_cameralockoff_on_stroke__1_res_0x7f0800c2"/>
+</animated-vector>

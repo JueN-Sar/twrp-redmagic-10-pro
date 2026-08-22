@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="config_autoBrightnessButtonBacklightValues">
+        <item>250</item>
+        <item>250</item>
+        <item>250</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </array>
+    <array name="config_autoBrightnessKeyboardBacklightValues">
+        <item>250</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </array>
+    <array name="config_autoBrightnessLcdBacklightValues">
+        <item>20</item>
+        <item>35</item>
+        <item>60</item>
+        <item>75</item>
+        <item>115</item>
+        <item>160</item>
+        <item>180</item>
+        <item>200</item>
+        <item>240</item>
+        <item>255</item>
+    </array>
+    <array name="config_autoBrightnessLevels">
+        <item>10</item>
+        <item>45</item>
+        <item>60</item>
+        <item>150</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>7000</item>
+    </array>
+    <array name="config_locationProviderPackageNames">
+        <item>com.android.location.fused</item>
+        <item>com.baidu.map.location</item>
+    </array>
+    <array name="day">
+        <item>day</item>
+    </array>
+    <array name="game_space_mode">
+        <item>Atmospheric mode</item>
+        <item>Card mode</item>
+        <item>Handheld mode</item>
+    </array>
+    <array name="gameshader_list">
+        <item>negative</item>
+        <item>darklight</item>
+        <item>eagleeye</item>
+        <item>clearness</item>
+        <item>gray</item>
+        <item>cyberpunk</item>
+        <item>night</item>
+        <item>oldfilm</item>
+        <item>sketch</item>
+        <item>lomo</item>
+        <item>crayon</item>
+        <item>oil</item>
+    </array>
+    <array name="month">
+        <item>month</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Fixed sequence</item>
+        <item>Recently used</item>
+        <item>Use times</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>This is the pop-up message.</item>
+        <item>The pop-up style can be adjusted freely.</item>
+        <item>Set the kind of message that you want to turn into a pop-up.</item>
+        <item>Click the reply button to open a small window.</item>
+    </array>
+    <array name="year">
+        <item>year</item>
+    </array>
+</resources>

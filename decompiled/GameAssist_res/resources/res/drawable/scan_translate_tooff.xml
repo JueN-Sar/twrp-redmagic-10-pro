@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_scan_translate_tooff__0_res_0x7f0803ea">
+    <target
+        android:name="mask1"
+        android:animation="@drawable/_scan_translate_tooff__1_res_0x7f0803eb"/>
+    <target
+        android:name="scan_translate"
+        android:animation="@drawable/_scan_translate_tooff__2_res_0x7f0803ec"/>
+</animated-vector>

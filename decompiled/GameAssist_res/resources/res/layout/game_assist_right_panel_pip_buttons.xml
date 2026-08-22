@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/game_assist_pip_one"
+        android:layout_width="@dimen/pip_icon_width"
+        android:layout_height="@dimen/pip_icon_width"
+        android:layout_margin="@dimen/game_assist_right_button_margin"
+        android:src="@drawable/pip_icon_placeholder"/>
+    <ImageView
+        android:id="@+id/game_assist_pip_two"
+        android:layout_width="@dimen/pip_icon_width"
+        android:layout_height="@dimen/pip_icon_width"
+        android:layout_margin="@dimen/game_assist_right_button_margin"
+        android:src="@drawable/pip_icon_placeholder"/>
+    <ImageView
+        android:id="@+id/game_assist_pip_three"
+        android:layout_width="@dimen/pip_icon_width"
+        android:layout_height="@dimen/pip_icon_width"
+        android:layout_margin="@dimen/game_assist_right_button_margin"
+        android:src="@drawable/pip_icon_placeholder"/>
+    <ImageView
+        android:id="@+id/game_assist_pip_exp"
+        android:layout_width="@dimen/dessert_tile_icon_width"
+        android:layout_height="@dimen/dessert_tile_icon_width"
+        android:layout_margin="@dimen/game_assist_right_button_margin"
+        android:src="@drawable/game_assist_button_exp"/>
+    <ImageView
+        android:id="@+id/game_assist_logo"
+        android:visibility="gone"
+        android:layout_width="178dp"
+        android:layout_height="39.33dp"
+        android:src="@drawable/game_space_logo"/>
+</merge>

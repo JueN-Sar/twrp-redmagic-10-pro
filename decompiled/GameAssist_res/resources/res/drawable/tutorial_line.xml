@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_tutorial_line__0_res_0x7f0804b4">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_tutorial_line__1_res_0x7f0804b5"/>
+    <target
+        android:name="line_1"
+        android:animation="@drawable/_tutorial_line__2_res_0x7f0804b6"/>
+    <target
+        android:name="line"
+        android:animation="@drawable/_tutorial_line__3_res_0x7f0804b7"/>
+</animated-vector>

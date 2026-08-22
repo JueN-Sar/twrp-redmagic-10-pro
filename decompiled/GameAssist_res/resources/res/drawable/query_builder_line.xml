@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_query_builder_line__0_res_0x7f080395">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_query_builder_line__1_res_0x7f080396"/>
+    <target
+        android:name="hour"
+        android:animation="@drawable/_query_builder_line__2_res_0x7f080397"/>
+    <target
+        android:name="minute"
+        android:animation="@drawable/_query_builder_line__3_res_0x7f080398"/>
+    <target
+        android:name="path"
+        android:animation="@drawable/_query_builder_line__4_res_0x7f080399"/>
+</animated-vector>

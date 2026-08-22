@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_marginRight="8dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/pip_module"
+        android:layout_width="41.33dp"
+        android:layout_height="41.33dp"/>
+</LinearLayout>

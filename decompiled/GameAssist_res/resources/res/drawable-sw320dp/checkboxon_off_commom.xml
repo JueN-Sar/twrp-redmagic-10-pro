@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_checkboxon_off_commom__0_res_0x7f0800fb">
+    <target
+        android:name="end"
+        android:animation="@drawable/_checkboxon_off_commom__1_res_0x7f0800fc"/>
+    <target
+        android:name="start"
+        android:animation="@drawable/_checkboxon_off_commom__2_res_0x7f0800fd"/>
+    <target
+        android:name="circle"
+        android:animation="@drawable/_checkboxon_off_commom__3_res_0x7f0800fe"/>
+    <target
+        android:name="outer"
+        android:animation="@drawable/_checkboxon_off_commom__4_res_0x7f0800ff"/>
+</animated-vector>

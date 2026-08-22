@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_sync_animation__0_res_0x7f080459">
+    <target
+        android:name="up_all"
+        android:animation="@drawable/_sync_animation__1_res_0x7f08045a"/>
+    <target
+        android:name="up1"
+        android:animation="@drawable/_sync_animation__2_res_0x7f08045b"/>
+    <target
+        android:name="down1"
+        android:animation="@drawable/_sync_animation__3_res_0x7f08045c"/>
+    <target
+        android:name="up_line"
+        android:animation="@drawable/_sync_animation__4_res_0x7f08045d"/>
+    <target
+        android:name="down_line"
+        android:animation="@drawable/_sync_animation__5_res_0x7f08045e"/>
+    <target
+        android:name="path"
+        android:animation="@drawable/_sync_animation__6_res_0x7f08045f"/>
+    <target
+        android:name="path_1"
+        android:animation="@drawable/_sync_animation__7_res_0x7f080460"/>
+</animated-vector>

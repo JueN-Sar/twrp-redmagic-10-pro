@@ -1,0 +1,314 @@
+7767517
+312 366
+Input                    images                   0 1 images
+YoloV5Focus              focus                    1 1 images /backbone/backbone/stem/Concat_output_0
+Convolution              /backbone/backbone/stem/conv/conv/Conv 1 1 /backbone/backbone/stem/Concat_output_0 /backbone/backbone/stem/conv/conv/Conv_output_0 0=32 1=3 4=1 5=1 6=3456 8=2
+Swish                    /backbone/backbone/stem/conv/act/Mul 1 1 /backbone/backbone/stem/conv/conv/Conv_output_0 /backbone/backbone/stem/conv/act/Mul_output_0
+Convolution              /backbone/backbone/dark2/dark2.0/conv/Conv 1 1 /backbone/backbone/stem/conv/act/Mul_output_0 /backbone/backbone/dark2/dark2.0/conv/Conv_output_0 0=64 1=3 3=2 4=1 5=1 6=18432 8=2
+Swish                    /backbone/backbone/dark2/dark2.0/act/Mul 1 1 /backbone/backbone/dark2/dark2.0/conv/Conv_output_0 /backbone/backbone/dark2/dark2.0/act/Mul_output_0
+Split                    splitncnn_2              1 2 /backbone/backbone/dark2/dark2.0/act/Mul_output_0 /backbone/backbone/dark2/dark2.0/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark2/dark2.0/act/Mul_output_0_splitncnn_1
+Convolution              /backbone/backbone/dark2/dark2.1/conv1/conv/Conv 1 1 /backbone/backbone/dark2/dark2.0/act/Mul_output_0_splitncnn_1 /backbone/backbone/dark2/dark2.1/conv1/conv/Conv_output_0 0=32 1=1 5=1 6=2048 8=2
+Swish                    /backbone/backbone/dark2/dark2.1/conv1/act/Mul 1 1 /backbone/backbone/dark2/dark2.1/conv1/conv/Conv_output_0 /backbone/backbone/dark2/dark2.1/conv1/act/Mul_output_0
+Split                    splitncnn_3              1 2 /backbone/backbone/dark2/dark2.1/conv1/act/Mul_output_0 /backbone/backbone/dark2/dark2.1/conv1/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark2/dark2.1/conv1/act/Mul_output_0_splitncnn_1
+Convolution              /backbone/backbone/dark2/dark2.1/conv2/conv/Conv 1 1 /backbone/backbone/dark2/dark2.0/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark2/dark2.1/conv2/conv/Conv_output_0 0=32 1=1 5=1 6=2048 8=2
+Swish                    /backbone/backbone/dark2/dark2.1/conv2/act/Mul 1 1 /backbone/backbone/dark2/dark2.1/conv2/conv/Conv_output_0 /backbone/backbone/dark2/dark2.1/conv2/act/Mul_output_0
+Convolution              /backbone/backbone/dark2/dark2.1/m/m.0/conv1/conv/Conv 1 1 /backbone/backbone/dark2/dark2.1/conv1/act/Mul_output_0_splitncnn_1 /backbone/backbone/dark2/dark2.1/m/m.0/conv1/conv/Conv_output_0 0=32 1=1 5=1 6=1024 8=2
+Swish                    /backbone/backbone/dark2/dark2.1/m/m.0/conv1/act/Mul 1 1 /backbone/backbone/dark2/dark2.1/m/m.0/conv1/conv/Conv_output_0 /backbone/backbone/dark2/dark2.1/m/m.0/conv1/act/Mul_output_0
+Convolution              /backbone/backbone/dark2/dark2.1/m/m.0/conv2/conv/Conv 1 1 /backbone/backbone/dark2/dark2.1/m/m.0/conv1/act/Mul_output_0 /backbone/backbone/dark2/dark2.1/m/m.0/conv2/conv/Conv_output_0 0=32 1=3 4=1 5=1 6=9216 8=2
+Swish                    /backbone/backbone/dark2/dark2.1/m/m.0/conv2/act/Mul 1 1 /backbone/backbone/dark2/dark2.1/m/m.0/conv2/conv/Conv_output_0 /backbone/backbone/dark2/dark2.1/m/m.0/conv2/act/Mul_output_0
+BinaryOp                 /backbone/backbone/dark2/dark2.1/m/m.0/Add 2 1 /backbone/backbone/dark2/dark2.1/m/m.0/conv2/act/Mul_output_0 /backbone/backbone/dark2/dark2.1/conv1/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark2/dark2.1/m/m.0/Add_output_0
+Concat                   /backbone/backbone/dark2/dark2.1/Concat 2 1 /backbone/backbone/dark2/dark2.1/m/m.0/Add_output_0 /backbone/backbone/dark2/dark2.1/conv2/act/Mul_output_0 /backbone/backbone/dark2/dark2.1/Concat_output_0
+Convolution              /backbone/backbone/dark2/dark2.1/conv3/conv/Conv 1 1 /backbone/backbone/dark2/dark2.1/Concat_output_0 /backbone/backbone/dark2/dark2.1/conv3/conv/Conv_output_0 0=64 1=1 5=1 6=4096 8=2
+Swish                    /backbone/backbone/dark2/dark2.1/conv3/act/Mul 1 1 /backbone/backbone/dark2/dark2.1/conv3/conv/Conv_output_0 /backbone/backbone/dark2/dark2.1/conv3/act/Mul_output_0
+Convolution              /backbone/backbone/dark3/dark3.0/conv/Conv 1 1 /backbone/backbone/dark2/dark2.1/conv3/act/Mul_output_0 /backbone/backbone/dark3/dark3.0/conv/Conv_output_0 0=128 1=3 3=2 4=1 5=1 6=73728 8=2
+Swish                    /backbone/backbone/dark3/dark3.0/act/Mul 1 1 /backbone/backbone/dark3/dark3.0/conv/Conv_output_0 /backbone/backbone/dark3/dark3.0/act/Mul_output_0
+Split                    splitncnn_4              1 2 /backbone/backbone/dark3/dark3.0/act/Mul_output_0 /backbone/backbone/dark3/dark3.0/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark3/dark3.0/act/Mul_output_0_splitncnn_1
+Convolution              /backbone/backbone/dark3/dark3.1/conv1/conv/Conv 1 1 /backbone/backbone/dark3/dark3.0/act/Mul_output_0_splitncnn_1 /backbone/backbone/dark3/dark3.1/conv1/conv/Conv_output_0 0=64 1=1 5=1 6=8192 8=2
+Swish                    /backbone/backbone/dark3/dark3.1/conv1/act/Mul 1 1 /backbone/backbone/dark3/dark3.1/conv1/conv/Conv_output_0 /backbone/backbone/dark3/dark3.1/conv1/act/Mul_output_0
+Split                    splitncnn_5              1 2 /backbone/backbone/dark3/dark3.1/conv1/act/Mul_output_0 /backbone/backbone/dark3/dark3.1/conv1/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark3/dark3.1/conv1/act/Mul_output_0_splitncnn_1
+Convolution              /backbone/backbone/dark3/dark3.1/conv2/conv/Conv 1 1 /backbone/backbone/dark3/dark3.0/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark3/dark3.1/conv2/conv/Conv_output_0 0=64 1=1 5=1 6=8192 8=2
+Swish                    /backbone/backbone/dark3/dark3.1/conv2/act/Mul 1 1 /backbone/backbone/dark3/dark3.1/conv2/conv/Conv_output_0 /backbone/backbone/dark3/dark3.1/conv2/act/Mul_output_0
+Convolution              /backbone/backbone/dark3/dark3.1/m/m.0/conv1/conv/Conv 1 1 /backbone/backbone/dark3/dark3.1/conv1/act/Mul_output_0_splitncnn_1 /backbone/backbone/dark3/dark3.1/m/m.0/conv1/conv/Conv_output_0 0=64 1=1 5=1 6=4096 8=2
+Swish                    /backbone/backbone/dark3/dark3.1/m/m.0/conv1/act/Mul 1 1 /backbone/backbone/dark3/dark3.1/m/m.0/conv1/conv/Conv_output_0 /backbone/backbone/dark3/dark3.1/m/m.0/conv1/act/Mul_output_0
+Convolution              /backbone/backbone/dark3/dark3.1/m/m.0/conv2/conv/Conv 1 1 /backbone/backbone/dark3/dark3.1/m/m.0/conv1/act/Mul_output_0 /backbone/backbone/dark3/dark3.1/m/m.0/conv2/conv/Conv_output_0 0=64 1=3 4=1 5=1 6=36864 8=2
+Swish                    /backbone/backbone/dark3/dark3.1/m/m.0/conv2/act/Mul 1 1 /backbone/backbone/dark3/dark3.1/m/m.0/conv2/conv/Conv_output_0 /backbone/backbone/dark3/dark3.1/m/m.0/conv2/act/Mul_output_0
+BinaryOp                 /backbone/backbone/dark3/dark3.1/m/m.0/Add 2 1 /backbone/backbone/dark3/dark3.1/m/m.0/conv2/act/Mul_output_0 /backbone/backbone/dark3/dark3.1/conv1/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark3/dark3.1/m/m.0/Add_output_0
+Split                    splitncnn_6              1 2 /backbone/backbone/dark3/dark3.1/m/m.0/Add_output_0 /backbone/backbone/dark3/dark3.1/m/m.0/Add_output_0_splitncnn_0 /backbone/backbone/dark3/dark3.1/m/m.0/Add_output_0_splitncnn_1
+Convolution              /backbone/backbone/dark3/dark3.1/m/m.1/conv1/conv/Conv 1 1 /backbone/backbone/dark3/dark3.1/m/m.0/Add_output_0_splitncnn_1 /backbone/backbone/dark3/dark3.1/m/m.1/conv1/conv/Conv_output_0 0=64 1=1 5=1 6=4096 8=2
+Swish                    /backbone/backbone/dark3/dark3.1/m/m.1/conv1/act/Mul 1 1 /backbone/backbone/dark3/dark3.1/m/m.1/conv1/conv/Conv_output_0 /backbone/backbone/dark3/dark3.1/m/m.1/conv1/act/Mul_output_0
+Convolution              /backbone/backbone/dark3/dark3.1/m/m.1/conv2/conv/Conv 1 1 /backbone/backbone/dark3/dark3.1/m/m.1/conv1/act/Mul_output_0 /backbone/backbone/dark3/dark3.1/m/m.1/conv2/conv/Conv_output_0 0=64 1=3 4=1 5=1 6=36864 8=2
+Swish                    /backbone/backbone/dark3/dark3.1/m/m.1/conv2/act/Mul 1 1 /backbone/backbone/dark3/dark3.1/m/m.1/conv2/conv/Conv_output_0 /backbone/backbone/dark3/dark3.1/m/m.1/conv2/act/Mul_output_0
+BinaryOp                 /backbone/backbone/dark3/dark3.1/m/m.1/Add 2 1 /backbone/backbone/dark3/dark3.1/m/m.1/conv2/act/Mul_output_0 /backbone/backbone/dark3/dark3.1/m/m.0/Add_output_0_splitncnn_0 /backbone/backbone/dark3/dark3.1/m/m.1/Add_output_0
+Split                    splitncnn_7              1 2 /backbone/backbone/dark3/dark3.1/m/m.1/Add_output_0 /backbone/backbone/dark3/dark3.1/m/m.1/Add_output_0_splitncnn_0 /backbone/backbone/dark3/dark3.1/m/m.1/Add_output_0_splitncnn_1
+Convolution              /backbone/backbone/dark3/dark3.1/m/m.2/conv1/conv/Conv 1 1 /backbone/backbone/dark3/dark3.1/m/m.1/Add_output_0_splitncnn_1 /backbone/backbone/dark3/dark3.1/m/m.2/conv1/conv/Conv_output_0 0=64 1=1 5=1 6=4096 8=2
+Swish                    /backbone/backbone/dark3/dark3.1/m/m.2/conv1/act/Mul 1 1 /backbone/backbone/dark3/dark3.1/m/m.2/conv1/conv/Conv_output_0 /backbone/backbone/dark3/dark3.1/m/m.2/conv1/act/Mul_output_0
+Convolution              /backbone/backbone/dark3/dark3.1/m/m.2/conv2/conv/Conv 1 1 /backbone/backbone/dark3/dark3.1/m/m.2/conv1/act/Mul_output_0 /backbone/backbone/dark3/dark3.1/m/m.2/conv2/conv/Conv_output_0 0=64 1=3 4=1 5=1 6=36864 8=2
+Swish                    /backbone/backbone/dark3/dark3.1/m/m.2/conv2/act/Mul 1 1 /backbone/backbone/dark3/dark3.1/m/m.2/conv2/conv/Conv_output_0 /backbone/backbone/dark3/dark3.1/m/m.2/conv2/act/Mul_output_0
+BinaryOp                 /backbone/backbone/dark3/dark3.1/m/m.2/Add 2 1 /backbone/backbone/dark3/dark3.1/m/m.2/conv2/act/Mul_output_0 /backbone/backbone/dark3/dark3.1/m/m.1/Add_output_0_splitncnn_0 /backbone/backbone/dark3/dark3.1/m/m.2/Add_output_0
+Concat                   /backbone/backbone/dark3/dark3.1/Concat 2 1 /backbone/backbone/dark3/dark3.1/m/m.2/Add_output_0 /backbone/backbone/dark3/dark3.1/conv2/act/Mul_output_0 /backbone/backbone/dark3/dark3.1/Concat_output_0
+Convolution              /backbone/backbone/dark3/dark3.1/conv3/conv/Conv 1 1 /backbone/backbone/dark3/dark3.1/Concat_output_0 /backbone/backbone/dark3/dark3.1/conv3/conv/Conv_output_0 0=128 1=1 5=1 6=16384 8=2
+Swish                    /backbone/backbone/dark3/dark3.1/conv3/act/Mul 1 1 /backbone/backbone/dark3/dark3.1/conv3/conv/Conv_output_0 /backbone/backbone/dark3/dark3.1/conv3/act/Mul_output_0
+Split                    splitncnn_8              1 4 /backbone/backbone/dark3/dark3.1/conv3/act/Mul_output_0 /backbone/backbone/dark3/dark3.1/conv3/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark3/dark3.1/conv3/act/Mul_output_0_splitncnn_1 /backbone/backbone/dark3/dark3.1/conv3/act/Mul_output_0_splitncnn_2 /backbone/backbone/dark3/dark3.1/conv3/act/Mul_output_0_splitncnn_3
+Convolution              /backbone/backbone/dark4/dark4.0/conv/Conv 1 1 /backbone/backbone/dark3/dark3.1/conv3/act/Mul_output_0_splitncnn_3 /backbone/backbone/dark4/dark4.0/conv/Conv_output_0 0=256 1=3 3=2 4=1 5=1 6=294912 8=2
+Swish                    /backbone/backbone/dark4/dark4.0/act/Mul 1 1 /backbone/backbone/dark4/dark4.0/conv/Conv_output_0 /backbone/backbone/dark4/dark4.0/act/Mul_output_0
+Split                    splitncnn_9              1 2 /backbone/backbone/dark4/dark4.0/act/Mul_output_0 /backbone/backbone/dark4/dark4.0/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark4/dark4.0/act/Mul_output_0_splitncnn_1
+Convolution              /backbone/backbone/dark4/dark4.1/conv1/conv/Conv 1 1 /backbone/backbone/dark4/dark4.0/act/Mul_output_0_splitncnn_1 /backbone/backbone/dark4/dark4.1/conv1/conv/Conv_output_0 0=128 1=1 5=1 6=32768 8=2
+Swish                    /backbone/backbone/dark4/dark4.1/conv1/act/Mul 1 1 /backbone/backbone/dark4/dark4.1/conv1/conv/Conv_output_0 /backbone/backbone/dark4/dark4.1/conv1/act/Mul_output_0
+Split                    splitncnn_10             1 2 /backbone/backbone/dark4/dark4.1/conv1/act/Mul_output_0 /backbone/backbone/dark4/dark4.1/conv1/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark4/dark4.1/conv1/act/Mul_output_0_splitncnn_1
+Convolution              /backbone/backbone/dark4/dark4.1/conv2/conv/Conv 1 1 /backbone/backbone/dark4/dark4.0/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark4/dark4.1/conv2/conv/Conv_output_0 0=128 1=1 5=1 6=32768 8=2
+Swish                    /backbone/backbone/dark4/dark4.1/conv2/act/Mul 1 1 /backbone/backbone/dark4/dark4.1/conv2/conv/Conv_output_0 /backbone/backbone/dark4/dark4.1/conv2/act/Mul_output_0
+Convolution              /backbone/backbone/dark4/dark4.1/m/m.0/conv1/conv/Conv 1 1 /backbone/backbone/dark4/dark4.1/conv1/act/Mul_output_0_splitncnn_1 /backbone/backbone/dark4/dark4.1/m/m.0/conv1/conv/Conv_output_0 0=128 1=1 5=1 6=16384 8=2
+Swish                    /backbone/backbone/dark4/dark4.1/m/m.0/conv1/act/Mul 1 1 /backbone/backbone/dark4/dark4.1/m/m.0/conv1/conv/Conv_output_0 /backbone/backbone/dark4/dark4.1/m/m.0/conv1/act/Mul_output_0
+Convolution              /backbone/backbone/dark4/dark4.1/m/m.0/conv2/conv/Conv 1 1 /backbone/backbone/dark4/dark4.1/m/m.0/conv1/act/Mul_output_0 /backbone/backbone/dark4/dark4.1/m/m.0/conv2/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /backbone/backbone/dark4/dark4.1/m/m.0/conv2/act/Mul 1 1 /backbone/backbone/dark4/dark4.1/m/m.0/conv2/conv/Conv_output_0 /backbone/backbone/dark4/dark4.1/m/m.0/conv2/act/Mul_output_0
+BinaryOp                 /backbone/backbone/dark4/dark4.1/m/m.0/Add 2 1 /backbone/backbone/dark4/dark4.1/m/m.0/conv2/act/Mul_output_0 /backbone/backbone/dark4/dark4.1/conv1/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark4/dark4.1/m/m.0/Add_output_0
+Split                    splitncnn_11             1 2 /backbone/backbone/dark4/dark4.1/m/m.0/Add_output_0 /backbone/backbone/dark4/dark4.1/m/m.0/Add_output_0_splitncnn_0 /backbone/backbone/dark4/dark4.1/m/m.0/Add_output_0_splitncnn_1
+Convolution              /backbone/backbone/dark4/dark4.1/m/m.1/conv1/conv/Conv 1 1 /backbone/backbone/dark4/dark4.1/m/m.0/Add_output_0_splitncnn_1 /backbone/backbone/dark4/dark4.1/m/m.1/conv1/conv/Conv_output_0 0=128 1=1 5=1 6=16384 8=2
+Swish                    /backbone/backbone/dark4/dark4.1/m/m.1/conv1/act/Mul 1 1 /backbone/backbone/dark4/dark4.1/m/m.1/conv1/conv/Conv_output_0 /backbone/backbone/dark4/dark4.1/m/m.1/conv1/act/Mul_output_0
+Convolution              /backbone/backbone/dark4/dark4.1/m/m.1/conv2/conv/Conv 1 1 /backbone/backbone/dark4/dark4.1/m/m.1/conv1/act/Mul_output_0 /backbone/backbone/dark4/dark4.1/m/m.1/conv2/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /backbone/backbone/dark4/dark4.1/m/m.1/conv2/act/Mul 1 1 /backbone/backbone/dark4/dark4.1/m/m.1/conv2/conv/Conv_output_0 /backbone/backbone/dark4/dark4.1/m/m.1/conv2/act/Mul_output_0
+BinaryOp                 /backbone/backbone/dark4/dark4.1/m/m.1/Add 2 1 /backbone/backbone/dark4/dark4.1/m/m.1/conv2/act/Mul_output_0 /backbone/backbone/dark4/dark4.1/m/m.0/Add_output_0_splitncnn_0 /backbone/backbone/dark4/dark4.1/m/m.1/Add_output_0
+Split                    splitncnn_12             1 2 /backbone/backbone/dark4/dark4.1/m/m.1/Add_output_0 /backbone/backbone/dark4/dark4.1/m/m.1/Add_output_0_splitncnn_0 /backbone/backbone/dark4/dark4.1/m/m.1/Add_output_0_splitncnn_1
+Convolution              /backbone/backbone/dark4/dark4.1/m/m.2/conv1/conv/Conv 1 1 /backbone/backbone/dark4/dark4.1/m/m.1/Add_output_0_splitncnn_1 /backbone/backbone/dark4/dark4.1/m/m.2/conv1/conv/Conv_output_0 0=128 1=1 5=1 6=16384 8=2
+Swish                    /backbone/backbone/dark4/dark4.1/m/m.2/conv1/act/Mul 1 1 /backbone/backbone/dark4/dark4.1/m/m.2/conv1/conv/Conv_output_0 /backbone/backbone/dark4/dark4.1/m/m.2/conv1/act/Mul_output_0
+Convolution              /backbone/backbone/dark4/dark4.1/m/m.2/conv2/conv/Conv 1 1 /backbone/backbone/dark4/dark4.1/m/m.2/conv1/act/Mul_output_0 /backbone/backbone/dark4/dark4.1/m/m.2/conv2/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /backbone/backbone/dark4/dark4.1/m/m.2/conv2/act/Mul 1 1 /backbone/backbone/dark4/dark4.1/m/m.2/conv2/conv/Conv_output_0 /backbone/backbone/dark4/dark4.1/m/m.2/conv2/act/Mul_output_0
+BinaryOp                 /backbone/backbone/dark4/dark4.1/m/m.2/Add 2 1 /backbone/backbone/dark4/dark4.1/m/m.2/conv2/act/Mul_output_0 /backbone/backbone/dark4/dark4.1/m/m.1/Add_output_0_splitncnn_0 /backbone/backbone/dark4/dark4.1/m/m.2/Add_output_0
+Concat                   /backbone/backbone/dark4/dark4.1/Concat 2 1 /backbone/backbone/dark4/dark4.1/m/m.2/Add_output_0 /backbone/backbone/dark4/dark4.1/conv2/act/Mul_output_0 /backbone/backbone/dark4/dark4.1/Concat_output_0
+Convolution              /backbone/backbone/dark4/dark4.1/conv3/conv/Conv 1 1 /backbone/backbone/dark4/dark4.1/Concat_output_0 /backbone/backbone/dark4/dark4.1/conv3/conv/Conv_output_0 0=256 1=1 5=1 6=65536 8=2
+Swish                    /backbone/backbone/dark4/dark4.1/conv3/act/Mul 1 1 /backbone/backbone/dark4/dark4.1/conv3/conv/Conv_output_0 /backbone/backbone/dark4/dark4.1/conv3/act/Mul_output_0
+Split                    splitncnn_13             1 4 /backbone/backbone/dark4/dark4.1/conv3/act/Mul_output_0 /backbone/backbone/dark4/dark4.1/conv3/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark4/dark4.1/conv3/act/Mul_output_0_splitncnn_1 /backbone/backbone/dark4/dark4.1/conv3/act/Mul_output_0_splitncnn_2 /backbone/backbone/dark4/dark4.1/conv3/act/Mul_output_0_splitncnn_3
+Convolution              /backbone/backbone/dark5/dark5.0/conv/Conv 1 1 /backbone/backbone/dark4/dark4.1/conv3/act/Mul_output_0_splitncnn_3 /backbone/backbone/dark5/dark5.0/conv/Conv_output_0 0=512 1=3 3=2 4=1 5=1 6=1179648 8=2
+Swish                    /backbone/backbone/dark5/dark5.0/act/Mul 1 1 /backbone/backbone/dark5/dark5.0/conv/Conv_output_0 /backbone/backbone/dark5/dark5.0/act/Mul_output_0
+Convolution              /backbone/backbone/dark5/dark5.1/conv1/conv/Conv 1 1 /backbone/backbone/dark5/dark5.0/act/Mul_output_0 /backbone/backbone/dark5/dark5.1/conv1/conv/Conv_output_0 0=256 1=1 5=1 6=131072 8=2
+Swish                    /backbone/backbone/dark5/dark5.1/conv1/act/Mul 1 1 /backbone/backbone/dark5/dark5.1/conv1/conv/Conv_output_0 /backbone/backbone/dark5/dark5.1/conv1/act/Mul_output_0
+Split                    splitncnn_14             1 4 /backbone/backbone/dark5/dark5.1/conv1/act/Mul_output_0 /backbone/backbone/dark5/dark5.1/conv1/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark5/dark5.1/conv1/act/Mul_output_0_splitncnn_1 /backbone/backbone/dark5/dark5.1/conv1/act/Mul_output_0_splitncnn_2 /backbone/backbone/dark5/dark5.1/conv1/act/Mul_output_0_splitncnn_3
+Pooling                  /backbone/backbone/dark5/dark5.1/m.0/MaxPool 1 1 /backbone/backbone/dark5/dark5.1/conv1/act/Mul_output_0_splitncnn_3 /backbone/backbone/dark5/dark5.1/m.0/MaxPool_output_0 1=5 3=2 5=1
+Pooling                  /backbone/backbone/dark5/dark5.1/m.1/MaxPool 1 1 /backbone/backbone/dark5/dark5.1/conv1/act/Mul_output_0_splitncnn_2 /backbone/backbone/dark5/dark5.1/m.1/MaxPool_output_0 1=9 3=4 5=1
+Pooling                  /backbone/backbone/dark5/dark5.1/m.2/MaxPool 1 1 /backbone/backbone/dark5/dark5.1/conv1/act/Mul_output_0_splitncnn_1 /backbone/backbone/dark5/dark5.1/m.2/MaxPool_output_0 1=13 3=6 5=1
+Concat                   /backbone/backbone/dark5/dark5.1/Concat 4 1 /backbone/backbone/dark5/dark5.1/conv1/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark5/dark5.1/m.0/MaxPool_output_0 /backbone/backbone/dark5/dark5.1/m.1/MaxPool_output_0 /backbone/backbone/dark5/dark5.1/m.2/MaxPool_output_0 /backbone/backbone/dark5/dark5.1/Concat_output_0
+Convolution              /backbone/backbone/dark5/dark5.1/conv2/conv/Conv 1 1 /backbone/backbone/dark5/dark5.1/Concat_output_0 /backbone/backbone/dark5/dark5.1/conv2/conv/Conv_output_0 0=512 1=1 5=1 6=524288 8=2
+Swish                    /backbone/backbone/dark5/dark5.1/conv2/act/Mul 1 1 /backbone/backbone/dark5/dark5.1/conv2/conv/Conv_output_0 /backbone/backbone/dark5/dark5.1/conv2/act/Mul_output_0
+Split                    splitncnn_15             1 2 /backbone/backbone/dark5/dark5.1/conv2/act/Mul_output_0 /backbone/backbone/dark5/dark5.1/conv2/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark5/dark5.1/conv2/act/Mul_output_0_splitncnn_1
+Convolution              /backbone/backbone/dark5/dark5.2/conv1/conv/Conv 1 1 /backbone/backbone/dark5/dark5.1/conv2/act/Mul_output_0_splitncnn_1 /backbone/backbone/dark5/dark5.2/conv1/conv/Conv_output_0 0=256 1=1 5=1 6=131072 8=2
+Swish                    /backbone/backbone/dark5/dark5.2/conv1/act/Mul 1 1 /backbone/backbone/dark5/dark5.2/conv1/conv/Conv_output_0 /backbone/backbone/dark5/dark5.2/conv1/act/Mul_output_0
+Convolution              /backbone/backbone/dark5/dark5.2/conv2/conv/Conv 1 1 /backbone/backbone/dark5/dark5.1/conv2/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark5/dark5.2/conv2/conv/Conv_output_0 0=256 1=1 5=1 6=131072 8=2
+Swish                    /backbone/backbone/dark5/dark5.2/conv2/act/Mul 1 1 /backbone/backbone/dark5/dark5.2/conv2/conv/Conv_output_0 /backbone/backbone/dark5/dark5.2/conv2/act/Mul_output_0
+Convolution              /backbone/backbone/dark5/dark5.2/m/m.0/conv1/conv/Conv 1 1 /backbone/backbone/dark5/dark5.2/conv1/act/Mul_output_0 /backbone/backbone/dark5/dark5.2/m/m.0/conv1/conv/Conv_output_0 0=256 1=1 5=1 6=65536 8=2
+Swish                    /backbone/backbone/dark5/dark5.2/m/m.0/conv1/act/Mul 1 1 /backbone/backbone/dark5/dark5.2/m/m.0/conv1/conv/Conv_output_0 /backbone/backbone/dark5/dark5.2/m/m.0/conv1/act/Mul_output_0
+Convolution              /backbone/backbone/dark5/dark5.2/m/m.0/conv2/conv/Conv 1 1 /backbone/backbone/dark5/dark5.2/m/m.0/conv1/act/Mul_output_0 /backbone/backbone/dark5/dark5.2/m/m.0/conv2/conv/Conv_output_0 0=256 1=3 4=1 5=1 6=589824 8=2
+Swish                    /backbone/backbone/dark5/dark5.2/m/m.0/conv2/act/Mul 1 1 /backbone/backbone/dark5/dark5.2/m/m.0/conv2/conv/Conv_output_0 /backbone/backbone/dark5/dark5.2/m/m.0/conv2/act/Mul_output_0
+Concat                   /backbone/backbone/dark5/dark5.2/Concat 2 1 /backbone/backbone/dark5/dark5.2/m/m.0/conv2/act/Mul_output_0 /backbone/backbone/dark5/dark5.2/conv2/act/Mul_output_0 /backbone/backbone/dark5/dark5.2/Concat_output_0
+Convolution              /backbone/backbone/dark5/dark5.2/conv3/conv/Conv 1 1 /backbone/backbone/dark5/dark5.2/Concat_output_0 /backbone/backbone/dark5/dark5.2/conv3/conv/Conv_output_0 0=512 1=1 5=1 6=262144 8=2
+Swish                    /backbone/backbone/dark5/dark5.2/conv3/act/Mul 1 1 /backbone/backbone/dark5/dark5.2/conv3/conv/Conv_output_0 /backbone/backbone/dark5/dark5.2/conv3/act/Mul_output_0
+Split                    splitncnn_16             1 3 /backbone/backbone/dark5/dark5.2/conv3/act/Mul_output_0 /backbone/backbone/dark5/dark5.2/conv3/act/Mul_output_0_splitncnn_0 /backbone/backbone/dark5/dark5.2/conv3/act/Mul_output_0_splitncnn_1 /backbone/backbone/dark5/dark5.2/conv3/act/Mul_output_0_splitncnn_2
+Pooling                  /backbone/cbam_1/channelattention/avg_pool/GlobalAveragePool 1 1 /backbone/backbone/dark5/dark5.2/conv3/act/Mul_output_0_splitncnn_2 /backbone/cbam_1/channelattention/avg_pool/GlobalAveragePool_output_0 0=1 4=1
+InnerProduct             /backbone/cbam_1/channelattention/fc1/Conv 1 1 /backbone/cbam_1/channelattention/avg_pool/GlobalAveragePool_output_0 /backbone/cbam_1/channelattention/relu1/Relu_output_0 0=64 2=32768 8=2 9=1
+InnerProduct             /backbone/cbam_1/channelattention/fc2/Conv 1 1 /backbone/cbam_1/channelattention/relu1/Relu_output_0 /backbone/cbam_1/channelattention/fc2/Conv_output_0 0=512 2=32768 8=2
+Pooling                  /backbone/cbam_1/channelattention/max_pool/MaxPool 1 1 /backbone/backbone/dark5/dark5.2/conv3/act/Mul_output_0_splitncnn_1 /backbone/cbam_1/channelattention/max_pool/MaxPool_output_0 1=20 2=20 5=1
+Convolution              /backbone/cbam_1/channelattention/fc1_1/Conv 1 1 /backbone/cbam_1/channelattention/max_pool/MaxPool_output_0 /backbone/cbam_1/channelattention/relu1_1/Relu_output_0 0=64 1=1 6=32768 8=102 9=1
+Convolution              /backbone/cbam_1/channelattention/fc2_1/Conv 1 1 /backbone/cbam_1/channelattention/relu1_1/Relu_output_0 /backbone/cbam_1/channelattention/fc2_1/Conv_output_0 0=512 1=1 6=32768 8=2
+BinaryOp                 /backbone/cbam_1/channelattention/Add 2 1 /backbone/cbam_1/channelattention/fc2/Conv_output_0 /backbone/cbam_1/channelattention/fc2_1/Conv_output_0 /backbone/cbam_1/channelattention/Add_output_0
+Sigmoid                  /backbone/cbam_1/channelattention/sigmoid/Sigmoid 1 1 /backbone/cbam_1/channelattention/Add_output_0 /backbone/cbam_1/channelattention/sigmoid/Sigmoid_output_0
+BinaryOp                 /backbone/cbam_1/Mul     2 1 /backbone/backbone/dark5/dark5.2/conv3/act/Mul_output_0_splitncnn_0 /backbone/cbam_1/channelattention/sigmoid/Sigmoid_output_0 /backbone/cbam_1/Mul_output_0 0=2
+Split                    splitncnn_17             1 3 /backbone/cbam_1/Mul_output_0 /backbone/cbam_1/Mul_output_0_splitncnn_0 /backbone/cbam_1/Mul_output_0_splitncnn_1 /backbone/cbam_1/Mul_output_0_splitncnn_2
+Reduction                /backbone/cbam_1/spatialattention/ReduceMean 1 1 /backbone/cbam_1/Mul_output_0_splitncnn_2 /backbone/cbam_1/spatialattention/ReduceMean_output_0 0=3 1=0 -23303=1,0 4=1 5=1
+Reduction                /backbone/cbam_1/spatialattention/ReduceMax 1 1 /backbone/cbam_1/Mul_output_0_splitncnn_1 /backbone/cbam_1/spatialattention/ReduceMax_output_0 0=4 1=0 -23303=1,0 4=1 5=1
+Concat                   /backbone/cbam_1/spatialattention/Concat 2 1 /backbone/cbam_1/spatialattention/ReduceMean_output_0 /backbone/cbam_1/spatialattention/ReduceMax_output_0 /backbone/cbam_1/spatialattention/Concat_output_0
+Convolution              /backbone/cbam_1/spatialattention/conv1/Conv 1 1 /backbone/cbam_1/spatialattention/Concat_output_0 /backbone/cbam_1/spatialattention/sigmoid/Sigmoid_output_0 0=1 1=7 4=3 6=98 8=2 9=4
+BinaryOp                 /backbone/cbam_1/Mul_1   2 1 /backbone/cbam_1/Mul_output_0_splitncnn_0 /backbone/cbam_1/spatialattention/sigmoid/Sigmoid_output_0 /backbone/cbam_1/Mul_1_output_0 0=2
+Pooling                  /backbone/cbam_2/channelattention/avg_pool/GlobalAveragePool 1 1 /backbone/backbone/dark4/dark4.1/conv3/act/Mul_output_0_splitncnn_2 /backbone/cbam_2/channelattention/avg_pool/GlobalAveragePool_output_0 0=1 4=1
+InnerProduct             /backbone/cbam_2/channelattention/fc1/Conv 1 1 /backbone/cbam_2/channelattention/avg_pool/GlobalAveragePool_output_0 /backbone/cbam_2/channelattention/relu1/Relu_output_0 0=32 2=8192 8=2 9=1
+InnerProduct             /backbone/cbam_2/channelattention/fc2/Conv 1 1 /backbone/cbam_2/channelattention/relu1/Relu_output_0 /backbone/cbam_2/channelattention/fc2/Conv_output_0 0=256 2=8192 8=2
+Pooling                  /backbone/cbam_2/channelattention/max_pool/MaxPool 1 1 /backbone/backbone/dark4/dark4.1/conv3/act/Mul_output_0_splitncnn_1 /backbone/cbam_2/channelattention/max_pool/MaxPool_output_0 1=40 2=40 5=1
+Convolution              /backbone/cbam_2/channelattention/fc1_1/Conv 1 1 /backbone/cbam_2/channelattention/max_pool/MaxPool_output_0 /backbone/cbam_2/channelattention/relu1_1/Relu_output_0 0=32 1=1 6=8192 8=102 9=1
+Convolution              /backbone/cbam_2/channelattention/fc2_1/Conv 1 1 /backbone/cbam_2/channelattention/relu1_1/Relu_output_0 /backbone/cbam_2/channelattention/fc2_1/Conv_output_0 0=256 1=1 6=8192 8=2
+BinaryOp                 /backbone/cbam_2/channelattention/Add 2 1 /backbone/cbam_2/channelattention/fc2/Conv_output_0 /backbone/cbam_2/channelattention/fc2_1/Conv_output_0 /backbone/cbam_2/channelattention/Add_output_0
+Sigmoid                  /backbone/cbam_2/channelattention/sigmoid/Sigmoid 1 1 /backbone/cbam_2/channelattention/Add_output_0 /backbone/cbam_2/channelattention/sigmoid/Sigmoid_output_0
+BinaryOp                 /backbone/cbam_2/Mul     2 1 /backbone/backbone/dark4/dark4.1/conv3/act/Mul_output_0_splitncnn_0 /backbone/cbam_2/channelattention/sigmoid/Sigmoid_output_0 /backbone/cbam_2/Mul_output_0 0=2
+Split                    splitncnn_18             1 3 /backbone/cbam_2/Mul_output_0 /backbone/cbam_2/Mul_output_0_splitncnn_0 /backbone/cbam_2/Mul_output_0_splitncnn_1 /backbone/cbam_2/Mul_output_0_splitncnn_2
+Reduction                /backbone/cbam_2/spatialattention/ReduceMean 1 1 /backbone/cbam_2/Mul_output_0_splitncnn_2 /backbone/cbam_2/spatialattention/ReduceMean_output_0 0=3 1=0 -23303=1,0 4=1 5=1
+Reduction                /backbone/cbam_2/spatialattention/ReduceMax 1 1 /backbone/cbam_2/Mul_output_0_splitncnn_1 /backbone/cbam_2/spatialattention/ReduceMax_output_0 0=4 1=0 -23303=1,0 4=1 5=1
+Concat                   /backbone/cbam_2/spatialattention/Concat 2 1 /backbone/cbam_2/spatialattention/ReduceMean_output_0 /backbone/cbam_2/spatialattention/ReduceMax_output_0 /backbone/cbam_2/spatialattention/Concat_output_0
+Convolution              /backbone/cbam_2/spatialattention/conv1/Conv 1 1 /backbone/cbam_2/spatialattention/Concat_output_0 /backbone/cbam_2/spatialattention/sigmoid/Sigmoid_output_0 0=1 1=7 4=3 6=98 8=2 9=4
+BinaryOp                 /backbone/cbam_2/Mul_1   2 1 /backbone/cbam_2/Mul_output_0_splitncnn_0 /backbone/cbam_2/spatialattention/sigmoid/Sigmoid_output_0 /backbone/cbam_2/Mul_1_output_0 0=2
+Pooling                  /backbone/cbam_3/channelattention/avg_pool/GlobalAveragePool 1 1 /backbone/backbone/dark3/dark3.1/conv3/act/Mul_output_0_splitncnn_2 /backbone/cbam_3/channelattention/avg_pool/GlobalAveragePool_output_0 0=1 4=1
+InnerProduct             /backbone/cbam_3/channelattention/fc1/Conv 1 1 /backbone/cbam_3/channelattention/avg_pool/GlobalAveragePool_output_0 /backbone/cbam_3/channelattention/relu1/Relu_output_0 0=16 2=2048 8=2 9=1
+InnerProduct             /backbone/cbam_3/channelattention/fc2/Conv 1 1 /backbone/cbam_3/channelattention/relu1/Relu_output_0 /backbone/cbam_3/channelattention/fc2/Conv_output_0 0=128 2=2048 8=2
+Pooling                  /backbone/cbam_3/channelattention/max_pool/MaxPool 1 1 /backbone/backbone/dark3/dark3.1/conv3/act/Mul_output_0_splitncnn_1 /backbone/cbam_3/channelattention/max_pool/MaxPool_output_0 1=80 2=80 5=1
+Convolution              /backbone/cbam_3/channelattention/fc1_1/Conv 1 1 /backbone/cbam_3/channelattention/max_pool/MaxPool_output_0 /backbone/cbam_3/channelattention/relu1_1/Relu_output_0 0=16 1=1 6=2048 8=102 9=1
+Convolution              /backbone/cbam_3/channelattention/fc2_1/Conv 1 1 /backbone/cbam_3/channelattention/relu1_1/Relu_output_0 /backbone/cbam_3/channelattention/fc2_1/Conv_output_0 0=128 1=1 6=2048 8=2
+BinaryOp                 /backbone/cbam_3/channelattention/Add 2 1 /backbone/cbam_3/channelattention/fc2/Conv_output_0 /backbone/cbam_3/channelattention/fc2_1/Conv_output_0 /backbone/cbam_3/channelattention/Add_output_0
+Sigmoid                  /backbone/cbam_3/channelattention/sigmoid/Sigmoid 1 1 /backbone/cbam_3/channelattention/Add_output_0 /backbone/cbam_3/channelattention/sigmoid/Sigmoid_output_0
+BinaryOp                 /backbone/cbam_3/Mul     2 1 /backbone/backbone/dark3/dark3.1/conv3/act/Mul_output_0_splitncnn_0 /backbone/cbam_3/channelattention/sigmoid/Sigmoid_output_0 /backbone/cbam_3/Mul_output_0 0=2
+Split                    splitncnn_19             1 3 /backbone/cbam_3/Mul_output_0 /backbone/cbam_3/Mul_output_0_splitncnn_0 /backbone/cbam_3/Mul_output_0_splitncnn_1 /backbone/cbam_3/Mul_output_0_splitncnn_2
+Reduction                /backbone/cbam_3/spatialattention/ReduceMean 1 1 /backbone/cbam_3/Mul_output_0_splitncnn_2 /backbone/cbam_3/spatialattention/ReduceMean_output_0 0=3 1=0 -23303=1,0 4=1 5=1
+Reduction                /backbone/cbam_3/spatialattention/ReduceMax 1 1 /backbone/cbam_3/Mul_output_0_splitncnn_1 /backbone/cbam_3/spatialattention/ReduceMax_output_0 0=4 1=0 -23303=1,0 4=1 5=1
+Concat                   /backbone/cbam_3/spatialattention/Concat 2 1 /backbone/cbam_3/spatialattention/ReduceMean_output_0 /backbone/cbam_3/spatialattention/ReduceMax_output_0 /backbone/cbam_3/spatialattention/Concat_output_0
+Convolution              /backbone/cbam_3/spatialattention/conv1/Conv 1 1 /backbone/cbam_3/spatialattention/Concat_output_0 /backbone/cbam_3/spatialattention/sigmoid/Sigmoid_output_0 0=1 1=7 4=3 6=98 8=2 9=4
+BinaryOp                 /backbone/cbam_3/Mul_1   2 1 /backbone/cbam_3/Mul_output_0_splitncnn_0 /backbone/cbam_3/spatialattention/sigmoid/Sigmoid_output_0 /backbone/cbam_3/Mul_1_output_0 0=2
+Convolution              /backbone/lateral_conv0/conv/Conv 1 1 /backbone/cbam_1/Mul_1_output_0 /backbone/lateral_conv0/conv/Conv_output_0 0=256 1=1 5=1 6=131072 8=2
+Swish                    /backbone/lateral_conv0/act/Mul 1 1 /backbone/lateral_conv0/conv/Conv_output_0 /backbone/lateral_conv0/act/Mul_output_0
+Split                    splitncnn_20             1 2 /backbone/lateral_conv0/act/Mul_output_0 /backbone/lateral_conv0/act/Mul_output_0_splitncnn_0 /backbone/lateral_conv0/act/Mul_output_0_splitncnn_1
+Interp                   /backbone/upsample/Resize 1 1 /backbone/lateral_conv0/act/Mul_output_0_splitncnn_1 /backbone/upsample/Resize_output_0 0=1 1=2.000000e+00 2=2.000000e+00
+Concat                   /backbone/Concat         2 1 /backbone/upsample/Resize_output_0 /backbone/cbam_2/Mul_1_output_0 /backbone/Concat_output_0
+Split                    splitncnn_21             1 2 /backbone/Concat_output_0 /backbone/Concat_output_0_splitncnn_0 /backbone/Concat_output_0_splitncnn_1
+Convolution              /backbone/C3_p4/conv1/conv/Conv 1 1 /backbone/Concat_output_0_splitncnn_1 /backbone/C3_p4/conv1/conv/Conv_output_0 0=128 1=1 5=1 6=65536 8=2
+Swish                    /backbone/C3_p4/conv1/act/Mul 1 1 /backbone/C3_p4/conv1/conv/Conv_output_0 /backbone/C3_p4/conv1/act/Mul_output_0
+Convolution              /backbone/C3_p4/conv2/conv/Conv 1 1 /backbone/Concat_output_0_splitncnn_0 /backbone/C3_p4/conv2/conv/Conv_output_0 0=128 1=1 5=1 6=65536 8=2
+Swish                    /backbone/C3_p4/conv2/act/Mul 1 1 /backbone/C3_p4/conv2/conv/Conv_output_0 /backbone/C3_p4/conv2/act/Mul_output_0
+Convolution              /backbone/C3_p4/m/m.0/conv1/conv/Conv 1 1 /backbone/C3_p4/conv1/act/Mul_output_0 /backbone/C3_p4/m/m.0/conv1/conv/Conv_output_0 0=128 1=1 5=1 6=16384 8=2
+Swish                    /backbone/C3_p4/m/m.0/conv1/act/Mul 1 1 /backbone/C3_p4/m/m.0/conv1/conv/Conv_output_0 /backbone/C3_p4/m/m.0/conv1/act/Mul_output_0
+Convolution              /backbone/C3_p4/m/m.0/conv2/conv/Conv 1 1 /backbone/C3_p4/m/m.0/conv1/act/Mul_output_0 /backbone/C3_p4/m/m.0/conv2/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /backbone/C3_p4/m/m.0/conv2/act/Mul 1 1 /backbone/C3_p4/m/m.0/conv2/conv/Conv_output_0 /backbone/C3_p4/m/m.0/conv2/act/Mul_output_0
+Concat                   /backbone/C3_p4/Concat   2 1 /backbone/C3_p4/m/m.0/conv2/act/Mul_output_0 /backbone/C3_p4/conv2/act/Mul_output_0 /backbone/C3_p4/Concat_output_0
+Convolution              /backbone/C3_p4/conv3/conv/Conv 1 1 /backbone/C3_p4/Concat_output_0 /backbone/C3_p4/conv3/conv/Conv_output_0 0=256 1=1 5=1 6=65536 8=2
+Swish                    /backbone/C3_p4/conv3/act/Mul 1 1 /backbone/C3_p4/conv3/conv/Conv_output_0 /backbone/C3_p4/conv3/act/Mul_output_0
+Convolution              /backbone/reduce_conv1/conv/Conv 1 1 /backbone/C3_p4/conv3/act/Mul_output_0 /backbone/reduce_conv1/conv/Conv_output_0 0=128 1=1 5=1 6=32768 8=2
+Swish                    /backbone/reduce_conv1/act/Mul 1 1 /backbone/reduce_conv1/conv/Conv_output_0 /backbone/reduce_conv1/act/Mul_output_0
+Split                    splitncnn_22             1 2 /backbone/reduce_conv1/act/Mul_output_0 /backbone/reduce_conv1/act/Mul_output_0_splitncnn_0 /backbone/reduce_conv1/act/Mul_output_0_splitncnn_1
+Interp                   /backbone/upsample_1/Resize 1 1 /backbone/reduce_conv1/act/Mul_output_0_splitncnn_1 /backbone/upsample_1/Resize_output_0 0=1 1=2.000000e+00 2=2.000000e+00
+Concat                   /backbone/Concat_1       2 1 /backbone/upsample_1/Resize_output_0 /backbone/cbam_3/Mul_1_output_0 /backbone/Concat_1_output_0
+Split                    splitncnn_23             1 2 /backbone/Concat_1_output_0 /backbone/Concat_1_output_0_splitncnn_0 /backbone/Concat_1_output_0_splitncnn_1
+Convolution              /backbone/C3_p3/conv1/conv/Conv 1 1 /backbone/Concat_1_output_0_splitncnn_1 /backbone/C3_p3/conv1/conv/Conv_output_0 0=64 1=1 5=1 6=16384 8=2
+Swish                    /backbone/C3_p3/conv1/act/Mul 1 1 /backbone/C3_p3/conv1/conv/Conv_output_0 /backbone/C3_p3/conv1/act/Mul_output_0
+Convolution              /backbone/C3_p3/conv2/conv/Conv 1 1 /backbone/Concat_1_output_0_splitncnn_0 /backbone/C3_p3/conv2/conv/Conv_output_0 0=64 1=1 5=1 6=16384 8=2
+Swish                    /backbone/C3_p3/conv2/act/Mul 1 1 /backbone/C3_p3/conv2/conv/Conv_output_0 /backbone/C3_p3/conv2/act/Mul_output_0
+Convolution              /backbone/C3_p3/m/m.0/conv1/conv/Conv 1 1 /backbone/C3_p3/conv1/act/Mul_output_0 /backbone/C3_p3/m/m.0/conv1/conv/Conv_output_0 0=64 1=1 5=1 6=4096 8=2
+Swish                    /backbone/C3_p3/m/m.0/conv1/act/Mul 1 1 /backbone/C3_p3/m/m.0/conv1/conv/Conv_output_0 /backbone/C3_p3/m/m.0/conv1/act/Mul_output_0
+Convolution              /backbone/C3_p3/m/m.0/conv2/conv/Conv 1 1 /backbone/C3_p3/m/m.0/conv1/act/Mul_output_0 /backbone/C3_p3/m/m.0/conv2/conv/Conv_output_0 0=64 1=3 4=1 5=1 6=36864 8=2
+Swish                    /backbone/C3_p3/m/m.0/conv2/act/Mul 1 1 /backbone/C3_p3/m/m.0/conv2/conv/Conv_output_0 /backbone/C3_p3/m/m.0/conv2/act/Mul_output_0
+Concat                   /backbone/C3_p3/Concat   2 1 /backbone/C3_p3/m/m.0/conv2/act/Mul_output_0 /backbone/C3_p3/conv2/act/Mul_output_0 /backbone/C3_p3/Concat_output_0
+Convolution              /backbone/C3_p3/conv3/conv/Conv 1 1 /backbone/C3_p3/Concat_output_0 /backbone/C3_p3/conv3/conv/Conv_output_0 0=128 1=1 5=1 6=16384 8=2
+Swish                    /backbone/C3_p3/conv3/act/Mul 1 1 /backbone/C3_p3/conv3/conv/Conv_output_0 /backbone/C3_p3/conv3/act/Mul_output_0
+Split                    splitncnn_24             1 4 /backbone/C3_p3/conv3/act/Mul_output_0 /backbone/C3_p3/conv3/act/Mul_output_0_splitncnn_0 /backbone/C3_p3/conv3/act/Mul_output_0_splitncnn_1 /backbone/C3_p3/conv3/act/Mul_output_0_splitncnn_2 /backbone/C3_p3/conv3/act/Mul_output_0_splitncnn_3
+Convolution              /backbone/bu_conv2/conv/Conv 1 1 /backbone/C3_p3/conv3/act/Mul_output_0_splitncnn_3 /backbone/bu_conv2/conv/Conv_output_0 0=128 1=3 3=2 4=1 5=1 6=147456 8=2
+Swish                    /backbone/bu_conv2/act/Mul 1 1 /backbone/bu_conv2/conv/Conv_output_0 /backbone/bu_conv2/act/Mul_output_0
+Concat                   /backbone/Concat_2       2 1 /backbone/bu_conv2/act/Mul_output_0 /backbone/reduce_conv1/act/Mul_output_0_splitncnn_0 /backbone/Concat_2_output_0
+Split                    splitncnn_25             1 2 /backbone/Concat_2_output_0 /backbone/Concat_2_output_0_splitncnn_0 /backbone/Concat_2_output_0_splitncnn_1
+Convolution              /backbone/C3_n3/conv1/conv/Conv 1 1 /backbone/Concat_2_output_0_splitncnn_1 /backbone/C3_n3/conv1/conv/Conv_output_0 0=128 1=1 5=1 6=32768 8=2
+Swish                    /backbone/C3_n3/conv1/act/Mul 1 1 /backbone/C3_n3/conv1/conv/Conv_output_0 /backbone/C3_n3/conv1/act/Mul_output_0
+Convolution              /backbone/C3_n3/conv2/conv/Conv 1 1 /backbone/Concat_2_output_0_splitncnn_0 /backbone/C3_n3/conv2/conv/Conv_output_0 0=128 1=1 5=1 6=32768 8=2
+Swish                    /backbone/C3_n3/conv2/act/Mul 1 1 /backbone/C3_n3/conv2/conv/Conv_output_0 /backbone/C3_n3/conv2/act/Mul_output_0
+Convolution              /backbone/C3_n3/m/m.0/conv1/conv/Conv 1 1 /backbone/C3_n3/conv1/act/Mul_output_0 /backbone/C3_n3/m/m.0/conv1/conv/Conv_output_0 0=128 1=1 5=1 6=16384 8=2
+Swish                    /backbone/C3_n3/m/m.0/conv1/act/Mul 1 1 /backbone/C3_n3/m/m.0/conv1/conv/Conv_output_0 /backbone/C3_n3/m/m.0/conv1/act/Mul_output_0
+Convolution              /backbone/C3_n3/m/m.0/conv2/conv/Conv 1 1 /backbone/C3_n3/m/m.0/conv1/act/Mul_output_0 /backbone/C3_n3/m/m.0/conv2/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /backbone/C3_n3/m/m.0/conv2/act/Mul 1 1 /backbone/C3_n3/m/m.0/conv2/conv/Conv_output_0 /backbone/C3_n3/m/m.0/conv2/act/Mul_output_0
+Concat                   /backbone/C3_n3/Concat   2 1 /backbone/C3_n3/m/m.0/conv2/act/Mul_output_0 /backbone/C3_n3/conv2/act/Mul_output_0 /backbone/C3_n3/Concat_output_0
+Convolution              /backbone/C3_n3/conv3/conv/Conv 1 1 /backbone/C3_n3/Concat_output_0 /backbone/C3_n3/conv3/conv/Conv_output_0 0=256 1=1 5=1 6=65536 8=2
+Swish                    /backbone/C3_n3/conv3/act/Mul 1 1 /backbone/C3_n3/conv3/conv/Conv_output_0 /backbone/C3_n3/conv3/act/Mul_output_0
+Split                    splitncnn_26             1 4 /backbone/C3_n3/conv3/act/Mul_output_0 /backbone/C3_n3/conv3/act/Mul_output_0_splitncnn_0 /backbone/C3_n3/conv3/act/Mul_output_0_splitncnn_1 /backbone/C3_n3/conv3/act/Mul_output_0_splitncnn_2 /backbone/C3_n3/conv3/act/Mul_output_0_splitncnn_3
+Convolution              /backbone/bu_conv1/conv/Conv 1 1 /backbone/C3_n3/conv3/act/Mul_output_0_splitncnn_3 /backbone/bu_conv1/conv/Conv_output_0 0=256 1=3 3=2 4=1 5=1 6=589824 8=2
+Swish                    /backbone/bu_conv1/act/Mul 1 1 /backbone/bu_conv1/conv/Conv_output_0 /backbone/bu_conv1/act/Mul_output_0
+Concat                   /backbone/Concat_3       2 1 /backbone/bu_conv1/act/Mul_output_0 /backbone/lateral_conv0/act/Mul_output_0_splitncnn_0 /backbone/Concat_3_output_0
+Split                    splitncnn_27             1 2 /backbone/Concat_3_output_0 /backbone/Concat_3_output_0_splitncnn_0 /backbone/Concat_3_output_0_splitncnn_1
+Convolution              /backbone/C3_n4/conv1/conv/Conv 1 1 /backbone/Concat_3_output_0_splitncnn_1 /backbone/C3_n4/conv1/conv/Conv_output_0 0=256 1=1 5=1 6=131072 8=2
+Swish                    /backbone/C3_n4/conv1/act/Mul 1 1 /backbone/C3_n4/conv1/conv/Conv_output_0 /backbone/C3_n4/conv1/act/Mul_output_0
+Convolution              /backbone/C3_n4/conv2/conv/Conv 1 1 /backbone/Concat_3_output_0_splitncnn_0 /backbone/C3_n4/conv2/conv/Conv_output_0 0=256 1=1 5=1 6=131072 8=2
+Swish                    /backbone/C3_n4/conv2/act/Mul 1 1 /backbone/C3_n4/conv2/conv/Conv_output_0 /backbone/C3_n4/conv2/act/Mul_output_0
+Convolution              /backbone/C3_n4/m/m.0/conv1/conv/Conv 1 1 /backbone/C3_n4/conv1/act/Mul_output_0 /backbone/C3_n4/m/m.0/conv1/conv/Conv_output_0 0=256 1=1 5=1 6=65536 8=2
+Swish                    /backbone/C3_n4/m/m.0/conv1/act/Mul 1 1 /backbone/C3_n4/m/m.0/conv1/conv/Conv_output_0 /backbone/C3_n4/m/m.0/conv1/act/Mul_output_0
+Convolution              /backbone/C3_n4/m/m.0/conv2/conv/Conv 1 1 /backbone/C3_n4/m/m.0/conv1/act/Mul_output_0 /backbone/C3_n4/m/m.0/conv2/conv/Conv_output_0 0=256 1=3 4=1 5=1 6=589824 8=2
+Swish                    /backbone/C3_n4/m/m.0/conv2/act/Mul 1 1 /backbone/C3_n4/m/m.0/conv2/conv/Conv_output_0 /backbone/C3_n4/m/m.0/conv2/act/Mul_output_0
+Concat                   /backbone/C3_n4/Concat   2 1 /backbone/C3_n4/m/m.0/conv2/act/Mul_output_0 /backbone/C3_n4/conv2/act/Mul_output_0 /backbone/C3_n4/Concat_output_0
+Convolution              /backbone/C3_n4/conv3/conv/Conv 1 1 /backbone/C3_n4/Concat_output_0 /backbone/C3_n4/conv3/conv/Conv_output_0 0=512 1=1 5=1 6=262144 8=2
+Swish                    /backbone/C3_n4/conv3/act/Mul 1 1 /backbone/C3_n4/conv3/conv/Conv_output_0 /backbone/C3_n4/conv3/act/Mul_output_0
+Split                    splitncnn_28             1 3 /backbone/C3_n4/conv3/act/Mul_output_0 /backbone/C3_n4/conv3/act/Mul_output_0_splitncnn_0 /backbone/C3_n4/conv3/act/Mul_output_0_splitncnn_1 /backbone/C3_n4/conv3/act/Mul_output_0_splitncnn_2
+Pooling                  /head/cbam_3/channelattention/avg_pool/GlobalAveragePool 1 1 /backbone/C3_p3/conv3/act/Mul_output_0_splitncnn_2 /head/cbam_3/channelattention/avg_pool/GlobalAveragePool_output_0 0=1 4=1
+InnerProduct             /head/cbam_3/channelattention/fc1/Conv 1 1 /head/cbam_3/channelattention/avg_pool/GlobalAveragePool_output_0 /head/cbam_3/channelattention/relu1/Relu_output_0 0=16 2=2048 8=2 9=1
+InnerProduct             /head/cbam_3/channelattention/fc2/Conv 1 1 /head/cbam_3/channelattention/relu1/Relu_output_0 /head/cbam_3/channelattention/fc2/Conv_output_0 0=128 2=2048 8=2
+Pooling                  /head/cbam_3/channelattention/max_pool/MaxPool 1 1 /backbone/C3_p3/conv3/act/Mul_output_0_splitncnn_1 /head/cbam_3/channelattention/max_pool/MaxPool_output_0 1=80 2=80 5=1
+Convolution              /head/cbam_3/channelattention/fc1_1/Conv 1 1 /head/cbam_3/channelattention/max_pool/MaxPool_output_0 /head/cbam_3/channelattention/relu1_1/Relu_output_0 0=16 1=1 6=2048 8=102 9=1
+Convolution              /head/cbam_3/channelattention/fc2_1/Conv 1 1 /head/cbam_3/channelattention/relu1_1/Relu_output_0 /head/cbam_3/channelattention/fc2_1/Conv_output_0 0=128 1=1 6=2048 8=2
+BinaryOp                 /head/cbam_3/channelattention/Add 2 1 /head/cbam_3/channelattention/fc2/Conv_output_0 /head/cbam_3/channelattention/fc2_1/Conv_output_0 /head/cbam_3/channelattention/Add_output_0
+Sigmoid                  /head/cbam_3/channelattention/sigmoid/Sigmoid 1 1 /head/cbam_3/channelattention/Add_output_0 /head/cbam_3/channelattention/sigmoid/Sigmoid_output_0
+BinaryOp                 /head/cbam_3/Mul         2 1 /backbone/C3_p3/conv3/act/Mul_output_0_splitncnn_0 /head/cbam_3/channelattention/sigmoid/Sigmoid_output_0 /head/cbam_3/Mul_output_0 0=2
+Split                    splitncnn_29             1 3 /head/cbam_3/Mul_output_0 /head/cbam_3/Mul_output_0_splitncnn_0 /head/cbam_3/Mul_output_0_splitncnn_1 /head/cbam_3/Mul_output_0_splitncnn_2
+Reduction                /head/cbam_3/spatialattention/ReduceMean 1 1 /head/cbam_3/Mul_output_0_splitncnn_2 /head/cbam_3/spatialattention/ReduceMean_output_0 0=3 1=0 -23303=1,0 4=1 5=1
+Reduction                /head/cbam_3/spatialattention/ReduceMax 1 1 /head/cbam_3/Mul_output_0_splitncnn_1 /head/cbam_3/spatialattention/ReduceMax_output_0 0=4 1=0 -23303=1,0 4=1 5=1
+Concat                   /head/cbam_3/spatialattention/Concat 2 1 /head/cbam_3/spatialattention/ReduceMean_output_0 /head/cbam_3/spatialattention/ReduceMax_output_0 /head/cbam_3/spatialattention/Concat_output_0
+Convolution              /head/cbam_3/spatialattention/conv1/Conv 1 1 /head/cbam_3/spatialattention/Concat_output_0 /head/cbam_3/spatialattention/sigmoid/Sigmoid_output_0 0=1 1=7 4=3 6=98 8=2 9=4
+BinaryOp                 /head/cbam_3/Mul_1       2 1 /head/cbam_3/Mul_output_0_splitncnn_0 /head/cbam_3/spatialattention/sigmoid/Sigmoid_output_0 /head/cbam_3/Mul_1_output_0 0=2
+Convolution              /head/stems.0/conv/Conv  1 1 /head/cbam_3/Mul_1_output_0 /head/stems.0/conv/Conv_output_0 0=128 1=1 5=1 6=16384 8=2
+Swish                    /head/stems.0/act/Mul    1 1 /head/stems.0/conv/Conv_output_0 /head/stems.0/act/Mul_output_0
+Split                    splitncnn_30             1 2 /head/stems.0/act/Mul_output_0 /head/stems.0/act/Mul_output_0_splitncnn_0 /head/stems.0/act/Mul_output_0_splitncnn_1
+Convolution              /head/cls_convs.0/cls_convs.0.0/conv/Conv 1 1 /head/stems.0/act/Mul_output_0_splitncnn_1 /head/cls_convs.0/cls_convs.0.0/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /head/cls_convs.0/cls_convs.0.0/act/Mul 1 1 /head/cls_convs.0/cls_convs.0.0/conv/Conv_output_0 /head/cls_convs.0/cls_convs.0.0/act/Mul_output_0
+Convolution              /head/cls_convs.0/cls_convs.0.1/conv/Conv 1 1 /head/cls_convs.0/cls_convs.0.0/act/Mul_output_0 /head/cls_convs.0/cls_convs.0.1/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /head/cls_convs.0/cls_convs.0.1/act/Mul 1 1 /head/cls_convs.0/cls_convs.0.1/conv/Conv_output_0 /head/cls_convs.0/cls_convs.0.1/act/Mul_output_0
+Convolution              /head/cls_preds.0/Conv   1 1 /head/cls_convs.0/cls_convs.0.1/act/Mul_output_0 /head/Sigmoid_1_output_0 0=9 1=1 5=1 6=1152 8=2 9=4
+Convolution              /head/reg_convs.0/reg_convs.0.0/conv/Conv 1 1 /head/stems.0/act/Mul_output_0_splitncnn_0 /head/reg_convs.0/reg_convs.0.0/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /head/reg_convs.0/reg_convs.0.0/act/Mul 1 1 /head/reg_convs.0/reg_convs.0.0/conv/Conv_output_0 /head/reg_convs.0/reg_convs.0.0/act/Mul_output_0
+Convolution              /head/reg_convs.0/reg_convs.0.1/conv/Conv 1 1 /head/reg_convs.0/reg_convs.0.0/act/Mul_output_0 /head/reg_convs.0/reg_convs.0.1/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /head/reg_convs.0/reg_convs.0.1/act/Mul 1 1 /head/reg_convs.0/reg_convs.0.1/conv/Conv_output_0 /head/reg_convs.0/reg_convs.0.1/act/Mul_output_0
+Split                    splitncnn_31             1 2 /head/reg_convs.0/reg_convs.0.1/act/Mul_output_0 /head/reg_convs.0/reg_convs.0.1/act/Mul_output_0_splitncnn_0 /head/reg_convs.0/reg_convs.0.1/act/Mul_output_0_splitncnn_1
+Convolution              /head/reg_preds.0/Conv   1 1 /head/reg_convs.0/reg_convs.0.1/act/Mul_output_0_splitncnn_1 /head/reg_preds.0/Conv_output_0 0=4 1=1 5=1 6=512 8=2
+Convolution              /head/obj_preds.0/Conv   1 1 /head/reg_convs.0/reg_convs.0.1/act/Mul_output_0_splitncnn_0 /head/Sigmoid_output_0 0=1 1=1 5=1 6=128 8=2 9=4
+Concat                   /head/Concat             3 1 /head/reg_preds.0/Conv_output_0 /head/Sigmoid_output_0 /head/Sigmoid_1_output_0 /head/Concat_output_0
+Pooling                  /head/cbam_2/channelattention/avg_pool/GlobalAveragePool 1 1 /backbone/C3_n3/conv3/act/Mul_output_0_splitncnn_2 /head/cbam_2/channelattention/avg_pool/GlobalAveragePool_output_0 0=1 4=1
+InnerProduct             /head/cbam_2/channelattention/fc1/Conv 1 1 /head/cbam_2/channelattention/avg_pool/GlobalAveragePool_output_0 /head/cbam_2/channelattention/relu1/Relu_output_0 0=32 2=8192 8=2 9=1
+InnerProduct             /head/cbam_2/channelattention/fc2/Conv 1 1 /head/cbam_2/channelattention/relu1/Relu_output_0 /head/cbam_2/channelattention/fc2/Conv_output_0 0=256 2=8192 8=2
+Pooling                  /head/cbam_2/channelattention/max_pool/MaxPool 1 1 /backbone/C3_n3/conv3/act/Mul_output_0_splitncnn_1 /head/cbam_2/channelattention/max_pool/MaxPool_output_0 1=40 2=40 5=1
+Convolution              /head/cbam_2/channelattention/fc1_1/Conv 1 1 /head/cbam_2/channelattention/max_pool/MaxPool_output_0 /head/cbam_2/channelattention/relu1_1/Relu_output_0 0=32 1=1 6=8192 8=102 9=1
+Convolution              /head/cbam_2/channelattention/fc2_1/Conv 1 1 /head/cbam_2/channelattention/relu1_1/Relu_output_0 /head/cbam_2/channelattention/fc2_1/Conv_output_0 0=256 1=1 6=8192 8=2
+BinaryOp                 /head/cbam_2/channelattention/Add 2 1 /head/cbam_2/channelattention/fc2/Conv_output_0 /head/cbam_2/channelattention/fc2_1/Conv_output_0 /head/cbam_2/channelattention/Add_output_0
+Sigmoid                  /head/cbam_2/channelattention/sigmoid/Sigmoid 1 1 /head/cbam_2/channelattention/Add_output_0 /head/cbam_2/channelattention/sigmoid/Sigmoid_output_0
+BinaryOp                 /head/cbam_2/Mul         2 1 /backbone/C3_n3/conv3/act/Mul_output_0_splitncnn_0 /head/cbam_2/channelattention/sigmoid/Sigmoid_output_0 /head/cbam_2/Mul_output_0 0=2
+Split                    splitncnn_32             1 3 /head/cbam_2/Mul_output_0 /head/cbam_2/Mul_output_0_splitncnn_0 /head/cbam_2/Mul_output_0_splitncnn_1 /head/cbam_2/Mul_output_0_splitncnn_2
+Reduction                /head/cbam_2/spatialattention/ReduceMean 1 1 /head/cbam_2/Mul_output_0_splitncnn_2 /head/cbam_2/spatialattention/ReduceMean_output_0 0=3 1=0 -23303=1,0 4=1 5=1
+Reduction                /head/cbam_2/spatialattention/ReduceMax 1 1 /head/cbam_2/Mul_output_0_splitncnn_1 /head/cbam_2/spatialattention/ReduceMax_output_0 0=4 1=0 -23303=1,0 4=1 5=1
+Concat                   /head/cbam_2/spatialattention/Concat 2 1 /head/cbam_2/spatialattention/ReduceMean_output_0 /head/cbam_2/spatialattention/ReduceMax_output_0 /head/cbam_2/spatialattention/Concat_output_0
+Convolution              /head/cbam_2/spatialattention/conv1/Conv 1 1 /head/cbam_2/spatialattention/Concat_output_0 /head/cbam_2/spatialattention/sigmoid/Sigmoid_output_0 0=1 1=7 4=3 6=98 8=2 9=4
+BinaryOp                 /head/cbam_2/Mul_1       2 1 /head/cbam_2/Mul_output_0_splitncnn_0 /head/cbam_2/spatialattention/sigmoid/Sigmoid_output_0 /head/cbam_2/Mul_1_output_0 0=2
+Convolution              /head/stems.1/conv/Conv  1 1 /head/cbam_2/Mul_1_output_0 /head/stems.1/conv/Conv_output_0 0=128 1=1 5=1 6=32768 8=2
+Swish                    /head/stems.1/act/Mul    1 1 /head/stems.1/conv/Conv_output_0 /head/stems.1/act/Mul_output_0
+Split                    splitncnn_33             1 2 /head/stems.1/act/Mul_output_0 /head/stems.1/act/Mul_output_0_splitncnn_0 /head/stems.1/act/Mul_output_0_splitncnn_1
+Convolution              /head/cls_convs.1/cls_convs.1.0/conv/Conv 1 1 /head/stems.1/act/Mul_output_0_splitncnn_1 /head/cls_convs.1/cls_convs.1.0/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /head/cls_convs.1/cls_convs.1.0/act/Mul 1 1 /head/cls_convs.1/cls_convs.1.0/conv/Conv_output_0 /head/cls_convs.1/cls_convs.1.0/act/Mul_output_0
+Convolution              /head/cls_convs.1/cls_convs.1.1/conv/Conv 1 1 /head/cls_convs.1/cls_convs.1.0/act/Mul_output_0 /head/cls_convs.1/cls_convs.1.1/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /head/cls_convs.1/cls_convs.1.1/act/Mul 1 1 /head/cls_convs.1/cls_convs.1.1/conv/Conv_output_0 /head/cls_convs.1/cls_convs.1.1/act/Mul_output_0
+Convolution              /head/cls_preds.1/Conv   1 1 /head/cls_convs.1/cls_convs.1.1/act/Mul_output_0 /head/Sigmoid_3_output_0 0=9 1=1 5=1 6=1152 8=2 9=4
+Convolution              /head/reg_convs.1/reg_convs.1.0/conv/Conv 1 1 /head/stems.1/act/Mul_output_0_splitncnn_0 /head/reg_convs.1/reg_convs.1.0/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /head/reg_convs.1/reg_convs.1.0/act/Mul 1 1 /head/reg_convs.1/reg_convs.1.0/conv/Conv_output_0 /head/reg_convs.1/reg_convs.1.0/act/Mul_output_0
+Convolution              /head/reg_convs.1/reg_convs.1.1/conv/Conv 1 1 /head/reg_convs.1/reg_convs.1.0/act/Mul_output_0 /head/reg_convs.1/reg_convs.1.1/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /head/reg_convs.1/reg_convs.1.1/act/Mul 1 1 /head/reg_convs.1/reg_convs.1.1/conv/Conv_output_0 /head/reg_convs.1/reg_convs.1.1/act/Mul_output_0
+Split                    splitncnn_34             1 2 /head/reg_convs.1/reg_convs.1.1/act/Mul_output_0 /head/reg_convs.1/reg_convs.1.1/act/Mul_output_0_splitncnn_0 /head/reg_convs.1/reg_convs.1.1/act/Mul_output_0_splitncnn_1
+Convolution              /head/reg_preds.1/Conv   1 1 /head/reg_convs.1/reg_convs.1.1/act/Mul_output_0_splitncnn_1 /head/reg_preds.1/Conv_output_0 0=4 1=1 5=1 6=512 8=2
+Convolution              /head/obj_preds.1/Conv   1 1 /head/reg_convs.1/reg_convs.1.1/act/Mul_output_0_splitncnn_0 /head/Sigmoid_2_output_0 0=1 1=1 5=1 6=128 8=2 9=4
+Concat                   /head/Concat_1           3 1 /head/reg_preds.1/Conv_output_0 /head/Sigmoid_2_output_0 /head/Sigmoid_3_output_0 /head/Concat_1_output_0
+Pooling                  /head/cbam_1/channelattention/avg_pool/GlobalAveragePool 1 1 /backbone/C3_n4/conv3/act/Mul_output_0_splitncnn_2 /head/cbam_1/channelattention/avg_pool/GlobalAveragePool_output_0 0=1 4=1
+InnerProduct             /head/cbam_1/channelattention/fc1/Conv 1 1 /head/cbam_1/channelattention/avg_pool/GlobalAveragePool_output_0 /head/cbam_1/channelattention/relu1/Relu_output_0 0=64 2=32768 8=2 9=1
+InnerProduct             /head/cbam_1/channelattention/fc2/Conv 1 1 /head/cbam_1/channelattention/relu1/Relu_output_0 /head/cbam_1/channelattention/fc2/Conv_output_0 0=512 2=32768 8=2
+Pooling                  /head/cbam_1/channelattention/max_pool/MaxPool 1 1 /backbone/C3_n4/conv3/act/Mul_output_0_splitncnn_1 /head/cbam_1/channelattention/max_pool/MaxPool_output_0 1=20 2=20 5=1
+Convolution              /head/cbam_1/channelattention/fc1_1/Conv 1 1 /head/cbam_1/channelattention/max_pool/MaxPool_output_0 /head/cbam_1/channelattention/relu1_1/Relu_output_0 0=64 1=1 6=32768 8=102 9=1
+Convolution              /head/cbam_1/channelattention/fc2_1/Conv 1 1 /head/cbam_1/channelattention/relu1_1/Relu_output_0 /head/cbam_1/channelattention/fc2_1/Conv_output_0 0=512 1=1 6=32768 8=2
+BinaryOp                 /head/cbam_1/channelattention/Add 2 1 /head/cbam_1/channelattention/fc2/Conv_output_0 /head/cbam_1/channelattention/fc2_1/Conv_output_0 /head/cbam_1/channelattention/Add_output_0
+Sigmoid                  /head/cbam_1/channelattention/sigmoid/Sigmoid 1 1 /head/cbam_1/channelattention/Add_output_0 /head/cbam_1/channelattention/sigmoid/Sigmoid_output_0
+BinaryOp                 /head/cbam_1/Mul         2 1 /backbone/C3_n4/conv3/act/Mul_output_0_splitncnn_0 /head/cbam_1/channelattention/sigmoid/Sigmoid_output_0 /head/cbam_1/Mul_output_0 0=2
+Split                    splitncnn_35             1 3 /head/cbam_1/Mul_output_0 /head/cbam_1/Mul_output_0_splitncnn_0 /head/cbam_1/Mul_output_0_splitncnn_1 /head/cbam_1/Mul_output_0_splitncnn_2
+Reduction                /head/cbam_1/spatialattention/ReduceMean 1 1 /head/cbam_1/Mul_output_0_splitncnn_2 /head/cbam_1/spatialattention/ReduceMean_output_0 0=3 1=0 -23303=1,0 4=1 5=1
+Reduction                /head/cbam_1/spatialattention/ReduceMax 1 1 /head/cbam_1/Mul_output_0_splitncnn_1 /head/cbam_1/spatialattention/ReduceMax_output_0 0=4 1=0 -23303=1,0 4=1 5=1
+Concat                   /head/cbam_1/spatialattention/Concat 2 1 /head/cbam_1/spatialattention/ReduceMean_output_0 /head/cbam_1/spatialattention/ReduceMax_output_0 /head/cbam_1/spatialattention/Concat_output_0
+Convolution              /head/cbam_1/spatialattention/conv1/Conv 1 1 /head/cbam_1/spatialattention/Concat_output_0 /head/cbam_1/spatialattention/sigmoid/Sigmoid_output_0 0=1 1=7 4=3 6=98 8=2 9=4
+BinaryOp                 /head/cbam_1/Mul_1       2 1 /head/cbam_1/Mul_output_0_splitncnn_0 /head/cbam_1/spatialattention/sigmoid/Sigmoid_output_0 /head/cbam_1/Mul_1_output_0 0=2
+Convolution              /head/stems.2/conv/Conv  1 1 /head/cbam_1/Mul_1_output_0 /head/stems.2/conv/Conv_output_0 0=128 1=1 5=1 6=65536 8=2
+Swish                    /head/stems.2/act/Mul    1 1 /head/stems.2/conv/Conv_output_0 /head/stems.2/act/Mul_output_0
+Split                    splitncnn_36             1 2 /head/stems.2/act/Mul_output_0 /head/stems.2/act/Mul_output_0_splitncnn_0 /head/stems.2/act/Mul_output_0_splitncnn_1
+Convolution              /head/cls_convs.2/cls_convs.2.0/conv/Conv 1 1 /head/stems.2/act/Mul_output_0_splitncnn_1 /head/cls_convs.2/cls_convs.2.0/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /head/cls_convs.2/cls_convs.2.0/act/Mul 1 1 /head/cls_convs.2/cls_convs.2.0/conv/Conv_output_0 /head/cls_convs.2/cls_convs.2.0/act/Mul_output_0
+Convolution              /head/cls_convs.2/cls_convs.2.1/conv/Conv 1 1 /head/cls_convs.2/cls_convs.2.0/act/Mul_output_0 /head/cls_convs.2/cls_convs.2.1/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /head/cls_convs.2/cls_convs.2.1/act/Mul 1 1 /head/cls_convs.2/cls_convs.2.1/conv/Conv_output_0 /head/cls_convs.2/cls_convs.2.1/act/Mul_output_0
+Convolution              /head/cls_preds.2/Conv   1 1 /head/cls_convs.2/cls_convs.2.1/act/Mul_output_0 /head/Sigmoid_5_output_0 0=9 1=1 5=1 6=1152 8=2 9=4
+Convolution              /head/reg_convs.2/reg_convs.2.0/conv/Conv 1 1 /head/stems.2/act/Mul_output_0_splitncnn_0 /head/reg_convs.2/reg_convs.2.0/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /head/reg_convs.2/reg_convs.2.0/act/Mul 1 1 /head/reg_convs.2/reg_convs.2.0/conv/Conv_output_0 /head/reg_convs.2/reg_convs.2.0/act/Mul_output_0
+Convolution              /head/reg_convs.2/reg_convs.2.1/conv/Conv 1 1 /head/reg_convs.2/reg_convs.2.0/act/Mul_output_0 /head/reg_convs.2/reg_convs.2.1/conv/Conv_output_0 0=128 1=3 4=1 5=1 6=147456 8=2
+Swish                    /head/reg_convs.2/reg_convs.2.1/act/Mul 1 1 /head/reg_convs.2/reg_convs.2.1/conv/Conv_output_0 /head/reg_convs.2/reg_convs.2.1/act/Mul_output_0
+Split                    splitncnn_37             1 2 /head/reg_convs.2/reg_convs.2.1/act/Mul_output_0 /head/reg_convs.2/reg_convs.2.1/act/Mul_output_0_splitncnn_0 /head/reg_convs.2/reg_convs.2.1/act/Mul_output_0_splitncnn_1
+Convolution              /head/reg_preds.2/Conv   1 1 /head/reg_convs.2/reg_convs.2.1/act/Mul_output_0_splitncnn_1 /head/reg_preds.2/Conv_output_0 0=4 1=1 5=1 6=512 8=2
+Convolution              /head/obj_preds.2/Conv   1 1 /head/reg_convs.2/reg_convs.2.1/act/Mul_output_0_splitncnn_0 /head/Sigmoid_4_output_0 0=1 1=1 5=1 6=128 8=2 9=4
+Concat                   /head/Concat_2           3 1 /head/reg_preds.2/Conv_output_0 /head/Sigmoid_4_output_0 /head/Sigmoid_5_output_0 /head/Concat_2_output_0
+Reshape                  /head/Reshape            1 1 /head/Concat_output_0 /head/Reshape_output_0 0=-1 1=14
+Reshape                  /head/Reshape_1          1 1 /head/Concat_1_output_0 /head/Reshape_1_output_0 0=-1 1=14
+Reshape                  /head/Reshape_2          1 1 /head/Concat_2_output_0 /head/Reshape_2_output_0 0=-1 1=14
+Concat                   /head/Concat_6           3 1 /head/Reshape_output_0 /head/Reshape_1_output_0 /head/Reshape_2_output_0 /head/Concat_6_output_0 0=1
+Permute                  /head/Transpose          1 1 /head/Concat_6_output_0 output 0=1

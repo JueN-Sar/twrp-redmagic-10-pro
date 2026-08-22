@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="game_space_mode">
+        <item>Mod atmosfera</item>
+        <item>Mod kad</item>
+        <item>Mod genggam</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Aha</item>
+        <item>Isn</item>
+        <item>Sel</item>
+        <item>Rab</item>
+        <item>Kha</item>
+        <item>Jum</item>
+        <item>Sab</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Urutan tetap</item>
+        <item>Baru-baru digunakan</item>
+        <item>Tempoh penggunaan</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Ini ialah mesej pop timbul.</item>
+        <item>Gaya pop timbul boleh dilaraskan dengan bebas.</item>
+        <item>Tetapkan jenis mesej yang anda mahu jadikan sebagai pop timbul.</item>
+        <item>Klik butang balas untuk membuka tetingkap kecil.</item>
+    </array>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.nubia.gameassist.plugin.PluginLibraryView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/plugin_library"
+    android:background="@drawable/plugin_library_background"
+    android:visibility="gone"
+    android:layout_width="282.3281dp"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="12dp">
+        <TextView
+            android:textSize="14dp"
+            android:textColor="#d8ffffff"
+            android:id="@+id/plugin_library_title"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plugin_library_title"/>
+        <ImageView
+            android:id="@+id/plugin_library_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="163dp"
+            android:src="@drawable/button_plugin_close"
+            android:layout_toRightOf="@+id/plugin_library_title"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/plugin_recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"/>
+</cn.nubia.gameassist.plugin.PluginLibraryView>

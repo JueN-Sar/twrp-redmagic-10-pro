@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_public_toon__0_res_0x7f080391">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_public_toon__1_res_0x7f080392"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_public_toon__2_res_0x7f080393"/>
+    <target
+        android:name="path"
+        android:animation="@drawable/_public_toon__3_res_0x7f080394"/>
+</animated-vector>

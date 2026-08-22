@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="host_performance_monitor_space_up_down">45</integer>
+    <integer name="low_sguar_genshin_operation_wish_endX">2100</integer>
+    <integer name="low_sguar_genshin_operation_wish_endY">130</integer>
+    <integer name="low_sguar_genshin_operation_wish_startX">1850</integer>
+    <integer name="low_sguar_sgame_events_endX">2370</integer>
+    <integer name="low_sguar_sgame_events_endY">775</integer>
+    <integer name="low_sguar_sgame_events_startX">2000</integer>
+    <integer name="low_sguar_sgame_events_startY">675</integer>
+    <integer name="low_sguar_sgame_events_touch_endX">300</integer>
+    <integer name="low_sguar_sgame_events_touch_startX">0</integer>
+    <integer name="low_sguar_sgame_events_without_wish_endY">635</integer>
+    <integer name="low_sguar_sgame_events_without_wish_startY">500</integer>
+    <integer name="low_sguar_sgame_goback_area_touch_endX">210</integer>
+    <integer name="low_sguar_sgame_wish_endX">2370</integer>
+    <integer name="low_sguar_sgame_wish_endY">465</integer>
+    <integer name="low_sguar_sgame_wish_startX">2000</integer>
+    <integer name="low_sguar_sgame_wish_startY">365</integer>
+    <integer name="low_sguar_sgame_wish_touch_endX">420</integer>
+    <integer name="low_sguar_sgame_wish_touch_startX">0</integer>
+    <integer name="performance_monitor_animation_translation_distance">90</integer>
+    <integer name="performance_monitor_child_left_offset">0</integer>
+    <integer name="performance_monitor_child_right_offset">0</integer>
+    <integer name="performance_monitor_space_up_down">108</integer>
+    <integer name="performance_monitor_window_height">108</integer>
+    <integer name="performance_monitor_window_width">1035</integer>
+    <integer name="special_current_time_view_width">150</integer>
+    <integer name="special_electricity_view_width">119</integer>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_watch_line__0_res_0x7f0804eb">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_watch_line__1_res_0x7f0804ec"/>
+    <target
+        android:name="line"
+        android:animation="@drawable/_watch_line__2_res_0x7f0804ed"/>
+</animated-vector>

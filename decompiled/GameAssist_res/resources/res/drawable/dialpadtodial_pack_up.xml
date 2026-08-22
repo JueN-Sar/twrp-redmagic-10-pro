@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_dialpadtodial_pack_up__0_res_0x7f080140">
+    <target
+        android:name="dialpad_1"
+        android:animation="@drawable/_dialpadtodial_pack_up__1_res_0x7f080141"/>
+</animated-vector>

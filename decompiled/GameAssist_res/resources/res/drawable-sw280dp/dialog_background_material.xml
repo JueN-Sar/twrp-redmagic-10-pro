@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="0dp"
+    android:insetRight="0dp"
+    android:insetTop="0dp"
+    android:insetBottom="0dp">
+    <shape android:shape="rectangle">
+        <corners
+            android:topLeftRadius="13.5dp"
+            android:topRightRadius="13.5dp"
+            android:bottomLeftRadius="0dp"
+            android:bottomRightRadius="0dp"/>
+        <solid android:color="@color/mfv_common_pop_bg"/>
+        <padding
+            android:left="0dp"
+            android:top="0dp"
+            android:right="0dp"
+            android:bottom="0dp"/>
+    </shape>
+</inset>

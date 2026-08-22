@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_app_sort_line_gradient__0_res_0x7f080053">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_app_sort_line_gradient__3_res_0x7f080056"/>
+    <target
+        android:name="line"
+        android:animation="@drawable/_app_sort_line_gradient__4_res_0x7f080057"/>
+</animated-vector>

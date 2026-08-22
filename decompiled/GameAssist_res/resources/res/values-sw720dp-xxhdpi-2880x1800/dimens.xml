@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="low_sugar_genshin_calendar_crop_height">480dp</dimen>
+    <dimen name="low_sugar_genshin_calendar_crop_startX">236dp</dimen>
+    <dimen name="low_sugar_genshin_calendar_crop_startY">108dp</dimen>
+    <dimen name="low_sugar_genshin_calendar_crop_width">896dp</dimen>
+    <dimen name="low_sugar_genshin_wish_crop_height">464dp</dimen>
+    <dimen name="low_sugar_genshin_wish_crop_startX">152dp</dimen>
+    <dimen name="low_sugar_genshin_wish_crop_startY">136dp</dimen>
+    <dimen name="low_sugar_genshin_wish_crop_width">952dp</dimen>
+    <dimen name="low_sugar_pubg_global_events_crop_width">180dp</dimen>
+    <dimen name="low_sugar_sgame_events_crop_startX">188dp</dimen>
+    <dimen name="low_sugar_sgame_wish_crop_startX">132dp</dimen>
+    <dimen name="multi_sub_screen_sink_aty_title_h">64dp</dimen>
+    <dimen name="multi_sub_screen_sink_disconnect_btn_margin_e">28dp</dimen>
+    <dimen name="multi_sub_screen_sink_disconnect_btn_margin_s">34.9dp</dimen>
+    <dimen name="multi_sub_screen_sink_disconnect_btn_w">29.1dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_battery_margin_s">4.9dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_battery_padding">2.9dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_battery_w">73.3dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_cps_w">51.8dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_fps_w">51.8dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_game_duration_w">74.4dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_game_duration_width">172.1dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_item_margin_s">23dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_item_value_margin_s">5.8dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_mpm_w">60.4dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_net_w">134.8dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_time_margin_s">28.7dp</dimen>
+    <dimen name="multi_sub_screen_sink_title_time_w">60.4dp</dimen>
+</resources>

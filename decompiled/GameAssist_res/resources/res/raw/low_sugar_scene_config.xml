@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+w，h,x,y
+书写格式  xxx:yyy
+前值省略  yyy   (前置默认值0)
+后值省略  xxx:  (前置默认值1)
+-->
+<low_sugar_scene_config>
+    <scene_config name="genshin_main_scene"  scene_index="1" >
+        <!--'phone', w=0.05287251, h=0.06408868, x=0.76954705, y=0.014516487-->
+        <!--'pad', w=0.048437566, h=0.05897145, x=0.6413658, y=0.018701201-->
+        <label name="operation_icon" w="0.04:0.07" h="0.04:0.07" x="0.6:" y="0.1"/>
+        <!--'phone', w=0.061213642, h=0.063342035, x=0.8161834, y=0.012724348-->
+        <!--'pad', w=0.055452712, h=0.055236492, x=0.757122, y=0.020427458-->
+        <label name="wish_icon" w="0.04:0.07" h="0.04:0.07" x="0.6:" y="0.1"/>
+    </scene_config>
+    <!-- 原神信息一览-->
+    <scene_config name="genshin_operation_scene"  scene_index="2" >
+        <!--'phone', w=0.06142319, h=0.066414304, x=0.06409738, y=0.020558398-->
+        <!--'pad', w=0.05448644, h=0.05891389, x=0.032976404, y=0.07085752-->
+        <label name="operation_icon" w="0.023:0.07" h="0.04:0.07" x="0.2" y="0.1"/>
+        <!--'phone', w=0.14351222, h=0.038222414, x=0.099112384, y=0.03458688-->
+        <!--'pad', w=0.12242789, h=0.032918856, x=0.07904649, y=0.08338425-->
+        <label name="operation_text" w="0.06:0.15" h="0.02:0.08" x="0.2" y="0.1"/>
+        <!--'phone', w=0.07419907, h=0.069703616, x=0.90569615, y=0.019966114-->
+        <!--'pad', w=0.06887736, h=0.06514808, x=0.9285202, y=0.068697646-->
+        <label name="close_icon" w="0.035:0.08" h="0.05:0.08" x="0.8:" y="0.1"/>
+        <label name="gift_icon" w="0.05:0.08" h="0.04:0.08" x="0:" y="0:"/>
+        <label name="task_done_icon" w="0.05:0.08" h="0.04:0.08" x="0:" y="0:"/>
+    </scene_config>
+    <!-- 原神祈愿 -->
+    <scene_config name="genshin_wish_scene"  scene_index="3" >
+        <!--'phone', w=0.058467515, h=0.058267996, x=0.06422882, y=0.026088683-->
+        <!--'pad', w=0.05204212, h=0.052271325, x=0.033449326, y=0.023361247-->
+        <label name="wish_icon" w="0.02:0.07" h="0.02:0.07" x="0.5" y="0.1"/>
+        <!--'phone', w=0.06449679, h=0.03101965, x=0.11071662, y=0.037985884-->
+        <!--'pad', w=0.05475314, h=0.027578702, x=0.08947243, y=0.035006307-->
+        <label name="wish_text" w="0.02:0.07" h="0.02:0.07" x="0.5" y="0.1"/>
+        <!--'phone', w=0.07340622, h=0.07087047, x=0.9060173, y=0.020394588-->
+        <!--'pad', w=0.06688869, h=0.06395042, x=0.9292456, y=0.017726233-->
+        <label name="close_icon" w="0.035:0.08" h="0.05:0.08" x="0.8:" y="0.1"/>
+    </scene_config>
+
+    <!-- 王者荣耀主界面 -->
+    <!--<label name="events_icon" w="0.03:0.06" h="0.02:0.05" x="0.9:" y="0.7"/>
+    <label name="events_text" w="0.04:0.07" h="0.02:0.05" x="0.9:" y="0.7"/>
+    <label name="wish_icon" w="0.03:0.05" h="0.03:0.05" x="0.9:" y="0.5"/>
+    <label name="wish_text" w="0.04:0.07" h="0.02:0.05" x="0.9:" y="0.5"/>
+    <label name="settings_icon" w="0.04:0.07" h="0.04:0.07" x="0.7:" y="0.05"/>
+    <label name="shop_icon" w="0.03:0.07" h="0.03:0.07" x="0.8:" y="0.3"/>
+    <label name="diamond_icon" w="0.03:0.06" h="0.03:0.06" x="0.2:0.6" y="0.05"/>-->
+    <scene_config name="sgame_main_scene"  scene_index="4" >
+        <label name="announcement_icon" w="0.03:0.07" h="0.02:0.07" x="0.5:" y="0.05"/>
+        <label name="playback_icon" w="0.03:0.07" h="0.02:0.07" x="0.5:" y="0.05"/>
+        <label name="events_icon" w="0.03:0.06" h="0.02:0.05" x="0.7:" y="0.3:0.7"/>
+        <label name="wish_icon" w="0.03:0.05" h="0.03:0.06" x="0.8:" y="0.4"/>
+        <label name="contacts_icon" w="0.03:0.07" h="0.02:0.07" x="0.6:" y="0.05"/>
+        <label name="message_icon" w="0.03:0.07" h="0.02:0.07" x="0.7:" y="0.05"/>
+        <label name="settings_icon" w="0.03:0.07" h="0.02:0.07" x="0.8:" y="0.05"/>
+        <label name="go_back_icon" w="0.06:0.1" h="0.03:0.06" x="0.02:0.09" y="0.02:0.05"/>
+        <label name="global_go_back_icon" w="0.06:0.1" h="0.03:0.06" x="0.02:0.09" y="0.02:0.05"/>
+    </scene_config>
+    <!-- 王者荣耀活动 -->
+    <scene_config name="sgame_events_scene"  scene_index="5" >
+        <label name="go_back_icon" w="0.06:0.1" h="0.03:0.06" x="0.02:0.09" y="0.02:0.05"/>
+        <label name="global_go_back_icon" w="0.06:0.1" h="0.03:0.06" x="0.02:0.09" y="0.02:0.05"/>
+    </scene_config>
+    <!-- 王者荣耀祈愿 -->
+    <scene_config name="sgame_wish_scene"  scene_index="6" >
+        <label name="go_back_icon" w="0.06:0.1" h="0.03:0.06" x="0.02:0.09" y="0.02:0.05"/>
+        <label name="global_go_back_icon" w="0.06:0.1" h="0.03:0.06" x="0.02:0.09" y="0.02:0.05"/>
+    </scene_config>
+    <scene_config name="sgame_other_has_goback_scene"  scene_index="7" >
+        <label name="go_back_icon" w="0.06:0.1" h="0.03:0.06" x="0.02:0.09" y="0.02:0.05"/>
+        <label name="global_go_back_icon" w="0.06:0.1" h="0.03:0.06" x="0.02:0.09" y="0.02:0.05"/>
+    </scene_config>
+
+    <!-- 英雄联盟主界面 -->
+    <scene_config name="wildrift_main_scene"  scene_index="8" >
+        <label name="essence_icon" w="0.03:0.06" h="0.03:0.06" x="0.5:0.8" y="0.04"/>
+        <label name="poro_coins_icon" w="0.03:0.06" h="0.03:0.06" x="0.5:0.8" y="0.04"/>
+        <label name="collection_icon" w="0.03:0.06" h="0.03:0.06" x="0.7:" y="0.04"/>
+        <label name="34_go_back_icon" w="0.02:0.04" h="0.04:0.07" x="0.01:0.04" y="0.03"/>
+    </scene_config>
+    <!-- 英雄联盟活动 -->
+    <scene_config name="wildrift_events_scene"  scene_index="9" >
+        <label name="34_go_back_icon" w="0.02:0.04" h="0.04:0.07" x="0.01:0.08" y="0.03"/>
+        <label name="reminder_icon" w="0.02:0.04" h="0.03:0.06" x="0.5" y="0.2"/>
+    </scene_config>
+    <!-- 英雄联盟祈愿 -->
+    <scene_config name="wildrift_wish_scene"  scene_index="10" >
+        <label name="34_go_back_icon" w="0.02:0.04" h="0.04:0.07" x="0.01:0.04" y="0.03"/>
+    </scene_config>
+    <scene_config name="wildrift_other_has_goback_scene"  scene_index="11" >
+        <label name="34_go_back_icon" w="0.02:0.04" h="0.04:0.07" x="0.01:0.04" y="0.03"/>
+    </scene_config>
+    <scene_config name="wildrift_game_scene"  scene_index="12" >
+        <label name="attack_icon" w="0.03:0.06" h="0.03:0.06" x="0.8:" y="0.3"/>
+        <label name="defend_icon" w="0.01:0.03" h="0.02:0.05" x="0.8:" y="0.1:0.4"/>
+        <label name="retreat_icon" w="0.02:0.05" h="0.03:0.06" x="0.8:" y="0.2:0.5"/>
+    </scene_config>
+
+    <!-- 国际版王者荣耀主界面 -->
+    <scene_config name="sgame_global_main_scene"  scene_index="13" >
+        <label name="global_menu_open_icon" w="0.03:0.07" h="0.04:0.08" x="0.05:0.08" y="0.7:"/>
+        <label name="global_menu_close_icon" w="0.05:0.09" h="0.05:0.09" x="0.05:0.08" y="0.7:"/>
+        <label name="global_message_icon" w="0.03:0.06" h="0.02:0.05" x="0.7:" y="0.01:0.04"/>
+        <label name="global_settings_icon" w="0.03:0.07" h="0.02:0.07" x="0.7:" y="0.01:0.04"/>
+        <label name="global_go_back_icon" w="0.06:0.2" h="0.03:0.06" x="0.02:0.09" y="0.02:0.05"/>
+    </scene_config>
+    <!-- 国际版王者荣耀活动 -->
+    <scene_config name="sgame_global_events_scene"  scene_index="14" >
+        <label name="global_go_back_icon" w="0.06:0.2" h="0.03:0.06" x="0.02:0.09" y="0.02:0.05"/>
+        <label name="global_operation_icon" w="0.03:0.07" h="0.03:0.07" x="0.1" y="0.2"/>
+        <label name="global_gift_icon" w="0.03:0.07" h="0.03:0.07" x="0.1:0.3" y="0.2"/>
+        <!--<label name="global_telegramr_icon" w="0.03:0.07" h="0.02:0.06" x="0.1" y="0.7:"/>-->
+        <label name="global_telegramr_icon" w="0.03:0.07" h="0.02:0.06" x="0.1" y="0.3"/>
+    </scene_config>
+    <scene_config name="sgame_global_wish_scene"  scene_index="15" >
+        <label name="global_go_back_icon" w="0.06:0.2" h="0.03:0.06" x="0.02:0.09" y="0.02:0.05"/>
+    </scene_config>
+
+    <!-- 国际版和平精英主界面 -->
+    <scene_config name="pubg_global_main_scene"  scene_index="16" >
+        <label name="honor_rank_icon" w="0.05:0.09" h="0.1" x="0.7:" y="0.05:0.1"/>
+        <label name="shop_icon" w="0.05:0.09" h="0.04:0.07" x="0.7:" y="0.05:0.1"/>
+        <label name="events_icon" w="0.04:0.07" h="0.04:0.07" x="0.7:" y="0.2:0.5"/>
+        <label name="close_icon" w="0.03:0.06" h="0.03:0.06" x="0.7:" y="0.03"/>
+    </scene_config>
+    <!-- 国际版和平精英活动 -->
+    <scene_config name="pubg_global_events_scene"  scene_index="17" >
+        <label name="events_star_icon" w="0.04:0.07" h="0.05:0.08" x="0.8:" y="0.2"/>
+        <label name="events_gift_icon" w="0.04:0.07" h="0.04:0.07" x="0.8:" y="0.1:0.4"/>
+        <label name="events_fire_icon" w="0.04:0.07" h="0.05:0.09" x="0.8:" y="0.3:0.6"/>
+        <label name="events_cooperate_icon" w="0.04:0.08" h="0.04:0.07" x="0.8:" y="0.5:0.8"/>
+        <label name="events_list_icon" w="0.04:0.07" h="0.05:0.08" x="0.8:" y="0.6:0.9"/>
+        <label name="events_m_icon" w="0.04:0.07" h="0.04:0.07" x="0.8:" y="0.8:"/>
+        <label name="close_icon" w="0.03:0.06" h="0.03:0.06" x="0.7:" y="0.03"/>
+    </scene_config>
+</low_sugar_scene_config>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        android:paddingTop="@dimen/pip_customize_item_pt"
+        android:layout_width="@dimen/tile_customize_width"
+        android:layout_height="@dimen/tile_customize_height">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/pip_icon_width"
+            android:layout_height="@dimen/pip_icon_width"/>
+        <TextView
+            android:textSize="@dimen/dessert_tile_label_size"
+            android:textColor="@color/game_tile_customize_label"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:fontFamily="NotoSansCJKsc"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>يوم</item>
+    </array>
+    <array name="game_space_mode">
+        <item>الوضع الجوي</item>
+        <item>وضع البطاقة</item>
+        <item>وضع الجهاز المحمول باليد</item>
+    </array>
+    <array name="month">
+        <item>شهر</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>&gt;الأحد</item>
+        <item>&gt;الإثنين</item>
+        <item>الثلاثاء</item>
+        <item>الأربعاء</item>
+        <item>الخميس</item>
+        <item>&gt;الجمعة</item>
+        <item>السبت</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>تسلسل ثابت</item>
+        <item>المستخدم مؤخرًا</item>
+        <item>أوقات الاستخدام</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>هذه رسالة منبثقة.</item>
+        <item>يمكن تعديل نمط النافذة المنبثقة كما تشاء.</item>
+        <item>تعيين نوع الرسالة التي تريد تحويلها لنافذة منبثقة.</item>
+        <item>انقر على زر الرد لفتح نافذة صغيرة.</item>
+    </array>
+    <array name="year">
+        <item>سنة</item>
+    </array>
+</resources>

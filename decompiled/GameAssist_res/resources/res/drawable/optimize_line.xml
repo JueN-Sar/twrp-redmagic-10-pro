@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_optimize_line__0_res_0x7f0802e6">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_optimize_line__1_res_0x7f0802e7"/>
+    <target
+        android:name="line"
+        android:animation="@drawable/_optimize_line__2_res_0x7f0802e8"/>
+    <target
+        android:name="zhizhen"
+        android:animation="@drawable/_optimize_line__3_res_0x7f0802e9"/>
+    <target
+        android:name="path"
+        android:animation="@drawable/_optimize_line__4_res_0x7f0802ea"/>
+</animated-vector>

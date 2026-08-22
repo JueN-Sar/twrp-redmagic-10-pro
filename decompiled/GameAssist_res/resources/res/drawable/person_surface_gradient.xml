@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_person_surface_gradient__0_res_0x7f080364">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_person_surface_gradient__3_res_0x7f080367"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_person_surface_gradient__4_res_0x7f080368"/>
+    <target
+        android:name="person"
+        android:animation="@drawable/_person_surface_gradient__5_res_0x7f080369"/>
+</animated-vector>

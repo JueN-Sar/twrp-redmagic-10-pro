@@ -1,0 +1,159 @@
+{
+  "game_ask_question_in_game_field": "com.zte.gameassist.aiagent.command.IntelligentNavigatorCommand",
+  "game_turn_on_fan": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_fan": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_open_touch_key": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_touch_key": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_open_game_note": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_game_note": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_open_super_screen_quality_config": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_super_screen_quality_config": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_open_ai_trigger_window": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_ai_trigger_window": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_game_touch_data": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_game_touch_data": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_game_help_line": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_game_help_line": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_tactical_advice": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_tactical_coach": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_game_stopwatch": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_game_stopwatch": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_front_sight": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_front_sight": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_M_broadcast": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_M_broadcast": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_M_Yell": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_M_Yell": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_one_click": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_one_click": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_custom_music_volume": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_custom_music_volume": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_ai_detect_plug": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_ai_detect_plug": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_custom_screen_size": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_custom_screen_size": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_high_sensitivity_roulette_wheel": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_high_sensitivity_roulette_wheel": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_custom_screen_map": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_custom_screen_map": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_ai_speaker": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_ai_speaker": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_sensor_operation": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_sensor_operation": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_show_counter": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_hide_counter": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_game_predicition": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_game_predicition": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_query_game_predicition": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_voice_map_touch": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_voice_map_touch": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_Investigation_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_Investigation_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_on_chat_assit": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_chat_assit": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_set_brightness_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_higher_perform_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_middle_perform_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_lower_perform_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_super_perform_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_super_perform_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_set_brightness_up": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_set_brightness_down": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_set_volume_max": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_set_volume_min": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_set_brightness_max": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_set_brightness_min": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_set_volume_up": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_set_volume_down": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_charge_separation": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_charge_separation": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_open_game_filter_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_game_filter_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+
+  "game_clean_memory": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_play_game_by_screen_casting": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_click_super_screenshot": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_wifi": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_wifi": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_active_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_active_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_mis_touch": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_mis_touch": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_set_fps_level_up": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_set_fps_level_down": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_voice_style_config": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_voice_style_config": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_performance_monitor": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_performance_monitor": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_record": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_record": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_rotation_lock": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_rotation_lock": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_game_dock_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_game_dock_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_competition_light": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_competition_light": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_no_tel_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_no_tel_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_game_voice_translation": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_game_voice_translation": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_game_reminder": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_game_reminder": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_game_virbate": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_game_virbate": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_set_notification_normal": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_set_notification_barrage": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_set_notification_gleam": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_set_notification_shield": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_turn_on_touch_map_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+  "game_turn_off_touch_map_mode": "com.zte.gameassist.aiagent.command.CustomCommand",
+
+  "game_open_WIFI_low_latency_mode": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_close_WIFI_low_latency_mode": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_Open_MobileData_Low_Latency": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_turn_off_low_latency_mobile_data": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_turn_on_apk_pre_download": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_turn_off_apk_pre_download": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_open_net_config_window": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_choice_app_to_game_list": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_open_game_launcher_music": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_close_game_launcher_music": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_open_my_data": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_start_M_app": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_start_game_app": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_play_games_by_key_mouse": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_play_games_by_joystick": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_play_games_by_screen_casting": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_open_game_config_window": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_turn_off_game_config_window": "com.zte.gameassist.aiagent.command.GameSpaceCommand",
+  "game_start_recognition_game_task": "com.zte.gameassist.aiagent.command.LowSugarDessertCommand",
+  "game_start_image_interpretation": "com.zte.gameassist.aiagent.command.IndependentDessertCommand"
+}

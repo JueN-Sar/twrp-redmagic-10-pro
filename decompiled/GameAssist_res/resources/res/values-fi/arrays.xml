@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>Päivä</item>
+    </array>
+    <array name="month">
+        <item>Kuukausi</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Su</item>
+        <item>Ma</item>
+        <item>Ti</item>
+        <item>Ke</item>
+        <item>To</item>
+        <item>Pe</item>
+        <item>La</item>
+    </array>
+    <array name="year">
+        <item>vuosi</item>
+    </array>
+</resources>

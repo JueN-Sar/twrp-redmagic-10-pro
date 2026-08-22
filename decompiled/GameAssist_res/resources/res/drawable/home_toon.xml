@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_home_toon__0_res_0x7f080204">
+    <target
+        android:name="group"
+        android:animation="@drawable/_home_toon__1_res_0x7f080205"/>
+    <target
+        android:name="path_1"
+        android:animation="@drawable/_home_toon__2_res_0x7f080206"/>
+</animated-vector>

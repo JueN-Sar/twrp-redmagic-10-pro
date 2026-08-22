@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_gradient_thumb_up_toon__0_res_0x7f0801e5">
+    <target
+        android:name="group"
+        android:animation="@drawable/_gradient_thumb_up_toon__2_res_0x7f0801e7"/>
+    <target
+        android:name="icon"
+        android:animation="@drawable/_gradient_thumb_up_toon__3_res_0x7f0801e8"/>
+</animated-vector>

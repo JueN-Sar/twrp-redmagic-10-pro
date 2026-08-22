@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_smart_faqs_line__0_res_0x7f080417">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_smart_faqs_line__1_res_0x7f080418"/>
+    <target
+        android:name="wenhao1"
+        android:animation="@drawable/_smart_faqs_line__2_res_0x7f080419"/>
+    <target
+        android:name="wenhao"
+        android:animation="@drawable/_smart_faqs_line__3_res_0x7f08041a"/>
+    <target
+        android:name="line"
+        android:animation="@drawable/_smart_faqs_line__4_res_0x7f08041b"/>
+</animated-vector>

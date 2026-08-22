@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>日</item>
+    </array>
+    <array name="game_space_mode">
+        <item>大氣模式</item>
+        <item>小卡模式</item>
+        <item>手持模式</item>
+    </array>
+    <array name="month">
+        <item>月</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>固定順序</item>
+        <item>最近使用</item>
+        <item>使用次數</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>這是快顯訊息。</item>
+        <item>快顯視窗可以自由調整。</item>
+        <item>設定您要變成快顯視窗的訊息類型。</item>
+        <item>按一下回覆按鈕以開啟一個小視窗。</item>
+    </array>
+    <array name="year">
+        <item>年</item>
+    </array>
+</resources>

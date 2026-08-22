@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="game_space_mode">
+        <item>वायुमण्डलीय मोड</item>
+        <item>कार्ड मोड</item>
+        <item>ह्यान्डहेल्ड मोड</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>आइतवार</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>स्थिर अनुक्रम</item>
+        <item>हालसालै प्रयोग गरिएको</item>
+        <item>प्रयोग गर्ने समय</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>यो पप-अप सन्देश हो।</item>
+        <item>पप-अप शैली स्वतन्त्र रूपमा समायोजन गर्न सकिन्छ।</item>
+        <item>तपाईंले पप-अपमा परिणत गर्न चाहनुभएको सन्देशको प्रकार सेट गर्नुहोस्।</item>
+        <item>सानो विन्डो खोल्न जवाफ बटनमा क्लिक गर्नुहोस्।</item>
+    </array>
+</resources>

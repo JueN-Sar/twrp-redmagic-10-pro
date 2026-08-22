@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_moodbad_animation__0_res_0x7f080272">
+    <target
+        android:name="path"
+        android:animation="@drawable/_moodbad_animation__1_res_0x7f080273"/>
+    <target
+        android:name="path_6"
+        android:animation="@drawable/_moodbad_animation__2_res_0x7f080274"/>
+    <target
+        android:name="group_2"
+        android:animation="@drawable/_moodbad_animation__3_res_0x7f080275"/>
+    <target
+        android:name="path_2"
+        android:animation="@drawable/_moodbad_animation__4_res_0x7f080276"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_moodbad_animation__5_res_0x7f080277"/>
+    <target
+        android:name="path_3"
+        android:animation="@drawable/_moodbad_animation__6_res_0x7f080278"/>
+    <target
+        android:name="group_1"
+        android:animation="@drawable/_moodbad_animation__7_res_0x7f080279"/>
+</animated-vector>

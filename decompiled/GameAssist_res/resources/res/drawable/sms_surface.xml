@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_sms_surface__0_res_0x7f080436">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_sms_surface__1_res_0x7f080437"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_sms_surface__2_res_0x7f080438"/>
+    <target
+        android:name="point_1"
+        android:animation="@drawable/_sms_surface__3_res_0x7f080439"/>
+    <target
+        android:name="line"
+        android:animation="@drawable/_sms_surface__4_res_0x7f08043a"/>
+    <target
+        android:name="point"
+        android:animation="@drawable/_sms_surface__5_res_0x7f08043b"/>
+</animated-vector>

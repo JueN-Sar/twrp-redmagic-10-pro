@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_timer_surface__0_res_0x7f080498">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_timer_surface__1_res_0x7f080499"/>
+    <target
+        android:name="group_1"
+        android:animation="@drawable/_timer_surface__2_res_0x7f08049a"/>
+    <target
+        android:name="up"
+        android:animation="@drawable/_timer_surface__3_res_0x7f08049b"/>
+    <target
+        android:name="pointer1"
+        android:animation="@drawable/_timer_surface__4_res_0x7f08049c"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_timer_surface__5_res_0x7f08049d"/>
+    <target
+        android:name="circle"
+        android:animation="@drawable/_timer_surface__6_res_0x7f08049e"/>
+    <target
+        android:name="pointer"
+        android:animation="@drawable/_timer_surface__7_res_0x7f08049f"/>
+</animated-vector>

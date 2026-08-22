@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.nubia.gameassist.plugin.panel.PluginTileView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/item_tile_plugin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/item_tile_plugin_margin_top_port"
+    android:layout_marginRight="@dimen/item_tile_plugin_margin_right">
+    <FrameLayout
+        android:id="@+id/tile_layout"
+        android:layout_width="@dimen/tile_layout_width"
+        android:layout_height="@dimen/tile_layout_height">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/tile_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:id="@+id/tile_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tile_settings_margin_left"/>
+    </FrameLayout>
+    <TextView
+        android:textSize="@dimen/tile_lable_text_size"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tile_lable"
+        android:layout_width="@dimen/tile_layout_width"
+        android:layout_height="@dimen/tile_lable_height"
+        android:layout_marginTop="@dimen/tile_lable_margin_top"/>
+</cn.nubia.gameassist.plugin.panel.PluginTileView>

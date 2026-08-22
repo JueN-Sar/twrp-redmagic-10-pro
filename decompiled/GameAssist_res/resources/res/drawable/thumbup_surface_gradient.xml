@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_thumbup_surface_gradient__0_res_0x7f08047f">
+    <target
+        android:name="path_1"
+        android:animation="@drawable/_thumbup_surface_gradient__3_res_0x7f080482"/>
+    <target
+        android:name="mask"
+        android:animation="@drawable/_thumbup_surface_gradient__4_res_0x7f080483"/>
+    <target
+        android:name="path_2"
+        android:animation="@drawable/_thumbup_surface_gradient__5_res_0x7f080484"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_thumbup_surface_gradient__6_res_0x7f080485"/>
+</animated-vector>

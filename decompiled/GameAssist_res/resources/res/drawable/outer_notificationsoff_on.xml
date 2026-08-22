@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_outer_notificationsoff_on__0_res_0x7f080318">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_outer_notificationsoff_on__1_res_0x7f080319"/>
+    <target
+        android:name="notifications_linestart"
+        android:animation="@drawable/_outer_notificationsoff_on__2_res_0x7f08031a"/>
+    <target
+        android:name="notifications_down"
+        android:animation="@drawable/_outer_notificationsoff_on__3_res_0x7f08031b"/>
+    <target
+        android:name="down"
+        android:animation="@drawable/_outer_notificationsoff_on__4_res_0x7f08031c"/>
+</animated-vector>

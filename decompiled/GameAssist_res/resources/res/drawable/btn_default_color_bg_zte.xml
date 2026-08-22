@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="6dp"
+    android:insetRight="6dp"
+    android:insetTop="6dp"
+    android:insetBottom="6dp">
+    <selector>
+        <item
+            android:state_pressed="true"
+            android:drawable="@drawable/btn_pressed_bg_zte_mfvt"/>
+        <item
+            android:state_enabled="false"
+            android:drawable="@drawable/btn_disable_bg_zte_mfvt"/>
+        <item android:drawable="@drawable/btn_default_bg_zte_mfvt"/>
+    </selector>
+</inset>

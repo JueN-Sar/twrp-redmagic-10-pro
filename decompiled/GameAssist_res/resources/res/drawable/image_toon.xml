@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_image_toon__0_res_0x7f08022f">
+    <target
+        android:name="point"
+        android:animation="@drawable/_image_toon__1_res_0x7f080230"/>
+    <target
+        android:name="image_end"
+        android:animation="@drawable/_image_toon__2_res_0x7f080231"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_image_toon__3_res_0x7f080232"/>
+    <target
+        android:name="path"
+        android:animation="@drawable/_image_toon__4_res_0x7f080233"/>
+    <target
+        android:name="group_2"
+        android:animation="@drawable/_image_toon__5_res_0x7f080234"/>
+</animated-vector>

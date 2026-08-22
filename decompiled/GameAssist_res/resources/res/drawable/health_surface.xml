@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_health_surface__0_res_0x7f0801fb">
+    <target
+        android:name="mask"
+        android:animation="@drawable/_health_surface__1_res_0x7f0801fc"/>
+    <target
+        android:name="group"
+        android:animation="@drawable/_health_surface__2_res_0x7f0801fd"/>
+    <target
+        android:name="xin"
+        android:animation="@drawable/_health_surface__3_res_0x7f0801fe"/>
+    <target
+        android:name="jiahao"
+        android:animation="@drawable/_health_surface__4_res_0x7f0801ff"/>
+    <target
+        android:name="jia"
+        android:animation="@drawable/_health_surface__5_res_0x7f080200"/>
+</animated-vector>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable xmlns:zte="http://schemas.android.com/apk/res-auto"
+    zte:data="4.9, 1.4, 4.5, 1.6, 4.3, 5.2, 3.5"
+    zte:gradientEndColor="#115512d8"
+    zte:gradientStartColor="#775512d8"
+    zte:height="300dp"
+    zte:horizontalEnd="7"
+    zte:horizontalStart="0"
+    zte:strokeColor="#ff5512d8"
+    zte:strokeWidth="3dp"
+    zte:verticalEnd="6"
+    zte:verticalStart="0.5"
+    zte:viewportHeight="250dp"
+    zte:viewportWidth="250dp"
+    zte:width="300dp"
+    class="com.zte.gameassist.drawable.linechart.LineChart"/>

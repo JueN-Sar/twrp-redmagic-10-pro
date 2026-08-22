@@ -1,0 +1,8 @@
+package com.google.android.gms.internal.mlkit_vision_text_bundled_common;
+
+/* loaded from: classes.dex */
+public final class zbabe {
+    public static zbuj a() {
+        return zbabd.f12651a;
+    }
+}

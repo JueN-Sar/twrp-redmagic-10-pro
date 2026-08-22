@@ -1,0 +1,49 @@
+uniform shader keyguard;
+uniform half4 src;
+uniform half4 dst;
+uniform half alpha;
+uniform int tablet;
+uniform half blurs;
+uniform half progress;
+
+half2 map(half2 fragCoord){
+    half2 pointf = half2(fragCoord.x/(dst.R-dst.L), fragCoord.y/(dst.B-dst.T));
+    if(tablet == 1){
+        return half2((src.R-src.L)*pointf.x, (src.B-src.T)*pointf.y);
+    }
+    if(progress<0){
+        pointf = 1.0 - pointf;
+    }
+    return half2((src.R-src.L)*(1.0-pointf.y), (src.B-src.T)*pointf.x);
+}
+
+half4 main(vec2 fragCoord){
+    //scale point
+    half2 center = half2(dst.R+dst.L, dst.B+dst.T) * 0.5;
+    half scale = -abs(progress*0.15) + 1.0;
+    fragCoord = (fragCoord-center) * scale + center;
+
+    //blurs point
+    if(blurs>0){
+        float full = 0.0;
+        float3 fullColor = float3(0,0,0);
+        for(half x=-1;x<=1;x+=0.25){
+            for(half y=-1;y<=1;y+=0.25){
+                vec2 point = vec2(fragCoord.x+x*blurs, fragCoord.y+y*blurs);
+                if(point.x >=dst.L && point.x<=dst.R && point.y >=dst.T && point.y<=dst.B){
+                    half dis = distance(point, fragCoord);
+                    vec2 kpoint = map(point);
+                    if(dis<blurs && kpoint.x >=src.L && kpoint.x<=src.R && kpoint.y >=src.T && kpoint.y<=src.B){
+                        float weight = pow((blurs-dis)/blurs, 1.5);
+                        fullColor = fullColor + keyguard.eval(kpoint).rgb * weight;
+                        full = full+weight;
+                    }
+                }
+            }
+        }
+        fullColor = fullColor / full;
+        return half4(fullColor.rgb, alpha);
+    }else{
+        return half4(keyguard.eval(map(fragCoord)).rgb, alpha);
+    }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>Dia</item>
+    </array>
+    <array name="game_space_mode">
+        <item>Modo atmosférico</item>
+        <item>Modo de cartão</item>
+        <item>Modo portátil</item>
+    </array>
+    <array name="month">
+        <item>Mês</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>Dom</item>
+        <item>Seg</item>
+        <item>Ter</item>
+        <item>Quar</item>
+        <item>Qui</item>
+        <item>Sexta</item>
+        <item>Sáb</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>Sequência fixa</item>
+        <item>Recentemente utilizados</item>
+        <item>Tempos de utilização</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>Esta é a mensagem pop-up.</item>
+        <item>O estilo pop-up pode ser ajustado livremente.</item>
+        <item>Defina o tipo de mensagem que você deseja transformar em um pop-up.</item>
+        <item>Clique no botão responder para abrir uma pequena janela.</item>
+    </array>
+    <array name="year">
+        <item>ano</item>
+    </array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetBottom="0dp"
+    android:inset="0dp">
+    <shape android:shape="rectangle">
+        <corners
+            android:topLeftRadius="@dimen/mfvc_radius_dialog"
+            android:topRightRadius="@dimen/mfvc_radius_dialog"
+            android:bottomLeftRadius="0dp"
+            android:bottomRightRadius="0dp"/>
+        <solid android:color="@color/mfv_common_pop_bg"/>
+    </shape>
+</inset>

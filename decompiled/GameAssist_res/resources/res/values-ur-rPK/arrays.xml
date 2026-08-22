@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>دن</item>
+    </array>
+    <array name="game_space_mode">
+        <item>ماحولیاتی موڈ</item>
+        <item>کارڈ موڈ</item>
+        <item>ہینڈ ہیلڈ موڈ</item>
+    </array>
+    <array name="month">
+        <item>مہینہ</item>
+    </array>
+    <array name="nubia_weeks_short">
+        <item>سورج</item>
+        <item>پیر</item>
+        <item>منگل</item>
+        <item>بدھ</item>
+        <item>جمعرات</item>
+        <item>جمعہ</item>
+        <item>ہفتہ</item>
+    </array>
+    <array name="plugin_sort_list">
+        <item>مقررہ ترتیب</item>
+        <item>حال ہی میں استعمال کیا گیا</item>
+        <item>مرتبہ استعمال کریں</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>یہ پاپ اپ پیغام ہے۔</item>
+        <item>پاپ اپ اسٹائل کو آزادانہ طور پر ایڈجسٹ کیا جاسکتا ہے۔</item>
+        <item>اس قسم کے پیغام کو سیٹ کریں جسے آپ پاپ اپ میں تبدیل کرنا چاہتے ہیں۔</item>
+        <item>اسمال ونڈو کھولنے کے لیے جوابی بٹن پر کلک کریں۔</item>
+    </array>
+    <array name="year">
+        <item>سال</item>
+    </array>
+</resources>

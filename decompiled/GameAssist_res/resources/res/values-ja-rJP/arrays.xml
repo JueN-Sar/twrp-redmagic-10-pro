@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>日</item>
+    </array>
+    <array name="month">
+        <item>月</item>
+    </array>
+    <array name="pre_danmu_item">
+        <item>これは弾幕メッセージである</item>
+        <item>弾幕のスタイルは自由に調整できる</item>
+        <item>弾幕に変えたいメッセージの種類を設定する</item>
+        <item>返信ボタンをクリックして小さなウィンドウを開きる</item>
+    </array>
+    <array name="year">
+        <item>年</item>
+    </array>
+</resources>

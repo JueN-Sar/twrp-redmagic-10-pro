@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_notificationsoff_vibration__0_res_0x7f0802d6">
+    <target
+        android:name="vibration_left"
+        android:animation="@drawable/_notificationsoff_vibration__1_res_0x7f0802d7"/>
+    <target
+        android:name="vibration_right"
+        android:animation="@drawable/_notificationsoff_vibration__2_res_0x7f0802d8"/>
+    <target
+        android:name="down"
+        android:animation="@drawable/_notificationsoff_vibration__3_res_0x7f0802d9"/>
+    <target
+        android:name="vibration"
+        android:animation="@drawable/_notificationsoff_vibration__4_res_0x7f0802da"/>
+    <target
+        android:name="notifications_linestart"
+        android:animation="@drawable/_notificationsoff_vibration__5_res_0x7f0802db"/>
+    <target
+        android:name="mask"
+        android:animation="@drawable/_notificationsoff_vibration__6_res_0x7f0802dc"/>
+    <target
+        android:name="path"
+        android:animation="@drawable/_notificationsoff_vibration__7_res_0x7f0802dd"/>
+    <target
+        android:name="vibration_left_1_1"
+        android:animation="@drawable/_notificationsoff_vibration__8_res_0x7f0802de"/>
+    <target
+        android:name="vibration_right_1_1"
+        android:animation="@drawable/_notificationsoff_vibration__9_res_0x7f0802df"/>
+</animated-vector>

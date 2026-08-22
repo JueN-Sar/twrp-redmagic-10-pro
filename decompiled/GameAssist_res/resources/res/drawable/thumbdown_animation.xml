@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_thumbdown_animation__0_res_0x7f080461">
+    <target
+        android:name="group"
+        android:animation="@drawable/_thumbdown_animation__1_res_0x7f080462"/>
+    <target
+        android:name="group_3"
+        android:animation="@drawable/_thumbdown_animation__2_res_0x7f080463"/>
+    <target
+        android:name="thumb_down"
+        android:animation="@drawable/_thumbdown_animation__3_res_0x7f080464"/>
+    <target
+        android:name="thumb_down_all"
+        android:animation="@drawable/_thumbdown_animation__4_res_0x7f080465"/>
+</animated-vector>

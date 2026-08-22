@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day">
+        <item>Дзень</item>
+    </array>
+    <array name="month">
+        <item>Месяц</item>
+    </array>
+    <array name="year">
+        <item>год</item>
+    </array>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="low_sguar_pubg_events_endX">2485</integer>
+    <integer name="low_sguar_pubg_events_endY">575</integer>
+    <integer name="low_sguar_pubg_events_startX">2035</integer>
+    <integer name="low_sguar_pubg_events_startY">380</integer>
+    <integer name="low_sguar_pubg_events_touch_startX">2035</integer>
+    <integer name="low_sguar_sgame_events_endX">2540</integer>
+    <integer name="low_sguar_sgame_events_endY">695</integer>
+    <integer name="low_sguar_sgame_events_startX">2200</integer>
+    <integer name="low_sguar_sgame_events_startY">605</integer>
+    <integer name="low_sguar_sgame_events_touch_endX">500</integer>
+    <integer name="low_sguar_sgame_events_touch_startX">150</integer>
+    <integer name="low_sguar_sgame_events_touch_startY">140</integer>
+    <integer name="low_sguar_sgame_events_without_wish_endY">585</integer>
+    <integer name="low_sguar_sgame_events_without_wish_startY">455</integer>
+    <integer name="low_sguar_sgame_global_events_endX">460</integer>
+    <integer name="low_sguar_sgame_global_events_endY">820</integer>
+    <integer name="low_sguar_sgame_global_events_startY">180</integer>
+    <integer name="low_sguar_sgame_global_events_touch_endX">460</integer>
+    <integer name="low_sguar_sgame_global_events_touch_startY">130</integer>
+    <integer name="low_sguar_sgame_goback_area_touch_endX">330</integer>
+    <integer name="low_sguar_sgame_goback_area_touch_endY">120</integer>
+    <integer name="low_sguar_sgame_wish_endX">2540</integer>
+    <integer name="low_sguar_sgame_wish_endY">415</integer>
+    <integer name="low_sguar_sgame_wish_startX">2200</integer>
+    <integer name="low_sguar_sgame_wish_startY">325</integer>
+    <integer name="low_sguar_sgame_wish_touch_endX">400</integer>
+    <integer name="low_sguar_sgame_wish_touch_startX">140</integer>
+    <integer name="low_sguar_wildrift_events_endX">395</integer>
+    <integer name="low_sguar_wildrift_events_endY">500</integer>
+    <integer name="low_sguar_wildrift_events_startY">280</integer>
+    <integer name="low_sguar_wildrift_events_touch_endX">290</integer>
+    <integer name="low_sguar_wildrift_events_touch_startY">185</integer>
+    <integer name="low_sguar_wildrift_goback_area_touch_endX">1100</integer>
+    <integer name="low_sguar_wildrift_goback_area_touch_endY">100</integer>
+</resources>
